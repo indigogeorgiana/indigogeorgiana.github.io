@@ -78,6 +78,13 @@ header {
 	opacity: 0.7;
 	}
 
+.inline {
+
+	display: inline;
+
+
+}
+
 /***********************************************************************************/
 /*IMAGE CONTENT*/
 
@@ -153,7 +160,7 @@ header {
 /*Emotional Intelligence Blog - Images */	
 .background5 { 
 	background-image: url("../img/zigzag.jpg");
-	height: 150%; 
+	height: 250%; 
 	margin:0;
 	background-position: center;
 	background-repeat: no-repeat;
