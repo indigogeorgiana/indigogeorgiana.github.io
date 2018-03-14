@@ -1,114 +1,162 @@
 <!DOCTYPE html>
 <html>
-  <head>
-   <title>Udacity Blog Part One</title>
-    <meta charset="UTF-8">
-     <link href="../styles/main.css" rel="stylesheet" type="text/css"/>
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
-      </head>
-        <body>
-        <div class="background3">
-            <header>
-                <nav>
-                 <h1>MY WEB DEV WANNABE BLOG</h1>
-                   <div class="dropdown">
-                   <button class="dropbtn8">Home</button>
-                   <div class="dropdown-content"> 
-                   <a href="../">Home</a>  
-                   <a href="./about-me.html">About</a>           
-                    </div>              
-                    </div>
-                  <div class="dropdown">
-                  <button class="dropbtn8">Technical Blogs</button>
-                  <div class="dropdown-content">
-                  <a href="./udacity-blog-part1.html">Udacity Part 1</a>
-                  <a href="./udacity-blog-part-2.html">Udacity Part 2</a>
-                    </div>
-                    </div>
-                  <div class="dropdown">
-                  <button class="dropbtn8">Reflection Blogs</button>
-                  <div class="dropdown-content">
-                    <a href="./c1-time-and-habits-blog.html">Time & Habits Blog</a>
-                    <a href="./reflection-blog.html">Reflection Blog</a>
-                    <a href="./emotional-intelligence-blog.html">Emotional Intel Blog</a>
-                    </div>
-                    </div>
-                   </nav>
-                 </header>
-              <br></br>      
-              <div class="h1"><strong>Udacity Blog Part One: HTML, CSS and the DOM</strong></div>
-              <br></br>
-              
-              <div class="h2"><strong>Explaining HTML, CSS and DOM to a non-technical friend?</strong></div>
-              <ul class="a">
-              <li><b>HTML</b> - Known as <b>Hypertext markup language,</b> it is a programming language used for the creating of web pages on the internet. HTML uses unique tags to let the browser know how a webpage should look and display online. These tags are designed to be used as pairs, and there are many different tags. HTML can also be used to add meta information to a web page but is not usually displayed by web browsers. There are many other similar languages such as XHTML which is quite similar but more strict version.</li>
-              <li><b>CSS</b> - <b>Cascading Style Sheets</b> is used to format the layout of web pages on the internet and is a way to the design and look of HTML or XHTML web pages. The language was designed by the World Wide Web Consortium and is supported well by most modern web browsers. One advantage to using CSS is a web page can still be displayed and understood, even if the CSS is not working or removed. </li>
-              <li><b>DOM</b> - A <b>Document Object Model</b> (DOM) is an application programming interface (API) used for valid HTML. With the DOM, programmers can build websites, add, modify or delete elements and content. Languages like HTML, CSS, and XHTML can be accessed, altered or using the DOM.</li>
-              </ul>
-             
-              <div class="h2"><strong>Building a website is just like writing a book...say what?</strong> </div>
-              <ul class="a">
-              <p>For anyone who has ever written a book (me) they would likely tell you that the above statement is not entirely accurate. However, in my opinion in principal, the basics of writing a book are somewhat similar.</li>    
-              <li>For a best selling book we'll need a book idea and an expert ghostwriter or novelist. In walks our expert Web Developer or depending on the size of the project a team of Web Developers to code and build your website.</li>
-              <li><b>DOM</b> – Writes may need a typewriter, pencil and paper to get started writing a book. Web Developer requires a reliable <b>Document Object Model</b> and  <b> API</b> to build websites.</li>
-              <li><b>HTML</b> - A writer considers a unique and interesting story with characters, descriptions and punchy dialogue are the tools required to write a book. Web Developers need at the very least HTML language and a good set of hands.</li>
-              <li><b>CSS</b> – Similair to a bookcover designer and editors role we’ll need to give our website some snazzy personal touches so to make our website really pop our Web Developer/Designer using <b>Cascading Style Sheets</b> language as tool to add colourful images, fresh unique fonts and usable layouts.</li>
-              </ul>
-            
-              <div class="h2"><strong>What is meant by boxifying design?</strong></div>
-              <ul class="a">
-            <p>Everything on a website is actually a box wow...that's amazeballs!! Simply put boxifying design is a method of taking everything needed to build a webpage and dividing them into various boxes.
-               Boxifying all content of your webiste is quite a simple method. Before coding your website think first about everything that will be on your website. Grabbing a paper and pencil you can make space for images, text, headers, links and other content.</p>
-                <p>Some the benefits to using the  boxifying design  concept are:</p>
-             
-            <li>Makes the developers job easier when he/she is decided where everything is going to go on a web page.</li>
-            <li>Breaks down a large task into small tasks making it easier for a large team to manage.</li>
-          
-            </ul>  
-             
-              <div class="h2"><strong>What is the box model?</strong></div>
-              <ul class="a">
-              <p>Given that all elements needed to design a webpage can fit into boxes, as web developer's we are able to define and divde these elemnts within the box model called content, Borders and margins.</p>
-                <li><b>Border</b> - As per the diagram below the border is the area around the padding and content.</li>
-                <li><b>Padding</b> - Clears an area around the content.</li>
-                <li><b>Content</b> - The content of the box, is where text and images will appear.</li>
-               </ul> 
-               <br></br>
-              <center>
-                  <img src="../img/box-model.jpg" alt="Box Model">
-                </center>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <input class="MyButton4" type="button" value="Return to homepage" onclick="window.location.href='/index.html'"/>
-          
-          <br></br>
-          <br></br>      
-          <div class="footer">&#169; 2018 Web Dev Wannabe</div>
-          <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
+<head>
+  <title>Udacity Blog Part One</title>
+  <meta charset="UTF-8">
+  <link href="../styles/main.css" rel="stylesheet" type="text/css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.
+    min.css">     
+</head>
+  <body>
+    <div class="background3">
+      <header>
+        <nav>
+          <h1>MY WEB DEV WANNABE BLOG</h1>
+            <div class="dropdown">
+              <button class="dropbtn8">Home</button>
+            <div class="dropdown-content"> 
+              <a href="../">Home</a>  
+              <a href="./about-me.html">About</a>           
+            </div>              
+            </div>
+            <div class="dropdown">
+             <button class="dropbtn8">Technical Blogs</button>
+            <div class="dropdown-content">
+              <a href="./udacity-blog-part1.html">Udacity Part 1</a>
+              <a href="./udacity-blog-part-2.html">Udacity Part 2</a>
+              <a href="./t3-design-to-web-blog.html">Design to Web</a>
+            </div>
+            </div>
+            <div class="dropdown">
+              <button class="dropbtn8">Reflection Blogs</button>
+            <div class="dropdown-content">
+              <a href="./c1-time-and-habits-blog.html">Time & Habits Blog</a>
+              <a href="./reflection-blog.html">Reflection Blog</a>
+              <a href="./emotional-intelligence-blog.html">Emotional Intel Blog</a>
+              <a href="./c3-meditation-process.html">Meditation Process</a>
+            </div>
+            </div>
+        </nav>
+      </header>
+      <br></br>      
+    <div class="h1"><strong>Udacity Blog Part One: HTML, CSS and the DOM</strong></div>
+      <br></br>
+        <div class="h2"><strong>Explaining HTML, CSS and DOM to a non-technical friend?</strong></div>
+          <ul class="a">
+            <li>
+              <b>HTML</b> - Known as <b>Hypertext markup language,</b> it is a programming language used 
+              for the creating of web pages on the internet. HTML uses unique tags to let the browser know 
+              how a webpage should look and display online. These tags are designed to be used as pairs, and 
+              there are many different tags. HTML can also be used to add meta information to a web page but 
+              is not usually displayed by web browsers. There are many other similar languages such as XHTML 
+              which is quite similar but more strict version.
+            </li>
+            <li>
+              <b>CSS</b> - <b>Cascading Style Sheets</b> is used to format the layout of web pages on the 
+              internet and is a way to the design and look of HTML or XHTML web pages. The language was 
+              designed by the World Wide Web Consortium and is supported well by most modern web browsers. 
+              One advantage to using CSS is a web page can still be displayed and understood, even if the CSS
+               is not working or removed. 
+            </li>
+            <li>
+              <b>DOM</b> - A <b>Document Object Model</b> (DOM) is an application programming interface 
+              (API) used for valid HTML. With the DOM, programmers can build websites, add, modify or delete 
+              lements and content. Languages like HTML, CSS, and XHTML can be accessed, altered or using the 
+              DOM.
+            </li>
+          </ul>
+        <div class="h2"><strong>Building a website is just like writing a book...say what?</strong> </div>
+          <ul class="a">
+            <p>
+              For anyone who has ever written a book (me) they would likely tell you that the above 
+              statement is not entirely accurate. However, in my opinion in principal, the basics of 
+              writing a book are somewhat similar.
+            </p>    
+            <li>
+              For a best selling book we'll need a book idea and an expert ghostwriter or novelist. In walks 
+              our expert Web Developer or depending on the size of the project a team of Web Developers to 
+              code and build your website.
+            </li>
+            <li>
+              <b>DOM</b> – Writes may need a typewriter, pencil and paper to get started writing a book. Web 
+              Developer requires a reliable <b>Document Object Model</b> and  <b> API</b> to build websites.
+            </li>
+            <li>
+              <b>HTML</b> - A writer considers a unique and interesting story with characters, descriptions 
+              and punchy dialogue are the tools required to write a book. Web Developers need at the very 
+              least HTML language and a good set of hands.
+            </li>
+            <li>
+              <b>CSS</b> – Similair to a bookcover designer and editors role we’ll need to give our website 
+              some snazzy personal touches so to make our website really pop our Web Developer/Designer 
+              using <b>Cascading Style Sheets</b> language as tool to add colourful images, fresh unique 
+              fonts and usable layouts.
+            </li>
+          </ul>
+        <div class="h2"><strong>What is meant by boxifying design?</strong></div>
+          <ul class="a">
+            <p>
+              Everything on a website is actually a box wow...that's amazeballs!! Simply put boxifying 
+              design is a method of taking everything needed to build a webpage and dividing them into 
+              various boxes. Boxifying all content of your webiste is quite a simple method. Before 
+              coding your website think first about everything that will be on your website. Grabbing 
+              a paper and pencil you can make space for images, text, headers, links and other content.
+            </p>
+            <p>Some the benefits to using the  boxifying design  concept are:</p>
+            <li>
+              Makes the developers job easier when he/she is decided where everything is going to go on 
+              a web page.
+            </li>
+            <li>Breaks down a large task into small tasks making it easier for a large team to manage.
+            </li>
+          </ul>  
+        <div class="h2"><strong>What is the box model?</strong></div>
+          <ul class="a">
+            <p>Given that all elements needed to design a webpage can fit into boxes, as web developer's 
+              we are able to define and divde these elemnts within the box model called content, Borders 
+              and margins.
+            </p>
+            <li>
+              <b>Border</b> - As per the diagram below the border is the area around the padding and 
+              content.
+            </li>
+            <li><b>Padding</b> - Clears an area around the content.
+            </li>
+            <li><b>Content</b> - The content of the box, is where text and images will appear.
+            </li>
+          </ul> 
+        <br></br>
+      <center>
+        <img src="../img/box-model.jpg" alt="Box Model">
+      </center>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+      <input class="MyButton4" type="button" value="Return to homepage" onclick="window.location.href='/index.html'"/>
+        <br></br>
+        <br></br>      
+      <div class="footer">&#169; 2018 Web Dev Wannabe</div>
+        <script>
+          /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
             function myFunction() {
-                document.getElementById("myDropdown").classList.toggle("show");
+              document.getElementById("myDropdown").classList.toggle("show");
             }
-            
-            // Close the dropdown if the user clicks outside of it
+          // Close the dropdown if the user clicks outside of it
             window.onclick = function(event) {
               if (!event.target.matches('.dropbtn')) {
-            
                 var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
+                  var i;
+                    for (i = 0; i < dropdowns.length; i++) {
+                      var openDropdown = dropdowns[i];
+                        if (openDropdown.classList.contains('show')) {
+                          openDropdown.classList.remove('show');
                   }
                 }
               }
             }
-      </script>
-        </div>
+        </script>
+       </div>
   </body>
 </html>
