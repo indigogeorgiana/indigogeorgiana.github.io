@@ -1,74 +1,81 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Homepage</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="styles/main.css" rel="stylesheet" type="text/css"/>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
-</head>
+  <head>
+    <title>Sample Skeleton Page</title>
+    <meta charset="utf-8">
+
+    <!-- 
+      Notice that we have three stylesheet links: the first two are for the Skeleton framework,
+      and the final one is for any custom styles we might need, like turning the background
+      bright pink.
+    
+      Please don't make the background pink... have a little pity on your teachers!
+    -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="custom.css">
+  </head>
+  
   <body>
-    <div class="background">
-     
-        <nav>
-          <h1>MY WEB DEV WANNABE BLOG</h1>
-            <div class="dropdown">
-             <button class="dropbtn1">Home</button>
-            <div class="dropdown-content"> 
-              <a href="index.html">Home</a>  
-              <a href="blog/about-me.html">About</a>              
-            </div>              
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn1">Technical Blogs</button>
-            <div class="dropdown-content">
-              <a href="blog/udacity-blog-part1.html">Udacity Part 1</a>
-              <a href="blog/udacity-blog-part-2.html">Udacity Part 2</a>
-            </div>
-            </div>
-            <div class="dropdown">
-              <button class="dropbtn1">Reflection Blogs</button>
-            <div class="dropdown-content">
-              <a href="blog/c1-time-and-habits-blog.html">Time & Habits Blog</a>
-              <a href="blog/reflection-blog.html">Reflection Blog</a>
-              <a href="blog/emotional-intelligence-blog.html">Emotional Intel One</a>
-              <a href="blog/c3-meditation-process.html">Emotional Intel Two</a>
-            </div>
-            </div>
-        </nav>
-    
-    <div class="footer-bar">
-      <a class="active" href="https://github.com/indigogeorgiana"><i class="fa fa-github-square" 
-            style="font-size:24px"></i></a>
-      <a href="https://www.pinterest.nz/indigogeorgiana/"><i class="fa fa-pinterest-square" style=
-            "font-size:24px"></i></a>
-      <a href="https://www.freecodecamp.org/map"><i class="fa fa-free-code-camp" style="font-size:24px">
-            </i></a>
-      <a href="https://plus.google.com/u/0/105371997975696575090"><i class="fa fa-google-plus" 
-            style="font-size:24px"></i></a>               
-    
-    </div> 
-    <div class="h1"><strong>Welcome to a day in the life of a Web Dev Wannabe</strong></div>
-    <div class="h1"><strong>My names Indigo and I'm a Dev Academy student</strong></div>
-    <div class="footer">&#169; 2018 Web Dev Wannabe</div>                        
-      <script>
-        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-          function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-          }
-        // Close the dropdown if the user clicks outside of it
-          window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-              var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                  for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                      if (openDropdown.classList.contains('show')) {
-                      openDropdown.classList.remove('show');
-                }
-              }
-            }
-          }
-      </script>
-    </div> 
+    <div class="container">
+      <div class="row">
+
+        <div class="twelve columns">
+          <h1>Sample Skeleton Page</h1>
+        </div>
+
+      </div>
+
+      <div class="row">
+        <div class="six columns">
+          <p>Use this example as a guide to getting your new Skeleton-based site up and running.</p>
+          <ul>
+            <li>Do try to write your HTML from scratch though:</li>
+            <ul>
+              <li>It's good practice</li>
+              <li>It's more satisfying</li>
+              <li>It builds 'muscle memory'</li>
+            </ul>
+          </ul>
+        </div>
+
+        <div class="six columns">
+          <p>Keep it really simple until you've mastered the basic structure of each page using the grid system.</p>
+          <p>Remember: everything goes inside <code>class="container"</code>. Columns (<code>class="twelve columns"</code>) go inside rows (<code>class="row"</code>).</p>
+
+          <p>There's a simple <code>custom.css</code> file <a href="https://github.com/dev-academy-programme/curriculum/blob/master/resources/html-skeleton-EXAMPLE/custom.css">here</a> if you need an example to get you started.</p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="six columns offset-by-six">
+          <p>Here's a column using an offset (try the <code>offset-by-six</code> class.</p>
+        </div>
+      </div>
+      <hr>
+
+      <div class="row">
+        <div class="four columns">
+          Here's a three-column layout.
+        </div>
+
+        <div class="four columns">
+          The total of the column widths must add up to twelve... 
+        </div>
+
+        <div class="four columns">
+          ...so four plus four plus four, in this case.
+        </div>
+      </div>
+      <hr>
+
+      <div class="row highlight">
+        <div class="twelve columns">
+          This row uses a custom class, <code>highlight</code>, to add some emphasis. This is not part of the Skeleton framework: you can add your own styles, or even override some of Skeleton's if you don't like them. Just make sure that your custom styles come <strong>last</strong> in the list of <code>link</code> elements in your <code>head</code>.
+        </div>
+      </div>
+      <hr>
+    </div>
   </body>
 </html>
