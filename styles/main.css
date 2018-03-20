@@ -1,35 +1,33 @@
-/********************************************************************/
-/****OTHER PAGE CONTENT*****/
-
-body, html {
-	margin: 0;
+body{
+    margin: 0;
 	height:100%;
-	}
+}
 
 ul li {
 	font-family: Calibri;
 	font-size: 110%;
 	padding: 20px 90px 10px 150px;
 	color: #000;
-	}	
-
-ul.a {
-	list-style-position: inside;
-	padding: 0 50px 0px 15px;
-	}
-
-nav h1 {
-	padding: 0 10px 0 80px;
-	display: inline-block;
-	background: black;
-	}
+    }
 
 p 	{
-	font-family: Calibri;
-	font-size: 120%;
-	padding: 20px 90px 10px 150px;
-	color: #000;
-	}
+    font-family: Calibri;
+    font-size: 120%;
+    padding: 20px 90px 10px 150px;
+    color: #000;
+    }
+
+ul.a {
+    list-style-position: inside;
+    padding: 0 50px 0px 15px;
+    }
+    
+nav h1 {
+    padding: 0 10px 0 80px;
+    display: inline-block;
+    background: black;
+    }
+
 /***************************************************************************************/
 /* Main Headings*/
 
@@ -40,9 +38,10 @@ h1 {
 	padding: 5px 15px 5px 100px;
 	color: white;
 	display: inline;
-	}
-
-.h1 {
+    }
+    
+/*Header 1*/
+.hd1 {
 	font-family: Calibri;
 	font-size: 190%;
 	text-align: center;
@@ -51,7 +50,7 @@ h1 {
 	}	
 
 /* Second Heading*/
-.h2 {
+h2 {
 	font-family: Calibri;
 	font-size: 120%;
 	text-align: left;
@@ -61,7 +60,7 @@ h1 {
 	}
 	
 /* Heading Three */		
-.h3 {
+h3 {
 	font-family: Calibri;
 	font-size: 200%;
 	font-weight: bold;
@@ -77,105 +76,125 @@ header {
 	color:white;
 	opacity: 0.7;
 	}
+/*******************************************/
+/*RED BOARDER BOXES*/
+* {
+    border: 1px solid red !important;
+}
 
-.inline {
-	display: inline;
-	}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/***************************************/
 
-/***********************************************************************************/
-/*IMAGE CONTENT*/
+.grid {
+    margin: 0 auto;
+    max-width: 1200px;
+    width: 100%;
+}
 
-/* Homepage(Index Page) Background Image*/
-.background {
-/* The image used */
-	background-image: url("../img/workoffice.jpg");
-	height: 100%;
-	margin: 0;
-	
-/* Center and scale the image nicely */
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	}
+.row {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+}
 
-/*About Me Blog - Image */	
-.background6 { 
-	background-image: url("../img/tukutuku.jpg");
-	height: 150%; 
-	margin:0;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	}	
+.col-1 {
+    width: 8.33%;
+}
 
-/* Reflection Blog One - Image */
-.background1 { 
-	background-image: url("../img/pinkgeo.png");
-	height: 260%;
-	margin:0; 
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	}
+.col-2 {
+    width: 16.66%;
+}
 
-/*c1-time and habits reflection - Image*/
-.background2 { 
-	background-image: url("../img/whitewash.jpg");
-	height: 270%; 
-	margin:0;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	}
+.col-3 {
+    width: 25%;
+}
 
-/*Udacity Blog Part 1 - Images*/	
-.background3 { 
-	background-image: url("../img/geometric.png");
-	height: 500%; 
-	margin:0;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	}
+.col-4 {
+    width: 33.33%;
+}
 
-/*Ucadity Blog Part 2 - Images */
-.background4 { 
-	background-image: url("../img/space.jpg");
-	height: 220%; 
-	margin:0;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	}
-	
-/*Emotional Intelligence Blog - Images */	
-.background5 { 
-	background-image: url("../img/zigzag.jpg");
-	height: 270%; 
-	margin:0;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	}
-	
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+        
+
 /*************************************************************************/
- /* Index/Homepage -  Dropdown Button*/
- .dropbtn1 {
-    background-color: #00e600;
-    color: #333333;
+/* MAIN DROPDOWN CODE*/
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+    
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+    
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1}
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+        }	
+    
+    .dropdown:hover .dropbtn {
+        background-color: #00e600;
+        }
+
+        /*************************************************************************/
+/*Reflection Blog One - Dropdown Header Button  */
+.dropbtn7 {
+    background-color:#ff4da6;
+    color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
-	cursor: pointer;
-	}
- 	
+    cursor: pointer;
+    }   
 /**********************************************************************************/
 /* Udacity Blog Part One - Dropdown Button*/
 .dropbtn8 {
@@ -186,25 +205,6 @@ header {
     border: none;
     cursor: pointer;
 	}	  
-
- /*Udacity Blog Part 1 - Buttons */
- input.MyButton4 {
-	width: 250px;
-	padding: 20px;
-	cursor: pointer;
-	font-weight: bold;
-	font-size:110%;
-	background-color: orangered;
-	color: black;
-	border: 3px solid black;
-	border-radius: 5px;
-	float: right;
-	}
-input.MyButton4:hover {
-	background: #ffb833;
-	color: white;
-	border: 3px solid #fff;
-	}	
 
 /*********************************************************************************************/
 /* Udacity Part 2 Page Dropdown Button 2*/
@@ -236,25 +236,6 @@ input.MyButton4:hover {
     border: none;
     cursor: pointer;
 	}
-
-/*Udacity Part 2 Bottom Button*/
-input.MyButton5 {
-	width: 250px;
-	padding: 20px;
-	cursor: pointer;
-	font-weight: bold;
-	font-size:110%;
-	background:#6600ff;
-	border: 3px solid #0d0e11;
-	border-radius: 5px;
-	float: right;
-	}
-input.MyButton5:hover {
-	background-color:#8533ff;
-    color: #8000ff;
-	border: 3px solid #fff;
-	}
-	
 /**********************************************************************************/
 /* Time & Habits Blog Dropdown Header Buttons*/
 .dropbtn5 {
@@ -264,26 +245,8 @@ input.MyButton5:hover {
     font-size: 16px;
     border: none;
     cursor: pointer;
-	}
-/* Time & Habits Blog Bottom Page Button */
-input.MyButton3 {
-	width: 250px;
-	padding: 20px;
-	cursor: pointer;
-	font-weight: bold;
-	font-size:110%;
-	background-color:#ffff00;
-    color: black;
-	border: 3px solid black;
-	border-radius: 5px;
-	float: right;
-	}
-input.MyButton3:hover {
-	background: black;
-	color: white;
-	border: 3px solid #fff;
-	}
-/*************************************************************************/
+    }
+ /*************************************************************************/
 /* Emotional Intel Blog - Dropdown Button */
 .dropbtn6 {
     background-color:#66a3ff;
@@ -292,116 +255,94 @@ input.MyButton3:hover {
     font-size: 16px;
     border: none;
     cursor: pointer;
-	}
+	}       
 
-/* Emotional Intel Blog - Bottom Button */
-input.MyButton6 {
-	width: 250px;
-	padding: 20px;
-	cursor: pointer;
-	font-weight: bold;
-	font-size:110%;
-	background-color:#66a3ff;
-    color: #003d99;
-	border: 3px solid blue;
-	border-radius: 5px;
-	float: right;
-	}
-input.MyButton6:hover {
-	background: #2196F3;
-	color: white;
-	border: 3px solid #fff;
-	}	
 
-/*************************************************************************/
-/*Reflection Blog One - Dropdown Header Button  */
-.dropbtn7 {
-    background-color:#ff4da6;
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-	}
+/***********************************************************************************/
+/*IMAGE CONTENT*/
 
-/* Reflection One - Blog Bottom Button*/
-input.MyButton2 {
-	width: 250px;
-	padding: 20px;
-	cursor: pointer;
-	font-weight: bold;
-	font-size:110%;
-	background-color:#ff4da6;
-    color: black;
-	border: 3px solid black;
-	border-radius: 5px;
-	float: right;
-	}
-input.MyButton2:hover {
-	background-color: brown;
-	color: white;
-	border: 3px solid #fff;
-	}
-
-/*************************************************************************/
-/* MAIN DROPDOWN CODE*/
-.dropdown {
-    position: relative;
-    display: inline-block;
-	}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-	}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-	}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-	}	
-
-.dropdown:hover .dropbtn {
-    background-color: #00e600;
-	}
+/* Homepage(Index Page) Background Image*/
+.background {
+    /* The image used */
+        background-image: url("../images/workoffice.jpg");
+        height: 100%;
+        margin: 0;
+        
+    /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        }
+    
+    /*About Me Blog - Image */	
+    .background6 { 
+        background-image: url("../");
+        height: 150%; 
+        margin:0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        }	
+    
+    /* Reflection Blog One - Image */
+    .background1 { 
+        background-image: url("../images/pinkgeo.png");
+        height: 260%;
+        margin:0; 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        }
+    
+    /*c1-time and habits reflection - Image*/
+    .background2 { 
+        background-image: url("../images/whitewash.jpg");
+        height: 270%; 
+        margin:0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        }
+    
+    /*Udacity Blog Part 1 - Images*/	
+    .background3 { 
+        background-image: url("../images/geometric.png");
+        height: 500%; 
+        margin:0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        }
+    
+    /*Ucadity Blog Part 2 - Images */
+    .background4 { 
+        background-image: url("../images/space.jpg");
+        height: 220%; 
+        margin:0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        }
+        
+    /*Emotional Intelligence Blog - Images */	
+    .background5 { 
+        background-image: url("../images/zigzag.jpg");
+        height: 270%; 
+        margin:0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        }
 /**********************************************************************/
-/* HOME PAGE ICON BAR*/
+/*PAGE FOOTER*/
 
-.icon-bar {
-    width: 90px; /* Set a specific width */
-    background-color: #555; /* Dark-grey background */
-	}
-
-.icon-bar a {
-    display: block; /* Make the links appear below each other instead of side-by-side */
-    text-align: center; /* Center-align text */
-    padding: 16px; /* Add some padding */
-    transition: all 0.3s ease; /* Add transition for hover effects */
-    color: white; /* White text color */
-    font-size: 36px; /* Increased font-size */
-	}
-
-.icon-bar a:hover {
-    background-color: #000; /* Add a hover color */
-	}
-
-.active {
-    background-color: #4CAF50; /* Add an active/current color */
-	}
-
-/******************************************************/
-/* PAGE FOOTER*/
 .footer {
 	text-align: center;
 	font-weight: bold;
@@ -411,4 +352,27 @@ input.MyButton2:hover {
 	width: 100%;
 	color: #000;
 	}
+
+.social-bar {
+    width: 90px; /* Set a specific width */
+    background-color: #555; /* Dark-grey background */
+	}
+
+.social-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side */
+    text-align: center; /* Center-align text */
+    padding: 16px; /* Add some padding */
+    transition: all 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 36px; /* Increased font-size */
+	}
+
+.social-bar a:hover {
+    background-color: #000; /* Add a hover color */
+	}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+	}
+
 /******************************************************/
