@@ -1,81 +1,116 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sample Skeleton Page</title>
+<head>
+  <title>Web Dev Wannabe</title>
     <meta charset="utf-8">
-
-    <!-- 
-      Notice that we have three stylesheet links: the first two are for the Skeleton framework,
-      and the final one is for any custom styles we might need, like turning the background
-      bright pink.
-    
-      Please don't make the background pink... have a little pity on your teachers!
-    -->
+    <link href="styles/main.css" rel="stylesheet" type="text/css"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- STYLESHEET LINKS-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-    <link rel="stylesheet" type="text/css" href="custom.css">
-  </head>
-  
-  <body>
-    <div class="container">
-      <div class="row">
-
-        <div class="twelve columns">
-          <h1>Sample Skeleton Page</h1>
+    <!-- CUSTOM CSS STYLESHEET -->
+    <!--<link rel="stylesheet" type="text/css" href="custom.css">*/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <div class="graphichome">
+    <header>
+      <nav>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="eight columns"> 
+               <h1><strong>MY WEB DEV WANNABE BLOG</strong></h1>
+            </div>
+            <div class="row4">
+            <div class="dropdown">
+              <button class="dropbtn">Home</button>
+                <div class="dropdown-content">
+                  <ul>
+                    <a href="#">Home</a>
+                    <a href="about-me.html">About me</a>
+                  </ul>
+              </div>   
+            </div>
+          </div>
+          <div class="row4">
+         <div class="dropdown">
+          <button class="dropbtn">Tech Blogs</button>
+            <div class="dropdown-content">
+              <ul> 
+                  <a href="udacity-blog-part1.html">Udacity Part 1</a>
+                  <a href="udacity-blog-part-2.html">Udacity Part 2</a>
+                  <a href="t3-design-to-web-blog.html">Design to Web</a>
+                  <a href="t3-design-to-web-blog.html">Design to Web</a> 
+              </ul>
+             </div>
+           </div>
+           </div>
+           <div class="row4">
+          <div class="dropdown">
+            <button class="dropbtn">Mindful Blogs</button>
+              <div class="dropdown-content">
+                <ul>
+                    <a href="c1-time-and-habits-blog.html">Time & Habits Blog</a>
+                    <a href="reflection-blog.html">Mindful Blog</a>
+                    <a href="emotional-intelligence-blog.html">Emotional Intel Blog</a>
+                    <a href="c3-meditation-process.html">Meditation Process</a>
+                    <a href="c4-daily-mindfulness.html">Daily Mindfulness</a>
+                </ul>
+             </div>
+            </div>
+          </div>
         </div>
-
-      </div>
-
-      <div class="row">
-        <div class="six columns">
-          <p>Use this example as a guide to getting your new Skeleton-based site up and running.</p>
-          <ul>
-            <li>Do try to write your HTML from scratch though:</li>
-            <ul>
-              <li>It's good practice</li>
-              <li>It's more satisfying</li>
-              <li>It builds 'muscle memory'</li>
-            </ul>
-          </ul>
         </div>
-
-        <div class="six columns">
-          <p>Keep it really simple until you've mastered the basic structure of each page using the grid system.</p>
-          <p>Remember: everything goes inside <code>class="container"</code>. Columns (<code>class="twelve columns"</code>) go inside rows (<code>class="row"</code>).</p>
-
-          <p>There's a simple <code>custom.css</code> file <a href="https://github.com/dev-academy-programme/curriculum/blob/master/resources/html-skeleton-EXAMPLE/custom.css">here</a> if you need an example to get you started.</p>
-        </div>
-      </div>
-      <hr>
-
-      <div class="row">
-        <div class="six columns offset-by-six">
-          <p>Here's a column using an offset (try the <code>offset-by-six</code> class.</p>
-        </div>
-      </div>
-      <hr>
-
-      <div class="row">
-        <div class="four columns">
-          Here's a three-column layout.
-        </div>
-
-        <div class="four columns">
-          The total of the column widths must add up to twelve... 
-        </div>
-
-        <div class="four columns">
-          ...so four plus four plus four, in this case.
-        </div>
-      </div>
-      <hr>
-
-      <div class="row highlight">
-        <div class="twelve columns">
-          This row uses a custom class, <code>highlight</code>, to add some emphasis. This is not part of the Skeleton framework: you can add your own styles, or even override some of Skeleton's if you don't like them. Just make sure that your custom styles come <strong>last</strong> in the list of <code>link</code> elements in your <code>head</code>.
-        </div>
-      </div>
-      <hr>
+        </nav>  
+      </header>  
+  <div class="container-fluid">
+    <div class="row">
+      <center>
+       <p>
+        <strong>Welcome, my names Indigo and I'm a Web Developer Wannabe. 
+        </strong>
+      </p>
+      <p><strong>
+        I'm a student in the Mamaku Cohort at 
+          Ensprial Web Dev Academy
+        </strong>
+        </p>
+      </center>
     </div>
-  </body>
+    </div>
+  </div>
+    <footer>
+     <center> <strong>Follow me on</strong></center>
+        <i class="fa fa-github-square" style="font-size:36px"></i>
+        <i class="fa fa-google-plus-square" style="font-size:36px"></i>
+        <i class="fa fa-linkedin-square" style="font-size:36px"></i> 
+        <i class="fa fa-pinterest-square" style="font-size:36px"></i>
+        <i class="fa fa-free-code-camp" style="font-size:36px"></i>
+      <center>&#169; 2018 Web Dev Wannabe</center>
+    </footer> 
+    <script>
+        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+          function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+          }
+        // Close the dropdown if the user clicks outside of it
+          window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+              var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                  for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                      if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+    </script>        
+  </div>
+</body>
 </html>

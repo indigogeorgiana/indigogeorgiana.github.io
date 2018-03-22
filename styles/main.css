@@ -1,0 +1,320 @@
+/********************************************************/
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    }
+
+h1  {   
+    font-family: Verdana, Geneva, sans-serif;
+    font-size:10vw;
+    font-size: 3.5em; /* 40px/16=2.5em */
+    padding: 1em 1em 1em 1em;
+    text-shadow: 0.1em 0.1em black;
+    opacity: 0.7;   
+	color: black;
+	display: inline;
+    
+} 
+
+h2{
+
+    word-spacing: 0.1em;
+}
+
+p 	{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 120%;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    color: #000;
+    }
+
+ul.a {
+    list-style-position: inside;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    }
+    
+
+
+header {
+ 
+    font-weight: bold;
+    color: blanchedalmond;
+   
+}
+
+.container-fluid {
+   
+    display: flex; /* or inline-flex */    
+    flex-grow: 1; /* default 0 */
+
+}
+
+
+
+/*************************************************************************/
+/* MAIN DROPDOWN CODE*/
+/*The .dropdown class is used to indicate a dropdown menu.*/
+button {
+    position: relative;
+    display: center;
+    color: black;
+    background-color: #4CAF50; /* Add an active/current color */
+    position: center;
+  
+    }
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 2em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+
+.dropdown-content a {
+    color: black;
+    padding: 1em 1em 1em 1em;
+    display: inline;
+    }
+
+.dropdown-content a:hover {
+    background-color:  #f9f9f9;
+    display: inline;
+   }
+
+.dropdown:hover .dropdown-content {
+    background-color: #f9f9f9;
+    display: inline;
+      }	
+
+.dropdown:hover .dropbtn {
+    background-color: #f9f9f9;
+  
+    }
+
+
+/************************************************************/
+.row {
+    width: 105%;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    display: center;
+  
+
+}
+
+.row1 {
+    width: 75%;
+    margin-top: 2em;
+    padding: 1em 1em 1em 1em;
+    display: right;
+}
+
+.row2 { 
+    width: 50%;
+    margin-top: 2em;
+    padding: 1em 1em 1em 1em;
+    display: right;
+}
+
+.row3 {
+    width: 25%;
+    margin-top: 2em;
+    padding: 1em 1em 1em 1em;
+    display: right;
+}
+
+.row4 {
+    width: 15%;
+    margin-top: 2em;
+    padding: 1em 1em 1em 1em;
+    display: right;
+}
+.one columns {
+    width: 8.33%;
+}
+
+.two columns {
+    width: 16.66%;
+}
+
+.three columns {
+    width: 25%;
+}
+
+.four columns {
+    width: 33.33%;
+}
+
+.five columns {
+    width: 41.66%;
+}
+
+.six columns {
+    width: 50%;
+    padding: 5em 2em 2em 2em;
+}
+
+.seven columns {
+    width: 58.33%;
+    padding: 2em 2em 2em 2em;
+}
+
+.eight columns {
+    width: 66.66%;
+}
+
+.nine columns {
+    width: 75%;
+}
+
+.ten columns{
+    width: 83.33%;
+}
+
+.eleven columns {
+    width: 91.66%;
+}
+
+.twelve columns{
+    width: 100%;
+    display: center;
+}
+
+  /**********************************************************************/
+/*PAGE FOOTER*/
+
+footer {
+	text-align: center;
+	font-weight: bold;
+    position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+    color: 9999;
+  
+	}
+
+.social-bar {
+    width: 90px; /* Set a specific width*/
+    background-color: gray;/* Dark-grey background*/
+    color: black;
+    }
+  
+
+.social-bar a {
+    display: block; /* Make the links appear below each other instead of side-by-side*/
+    text-align: center; /* Center-align text*/
+    padding: 16px; /* Add some padding*/
+    transition: all 0.3s ease; /* Add transition for hover effects*/
+    color: white; /* White text color*/
+    font-size: 36px; /* Increased font-size*/
+	}
+
+.social-bar a:hover {
+    background-color: #000; /* Add a hover color */
+	}
+
+.active {
+    background-color: #4CAF50; /* Add an active/current color */
+	}
+
+/******************************************************/
+
+/***********************************************************************************/
+/*IMAGE CONTENT*/
+
+/* Homepage(Index Page) Background Image*/
+.graphichome {
+/* The image used */
+    background-image: url("../images/workoffice.jpg");
+    height: 100%;
+    margin: 0;
+        
+/* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    }
+    
+/*About Me - Image */	
+.graphicme { 
+    background-image: url("../");
+    height: 150%; 
+    margin:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    }	
+    
+/* Reflection Blog One - Image */
+.grpahicpink { 
+    background-image: url("../images/pinkgeo.png");
+    height: 260%;
+    margin:0; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    }
+    
+/*c1-time and habits reflection - Image*/
+.graphicwhite { 
+    background-image: url("../images/whitewash.jpg");
+    height: 270%; 
+    margin:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    }
+   
+/*Udacity Blog Part 1 - Images*/	
+.graphicgeo { 
+    background-image: url("../images/geometric.png");
+    height: 500%; 
+    margin:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    }
+    
+/*Ucadity Blog Part 2 - Images */
+.graphicspace { 
+    background-image: url("../images/space.jpg");
+    height: 220%; 
+    margin:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    }
+        
+/*Emotional Intel - Image */	
+.graphiczigzag { 
+    background-image: url("../images/zigzag.jpg");
+    height: 270%; 
+    margin:0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    }
+/**********************************************************************/
+/*RED BOARDER TEMPLATE BOXES*/
+* {
+    border: 1px solid red !important;
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/***************************************/
