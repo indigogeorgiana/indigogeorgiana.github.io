@@ -198,7 +198,7 @@ footer {
 	}
 
 .social-bar {
-    width: 90px; /* Set a specific width*/
+    width: 10ems; /* Set a specific width*/
     background-color: gray;/* Dark-grey background*/
     color: black;
     }

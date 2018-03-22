@@ -2,10 +2,19 @@
 <html>
   <head>
   <title>Time & Habits Blog</title>
-  <meta charset="UTF-8">    
-  <link href="../styles/main.css" rel="stylesheet" type="text/css"/> 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+  <meta charset="utf-8">
+    <link href="styles/main.css" rel="stylesheet" type="text/css"/> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- STYLESHEET LINKS-->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <!-- CUSTOM CSS STYLESHEET -->
+    <!--<link rel="stylesheet" type="text/css" href="custom.css">*/ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
  
 </head>
@@ -78,33 +87,38 @@
       <br></br>
       <br></br>
       <br></br>
-  <input class="MyButton3" type="button" value="Return to homepage" onclick="window.location.href='/index.html'"/>              
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>  
-  <div class="footer">&#169; 2018 Web Dev Wannabe</div> 
-    <script>
-      /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-        function myFunction() {
-          document.getElementById("myDropdown").classList.toggle("show");
-        }
-      // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("dropdown-content");
-              var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                      openDropdown.classList.remove('show');
-            }
-          }
-        }
-      }
-    </script>                   
-    </div>
-  </body>
-</html>
+      <footer>
+     
+          <center> <strong>Follow me on</strong></center>
+             <a href="https://github.com/indigogeorgiana" class="fa fa-github-square" style="font-size:36px"></a></i>
+             <a href="https://plus.google.com/u/0/105371997975696575090" class="fa fa-google-plus-square" style="font-size:36px"></a></i>
+             <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160/" class="fa fa-linkedin-square" style="font-size:36px"></a></i> 
+             <a href="https://www.pinterest.nz/indigogeorgiana/" class="fa fa-pinterest-square" style="font-size:36px"></a></i>
+             <a href="https://www.freecodecamp.org/indigogeorgiana" class="fa fa-free-code-camp" style="font-size:36px"></a></i>
+             <a href="https://twitter.com/GhostWriterGurl?lang=en" class="fa fa-twitter-square" style="font-size:36px"></a></i>
+              
+           <center>&#169; 2018 Web Dev Wannabe</center>
+     
+         </footer> 
+         <script>
+             /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+               function myFunction() {
+                 document.getElementById("myDropdown").classList.toggle("show");
+               }
+             // Close the dropdown if the user clicks outside of it
+               window.onclick = function(event) {
+                 if (!event.target.matches('.dropbtn')) {
+                   var dropdowns = document.getElementsByClassName("dropdown-content");
+                     var i;
+                       for (i = 0; i < dropdowns.length; i++) {
+                         var openDropdown = dropdowns[i];
+                           if (openDropdown.classList.contains('show')) {
+                             openDropdown.classList.remove('show');
+                   }
+                 }
+               }
+             }
+         </script>        
+       </div>
+     </body>
+     </html>
