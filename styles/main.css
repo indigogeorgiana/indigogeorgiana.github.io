@@ -306,7 +306,7 @@ footer {
     width: 100%;
     }
 /**********************************************************************/
-/*RED BOARDER TEMPLATE BOXES
+/*RED BOARDER TEMPLATE BOXES*/
 * {
     border: 1px solid red !important;
 }
@@ -316,5 +316,5 @@ footer {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-}*/
+}
 /***************************************/
