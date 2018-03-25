@@ -1,25 +1,33 @@
 /********************************************************/
 body {
-    height: 100%;
-    width: 100%;
+    height: 125%;
+    width:  100%;
     margin: 0;
-    }
+    padding:0;
+    
+}
 
 h1  {   
-    font-family: Verdana, Geneva, sans-serif;
-    font-size:10vw;
-    font-size: 3.5em; /* 40px/16=2.5em */
-    padding: 1em 1em 1em 1em;
-    text-shadow: 0.1em 0.1em black;
-    opacity: 0.7;   
-	color: black;
-	display: inline;
+    font-family: 'Croissant One', cursive;
+    font-size:8vw;
+    font-weight: bold;
+    padding: 0.09em 0.9em 0em 2em;
+   	color: #f9f9f9;
+    width:  100%;
+    background-size: cover;
+    border:0.1em 0.1em 0em 0.1em;
+    border: double;
+    display: flex;
+    justify-content: center;
+   
     
 } 
 
-h2{
-
+h2  {
+    font-family: 'Croissant One', cursive;
     word-spacing: 0.1em;
+    font-size: 6vw;;
+    color:black;
 }
 
 p 	{
@@ -27,161 +35,618 @@ p 	{
     font-size: 120%;
     padding: 0.5em 0.5em 0.5em 0.5em;
     color: #000;
-    }
+}
+
+header {
+    background:black;
+    opacity: 0.6;   
+}
+
+header1 {
+    border: 0.40em double #4CAF50;
+    background-size: cover;
+    color: #f9f9f9;     
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size:2.625em;
+    font-weight: bold;
+    width:  90%;  
+    display: flex;
+    justify-content: center;  
+}
+
+header2 {
+    word-spacing: 0.1em;
+    font-size:2.7vw;
+    color:green;
+    background-size: cover;
+    font-family: 'Pompiere', cursive;
+    font-weight: bold;
+    width:  90%;  
+    display: flex;
+    justify-content: center;  
+}
+
+header3 {
+    color: black;     
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size:2.625em;
+    font-weight: bold;
+    width:  90%;  
+    display: flex;
+    justify-content: center;   
+}
+
+header4 {
+    border: 0.40em double#ffff00;
+    background-size: cover;
+    color: #f9f9f9;     
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size:2.625em;
+    font-weight: bold;
+    width:  90%;  
+    display: flex;
+    justify-content: center;  
+
+}
+
+header5 {
+    border: 0.40em double orangered;
+    background-size: cover;
+    color: #f9f9f9;     
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size:2.625em;
+    font-weight: bold;
+    width:  90%;  
+    display: flex;
+    justify-content: center; 
+}      
+header6 {
+    border: 0.40em double #66a3ff;
+    background-size: cover;
+    color: #f9f9f9;     
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size:2.625em;
+    font-weight: bold;
+    width:  90%;  
+    display: flex;
+    justify-content: center;  
+}
+
+header7 {
+    border: 0.40em double#ffb3b3;
+    background-size: cover;
+    color: #f9f9f9;     
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size:2.625em;
+    font-weight: bold;
+    width:  90%;  
+    display: flex;
+    justify-content: center;
+}
+
+header8 {
+    border: 0.40em double#ff4da6;
+    background-size: cover;
+    color: #f9f9f9;     
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size:2.625em;
+    font-weight: bold;
+    width:  90%;  
+    display: flex;
+    justify-content: center;
+}
+
+div.ul.a{
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+}
+
+h2  {
+    font-family: 'Croissant One', cursive;
+    word-spacing: 0.1em;
+    font-size: 10vw;;
+    color:black;
+}
+
+p 	{
+    font-family:Verdana, Geneva, sans-serif;
+    font-size: 120%;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    color: #000;
+}
 
 ul.a {
     list-style-position: inside;
-    padding: 0.5em 0.5em 0.5em 0.5em;
-    }
-    
-
-
-header {
- 
-    font-weight: bold;
-    color: blanchedalmond;
-   
-}
-
-.container-fluid {
-   
+    padding: 0.5em 0.5em 0.5em 0.5em;    
+}  
+        
+.container-fluid {   
     display: flex; /* or inline-flex */    
-    flex-grow: 1; /* default 0 */
+    flex-grow: 1; /* default 0 */     
+    }
 
+.container-fluid1 {   
+    display: right; /* or inline-flex */  
+    margin-left: 11em;
+    }
+
+.flex-container > * {
+    padding: 0.938em;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
 }
-
-
 
 /*************************************************************************/
 /* MAIN DROPDOWN CODE*/
-/*The .dropdown class is used to indicate a dropdown menu.*/
-button {
-    position: relative;
-    display: center;
-    color: black;
-    background-color: #4CAF50; /* Add an active/current color */
-    position: center;
-  
-    }
 
-.dropdown-content {
+/* Style The Dropdown Button */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transform: translate(-50%, 0) !important;
+}
+
+/*****HOMEPAGE/ BUTTONS******/
+.dropbtn1 {
+    background-color: #4CAF50;
+    color:black;
+    margin: 1.5em 10em 0.1em 23em;
+    border: 2em 0em 1em 1em;
+    padding: 1em 9em 2em 5em;      
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;   
+}
+
+.dropbtn2 {
+    background-color: #4CAF50;
+    color:black;
+    margin: 1.5em 0em 0.1em 27em;
+    border: 2em 2em 1em 1em;
+    padding: 1em 10em 2em 4em;  
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.dropbtn3 {
+    background-color: #4CAF50;
+    color:black;  
+    margin: 1.5em -6em 0.1em 35em;
+    border: 2em 1em 1em 1em;
+    padding: 1em 10em 2em 3.8em;
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;          
+    min-width: 1.000em;   
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;      
+}
+
+/****REFLECTION BLOG ONE - DROP DOWN BUTTONS****/
+.dropbtn4 {
+    background-color:#ff4da6;
+    color: black;
+    margin: 1.5em 10em 0.1em 23em;
+    border: 2em 0em 1em 1em;
+    padding: 1em 9em 2em 5em;    
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+} 
+
+.dropbtn5 {
+    background-color:#ff4da6;
+    color: black;
+    margin: 1.5em 0em 0.1em 27em;
+    border: 2em 2em 1em 1em;
+    padding: 1em 10em 2em 4em;  
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.dropbtn6 {
+    background-color:#ff4da6;
+    color: black;
+    margin: 1.5em -6em 0.1em 35em;
+    border: 2em 1em 1em 1em;
+    padding: 1em 10em 2em 3.8em;
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;          
+    min-width: 1.000em;   
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;      
+  }
+
+/****UDACITY BLOG PART 1 - DROP DOWN BUTTONS***/
+
+.dropbtn7 {
+    background-color: orangered;
+    color: black;
+    margin: 1.5em 10em 0.1em 23em;
+    border: 2em 0em 1em 1em;
+    padding: 1em 9em 2em 5em;    
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+   
+
+
+}	 
+    
+.dropbtn8 {
+    background-color: orangered;
+    color: black;
+    margin: 1.5em 0em 0.1em 27em;
+    border: 2em 2em 1em 1em;
+    padding: 1em 10em 2em 4em;  
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+
+
+}	 
+        
+.dropbtn9 {
+    background-color: orangered;
+    color: black;
+    margin: 1.5em -6em 0.1em 35em;
+    border: 2em 1em 1em 1em;
+    padding: 1em 10em 2em 3.8em;
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;          
+    min-width: 1.000em;   
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;  
+    
+}	 
+
+/****UDACITY BLOG PART 2 - DROP DOWN BUTTONS***/
+
+.dropbtn10 {
+    background-color: #ffb3b3;
+    color: #ff1a1a ;
+    margin: 1.5em 10em 0.1em 23em;
+    border: 2em 0em 1em 1em;
+    padding: 1em 9em 2em 5em;    
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;     
+}    
+    
+.dropbtn11 {
+    background-color:#b3b3ff;
+    color: #8000ff;
+    margin: 1.5em 0em 0.1em 27em;
+    border: 2em 2em 1em 1em;
+    padding: 1em 10em 2em 4em;  
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}        
+
+.dropbtn12 {
+    background-color: #b3ffff;
+    color: #00cccc;
+    margin: 1.5em -6em 0.1em 35em;
+    border: 2em 1em 1em 1em;
+    padding: 1em 10em 2em 3.8em;
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;          
+    min-width: 1.000em;   
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;       
+}
+
+/****TIME AND HABITS BLOG - DROP DOWN BUTTONS***/
+
+.dropbtn13 {
+    background-color:#ffff00;
+    color: black;
+    margin: 1.5em 10em 0.1em 23em;
+    border: 2em 0em 1em 1em;
+    padding: 1em 9em 2em 5em;    
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;    
+}
+
+.dropbtn14 {
+    background-color:#ffff00;
+    color: black;
+    margin: 1.5em 0em 0.1em 27em;
+    border: 2em 2em 1em 1em;
+    padding: 1em 10em 2em 4em;  
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.dropbtn15{
+    background-color:#ffff00;
+    color: black;
+    margin: 1.5em -6em 0.1em 35em;
+    border: 2em 1em 1em 1em;
+    padding: 1em 10em 2em 3.8em;
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;          
+    min-width: 1.000em;   
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;       
+}
+
+/***EMOTIONAL INTEL BLOG - DROP DOWN BUTTON***/
+.dropbtn16 {
+    background-color:#66a3ff;
+    color: #003d99;
+    margin: 1.5em 10em 0.1em 23em;
+    border: 2em 0em 1em 1em;
+    padding: 1em 9em 2em 5em;      
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;
+    min-width: 1.000em;
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;   
+} 
+
+       
+.dropbtn17 {
+    background-color:#66a3ff;
+    color: #003d99; 
+    margin: 1.5em 0em 0.1em 27em;
+    border: 2em 2em 1em 1em;
+    padding: 1em 10em 2em 4em;  
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1em;   
+    min-width: 1.000em;
+    z-index: 1;
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+}  
+
+.dropbtn18 {
+    background-color:#66a3ff;
+    color: #003d99;
+    margin: 1.5em -6em 0.1em 35em;
+    border: 2em 1em 1em 1em;
+    padding: 1em 10em 2em 3.8em;
+    width: 9.375em;
+    height: 2.250em; 
+    font-size: 1;          
+    min-width: 1.000em;   
+    z-index: 1; 
+    cursor: pointer;
+    font-family: 'IBM Plex Sans Condensed', sans-serif;  
+}
+    
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content1 {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
-    min-width: 2em;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    }
+    min-width: 3em;
+    box-shadow: 0.5em 2em 3em 2em rgba(0,0,0,0.2);
+    z-index: 1;    
+}
 
-.dropdown-content a {
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    min-width: 3em;
+    box-shadow: 0.5em 2em 3em 2em rgba(0,0,0,0.2);
+    z-index: 1;  
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    padding: 0;
+    min-width: 3em;
+    box-shadow: 0.5em 2em 3em 2em rgba(0,0,0,0.2);
+    z-index: 1; 
+}
+
+/* Links inside the dropdown */
+.dropdown-content1 a {
+    margin: 0em 10em 0em 23em;
+    border: 0em 0em 0em 1em;
+    padding: 0em 9em 1em 5em;
+    background-color: blanchedalmond;
     color: black;
-    padding: 1em 1em 1em 1em;
-    display: inline;
-    }
+    display: block;
+    text-decoration: none;
+    text-align: center;    
+}
 
-.dropdown-content a:hover {
-    background-color:  #f9f9f9;
-    display: inline;
-   }
+/* Links inside the dropdown */
+.dropdown-content2 a {
+    margin: 0em 0em 1em 27em;
+    border: 0em 2em 1em 1em;
+    padding: 0em 10em 1em 4em;
+    background-color: blanchedalmond;
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-align: center;    
+}
 
-.dropdown:hover .dropdown-content {
-    background-color: #f9f9f9;
-    display: inline;
-      }	
+/* Links inside the dropdown */
+.dropdown-content3 a {   
+    margin: 0em -6em 1em 35em;
+    border: 0em 1em 1em 1em;
+    padding: 0em 10em 1em 3.8em;
+    background-color: blanchedalmond;
+    color: black;
+    display: block;
+    text-decoration: none;
+    text-align: center; 
+}
 
-.dropdown:hover .dropbtn {
-    background-color: #f9f9f9;
-  
-    }
+/* Show the dropdown menu on hover*/ 
+.dropdown:hover .dropdown-content1 {
+    display: block;
+}
 
-
-/************************************************************/
+/* Show the dropdown menu on hover*/ 
+.dropdown:hover .dropdown-content2 {
+    display: block;
+}
+ 
+/* Show the dropdown menu on hover*/ 
+.dropdown:hover .dropdown-content3 {
+    display: block;
+}
+ 
+ 
+/****ROWS/COLUMNS CODE****/
 .row {
     width: 105%;
     margin-bottom: 1.5em;
     margin-top: 1.5em;
     display: center;
-  
-
-}
+    }
 
 .row1 {
     width: 75%;
     margin-top: 2em;
     padding: 1em 1em 1em 1em;
     display: right;
-}
+    }
 
 .row2 { 
     width: 50%;
     margin-top: 2em;
     padding: 1em 1em 1em 1em;
     display: right;
-}
+    }
 
 .row3 {
     width: 25%;
     margin-top: 2em;
     padding: 1em 1em 1em 1em;
     display: right;
-}
+    }
 
 .row4 {
     width: 15%;
     margin-top: 2em;
     padding: 1em 1em 1em 1em;
     display: right;
-}
-.one columns {
+    }
+.one column {
     width: 8.33%;
-}
+    }
 
 .two columns {
     width: 16.66%;
-}
+    }
 
 .three columns {
     width: 25%;
-}
+    }
 
 .four columns {
     width: 33.33%;
-}
+    display: center;
+    border: 0em 1em 0em 1em;
+    float:left;
+    }
 
 .five columns {
     width: 41.66%;
-}
+    display: center;
+    border: 0em 1em 0em 1em;
+    }
 
 .six columns {
     width: 50%;
-    padding: 5em 2em 2em 2em;
-}
+    
+    border: 2em 0em 0em 2em;
+    }
 
 .seven columns {
     width: 58.33%;
     padding: 2em 2em 2em 2em;
-}
+    }
 
 .eight columns {
     width: 66.66%;
-}
+    }
 
 .nine columns {
     width: 75%;
-}
+    }
 
 .ten columns{
     width: 83.33%;
-}
+    
+    }
 
 .eleven columns {
     width: 91.66%;
-}
+    display: center;
+    }
 
 .twelve columns{
     width: 100%;
     display: center;
-}
+    }
 
   /**********************************************************************/
 /*PAGE FOOTER*/
@@ -189,32 +654,36 @@ button {
 footer {
 	text-align: center;
 	font-weight: bold;
-    position: fixed;
-	left: 0;
-	bottom: 0;
+    position: center;
+	left: 1em;
+	bottom: 1em;
 	width: 100%;
-    color: 9999;
-  
+    color: black;  
+    font-size: 1.1em; /* Increased font-size*/
+   
 	}
 
 .social-bar {
-    width: 10ems; /* Set a specific width*/
-    background-color: gray;/* Dark-grey background*/
+    width: 100%; /* Set a specific width*/
+    opacity: 2;
     color: black;
+    align-content: center;
+    display:center;
+    
     }
   
 
 .social-bar a {
-    display: block; /* Make the links appear below each other instead of side-by-side*/
+    display: inline-flex; /* Make the links appear below each other instead of side-by-side*/
     text-align: center; /* Center-align text*/
-    padding: 16px; /* Add some padding*/
+    padding: 0.3em 0.3em 0.3em 0.3em; /* Add some padding*/
     transition: all 0.3s ease; /* Add transition for hover effects*/
-    color: white; /* White text color*/
-    font-size: 36px; /* Increased font-size*/
+    color:black; /* White text color*/
+    font-size: 2em; /* Increased font-size*/
 	}
 
 .social-bar a:hover {
-    background-color: #000; /* Add a hover color */
+    background-color: #4CAF50 ; /* Add a hover color */
 	}
 
 .active {
@@ -306,7 +775,7 @@ footer {
     width: 100%;
     }
 /**********************************************************************/
-/*RED BOARDER TEMPLATE BOXES*/
+/*RED BOARDER TEMPLATE BOXES
 * {
     border: 1px solid red !important;
 }
@@ -318,3 +787,53 @@ footer {
     box-sizing: border-box;
 }
 /***************************************/
+
+/*font-family: 'Oldenburg', cursive;
+
+font-family: 'IBM Plex Sans Condensed', sans-serif;
+
+font-family: 'Hind', sans-serif;
+
+font-family: 'Bree Serif', serif;
+
+font-family: 'Berkshire Swash', cursive;
+
+font-family: 'Cairo', sans-serif;
+
+font-family: 'Satisfy', cursive;
+
+font-family: 'Philosopher', sans-serif;
+
+font-family: 'Pontano Sans', sans-serif;
+
+font-family: 'Amita', cursive;
+
+font-family: 'Alice', serif;
+
+font-family: 'Fredericka the Great', cursive;
+
+font-family: 'Cutive', serif;
+
+font-family: 'Pompiere', cursive;
+
+font-family: 'Geo', sans-serif;
+
+font-family: 'Andika', sans-serif;
+
+font-family: 'Vast Shadow', cursive;
+
+font-family: 'Lemon', cursive;
+
+font-family: 'Lily Script One', cursive;
+
+font-family: 'Fondamento', cursive;
+
+font-family: 'Cherry Swash', cursive;
+
+font-family: 'Stardos Stencil', cursive;
+
+font-family: 'Oleo Script Swash Caps', cursive;
+
+font-family: 'Voces', cursive;*/
+
+
