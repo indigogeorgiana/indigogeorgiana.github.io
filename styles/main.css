@@ -1,47 +1,40 @@
 /********************************************************/
-body {
+body, html {
     height: 125%;
     width:  100%;
     margin: 0;
-    padding:0;
-    
+    padding:0;    
 }
-
 h1  {   
     font-family: 'Croissant One', cursive;
     font-size:8vw;
     font-weight: bold;
-    padding: 0.09em 0.9em 0em 2em;
-   	color: #f9f9f9;
+  	color: #f9f9f9;
     width:  100%;
     background-size: cover;
-    border:0.1em 0.1em 0em 0.1em;
-    border: double;
     display: flex;
-    justify-content: center;
-   
-    
+    justify-content: center;  
 } 
-
 h2  {
     font-family: 'Croissant One', cursive;
     word-spacing: 0.1em;
     font-size: 6vw;;
     color:black;
 }
-
 p 	{
-    font-family:Verdana, Geneva, sans-serif;
-    font-size: 120%;
-    padding: 0.5em 0.5em 0.5em 0.5em;
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size: 100%;
     color: #000;
+    padding: 0.5em 0.5em 0.5em 0.5em;    
 }
 
+nav {
+    display: block;
+}
 header {
     background:black;
     opacity: 0.6;   
 }
-
 header1 {
     border: 0.40em double #4CAF50;
     background-size: cover;
@@ -53,7 +46,6 @@ header1 {
     display: flex;
     justify-content: center;  
 }
-
 header2 {
     word-spacing: 0.1em;
     font-size:2.7vw;
@@ -65,7 +57,6 @@ header2 {
     display: flex;
     justify-content: center;  
 }
-
 header3 {
     color: black;     
     font-family: 'IBM Plex Sans Condensed', sans-serif; 
@@ -75,7 +66,6 @@ header3 {
     display: flex;
     justify-content: center;   
 }
-
 header4 {
     border: 0.40em double#ffff00;
     background-size: cover;
@@ -86,9 +76,7 @@ header4 {
     width:  90%;  
     display: flex;
     justify-content: center;  
-
 }
-
 header5 {
     border: 0.40em double orangered;
     background-size: cover;
@@ -99,7 +87,7 @@ header5 {
     width:  90%;  
     display: flex;
     justify-content: center; 
-}      
+}  
 header6 {
     border: 0.40em double #66a3ff;
     background-size: cover;
@@ -111,7 +99,6 @@ header6 {
     display: flex;
     justify-content: center;  
 }
-
 header7 {
     border: 0.40em double#ffb3b3;
     background-size: cover;
@@ -123,7 +110,6 @@ header7 {
     display: flex;
     justify-content: center;
 }
-
 header8 {
     border: 0.40em double#ff4da6;
     background-size: cover;
@@ -135,41 +121,23 @@ header8 {
     display: flex;
     justify-content: center;
 }
-
 div.ul.a{
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
     -moz-column-count: 3; /* Firefox */
     column-count: 3;
 }
-
-h2  {
-    font-family: 'Croissant One', cursive;
-    word-spacing: 0.1em;
-    font-size: 10vw;;
-    color:black;
-}
-
-p 	{
-    font-family:Verdana, Geneva, sans-serif;
-    font-size: 120%;
-    padding: 0.5em 0.5em 0.5em 0.5em;
-    color: #000;
-}
-
 ul.a {
     list-style-position: inside;
     padding: 0.5em 0.5em 0.5em 0.5em;    
 }  
-        
 .container-fluid {   
     display: flex; /* or inline-flex */    
     flex-grow: 1; /* default 0 */     
-    }
-
+}
 .container-fluid1 {   
     display: right; /* or inline-flex */  
     margin-left: 11em;
-    }
+}
 
 .flex-container > * {
     padding: 0.938em;
@@ -190,10 +158,7 @@ ul.a {
 /*****HOMEPAGE/ BUTTONS******/
 .dropbtn1 {
     background-color: #4CAF50;
-    color:black;
-    margin: 1.5em 10em 0.1em 23em;
-    border: 2em 0em 1em 1em;
-    padding: 1em 9em 2em 5em;      
+    color:black;     
     width: 9.375em;
     height: 2.250em; 
     font-size: 1em;
@@ -203,43 +168,11 @@ ul.a {
     font-family: 'IBM Plex Sans Condensed', sans-serif;   
 }
 
-.dropbtn2 {
-    background-color: #4CAF50;
-    color:black;
-    margin: 1.5em 0em 0.1em 27em;
-    border: 2em 2em 1em 1em;
-    padding: 1em 10em 2em 4em;  
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;   
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-}
-
-.dropbtn3 {
-    background-color: #4CAF50;
-    color:black;  
-    margin: 1.5em -6em 0.1em 35em;
-    border: 2em 1em 1em 1em;
-    padding: 1em 10em 2em 3.8em;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;          
-    min-width: 1.000em;   
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;      
-}
 
 /****REFLECTION BLOG ONE - DROP DOWN BUTTONS****/
 .dropbtn4 {
     background-color:#ff4da6;
     color: black;
-    margin: 1.5em 10em 0.1em 23em;
-    border: 2em 0em 1em 1em;
-    padding: 1em 9em 2em 5em;    
     width: 9.375em;
     height: 2.250em; 
     font-size: 1em;   
@@ -249,97 +182,23 @@ ul.a {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 } 
 
+/****UDACITY BLOG PART 1 - DROP DOWN BUTTONS***/
 .dropbtn5 {
-    background-color:#ff4da6;
+    background-color: orangered;
     color: black;
-    margin: 1.5em 0em 0.1em 27em;
-    border: 2em 2em 1em 1em;
-    padding: 1em 10em 2em 4em;  
     width: 9.375em;
     height: 2.250em; 
-    font-size: 1em;   
+    font-size: 1;   
     min-width: 1.000em;
     z-index: 1; 
     cursor: pointer;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
-
-.dropbtn6 {
-    background-color:#ff4da6;
-    color: black;
-    margin: 1.5em -6em 0.1em 35em;
-    border: 2em 1em 1em 1em;
-    padding: 1em 10em 2em 3.8em;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;          
-    min-width: 1.000em;   
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;      
-  }
-
-/****UDACITY BLOG PART 1 - DROP DOWN BUTTONS***/
-
-.dropbtn7 {
-    background-color: orangered;
-    color: black;
-    margin: 1.5em 10em 0.1em 23em;
-    border: 2em 0em 1em 1em;
-    padding: 1em 9em 2em 5em;    
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;   
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-   
-
-
-}	 
-    
-.dropbtn8 {
-    background-color: orangered;
-    color: black;
-    margin: 1.5em 0em 0.1em 27em;
-    border: 2em 2em 1em 1em;
-    padding: 1em 10em 2em 4em;  
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;   
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-
-
-}	 
-        
-.dropbtn9 {
-    background-color: orangered;
-    color: black;
-    margin: 1.5em -6em 0.1em 35em;
-    border: 2em 1em 1em 1em;
-    padding: 1em 10em 2em 3.8em;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;          
-    min-width: 1.000em;   
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;  
-    
-}	 
-
+  
 /****UDACITY BLOG PART 2 - DROP DOWN BUTTONS***/
-
-.dropbtn10 {
+.dropbtn6 {
     background-color: #ffb3b3;
     color: #ff1a1a ;
-    margin: 1.5em 10em 0.1em 23em;
-    border: 2em 0em 1em 1em;
-    padding: 1em 9em 2em 5em;    
     width: 9.375em;
     height: 2.250em; 
     font-size: 1em;   
@@ -349,12 +208,9 @@ ul.a {
     font-family: 'IBM Plex Sans Condensed', sans-serif;     
 }    
     
-.dropbtn11 {
+.dropbtn7 {
     background-color:#b3b3ff;
     color: #8000ff;
-    margin: 1.5em 0em 0.1em 27em;
-    border: 2em 2em 1em 1em;
-    padding: 1em 10em 2em 4em;  
     width: 9.375em;
     height: 2.250em; 
     font-size: 1em;   
@@ -364,12 +220,9 @@ ul.a {
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }        
 
-.dropbtn12 {
+.dropbtn8 {
     background-color: #b3ffff;
     color: #00cccc;
-    margin: 1.5em -6em 0.1em 35em;
-    border: 2em 1em 1em 1em;
-    padding: 1em 10em 2em 3.8em;
     width: 9.375em;
     height: 2.250em; 
     font-size: 1em;          
@@ -380,13 +233,9 @@ ul.a {
 }
 
 /****TIME AND HABITS BLOG - DROP DOWN BUTTONS***/
-
-.dropbtn13 {
+.dropbtn9 {
     background-color:#ffff00;
     color: black;
-    margin: 1.5em 10em 0.1em 23em;
-    border: 2em 0em 1em 1em;
-    padding: 1em 9em 2em 5em;    
     width: 9.375em;
     height: 2.250em; 
     font-size: 1em;   
@@ -396,43 +245,10 @@ ul.a {
     font-family: 'IBM Plex Sans Condensed', sans-serif;    
 }
 
-.dropbtn14 {
-    background-color:#ffff00;
-    color: black;
-    margin: 1.5em 0em 0.1em 27em;
-    border: 2em 2em 1em 1em;
-    padding: 1em 10em 2em 4em;  
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;   
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-}
-
-.dropbtn15{
-    background-color:#ffff00;
-    color: black;
-    margin: 1.5em -6em 0.1em 35em;
-    border: 2em 1em 1em 1em;
-    padding: 1em 10em 2em 3.8em;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;          
-    min-width: 1.000em;   
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;       
-}
-
 /***EMOTIONAL INTEL BLOG - DROP DOWN BUTTON***/
-.dropbtn16 {
+.dropbtn10 {
     background-color:#66a3ff;
     color: #003d99;
-    margin: 1.5em 10em 0.1em 23em;
-    border: 2em 0em 1em 1em;
-    padding: 1em 9em 2em 5em;      
     width: 9.375em;
     height: 2.250em; 
     font-size: 1em;
@@ -440,42 +256,9 @@ ul.a {
     z-index: 1; 
     cursor: pointer;
     font-family: 'IBM Plex Sans Condensed', sans-serif;   
-} 
-
-       
-.dropbtn17 {
-    background-color:#66a3ff;
-    color: #003d99; 
-    margin: 1.5em 0em 0.1em 27em;
-    border: 2em 2em 1em 1em;
-    padding: 1em 10em 2em 4em;  
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;   
-    min-width: 1.000em;
-    z-index: 1;
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-}  
-
-.dropbtn18 {
-    background-color:#66a3ff;
-    color: #003d99;
-    margin: 1.5em -6em 0.1em 35em;
-    border: 2em 1em 1em 1em;
-    padding: 1em 10em 2em 3.8em;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1;          
-    min-width: 1.000em;   
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;  
-}
-    
-
+}       
 /* Dropdown Content (Hidden by Default) */
-.dropdown-content1 {
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 3em;
@@ -483,174 +266,100 @@ ul.a {
     z-index: 1;    
 }
 
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content2 {
-    display: none;
-    position: absolute;
-    min-width: 3em;
-    box-shadow: 0.5em 2em 3em 2em rgba(0,0,0,0.2);
-    z-index: 1;  
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content3 {
-    display: none;
-    position: absolute;
-    padding: 0;
-    min-width: 3em;
-    box-shadow: 0.5em 2em 3em 2em rgba(0,0,0,0.2);
-    z-index: 1; 
-}
-
 /* Links inside the dropdown */
-.dropdown-content1 a {
-    margin: 0em 10em 0em 23em;
-    border: 0em 0em 0em 1em;
-    padding: 0em 9em 1em 5em;
-    background-color: blanchedalmond;
-    color: black;
-    display: block;
-    text-decoration: none;
-    text-align: center;    
-}
-
-/* Links inside the dropdown */
-.dropdown-content2 a {
-    margin: 0em 0em 1em 27em;
-    border: 0em 2em 1em 1em;
-    padding: 0em 10em 1em 4em;
-    background-color: blanchedalmond;
-    color: black;
-    display: block;
-    text-decoration: none;
-    text-align: center;    
-}
-
-/* Links inside the dropdown */
-.dropdown-content3 a {   
-    margin: 0em -6em 1em 35em;
-    border: 0em 1em 1em 1em;
-    padding: 0em 10em 1em 3.8em;
+.dropdown-content a {
+    text-anchor: end;
     background-color: blanchedalmond;
     color: black;
     display: block;
     text-decoration: none;
     text-align: center; 
+       
 }
 
 /* Show the dropdown menu on hover*/ 
-.dropdown:hover .dropdown-content1 {
+.dropdown:hover .dropdown-content {
     display: block;
 }
 
-/* Show the dropdown menu on hover*/ 
-.dropdown:hover .dropdown-content2 {
-    display: block;
-}
- 
-/* Show the dropdown menu on hover*/ 
-.dropdown:hover .dropdown-content3 {
-    display: block;
-}
- 
- 
 /****ROWS/COLUMNS CODE****/
 .row {
     width: 105%;
     margin-bottom: 1.5em;
     margin-top: 1.5em;
     display: center;
-    }
-
+}
 .row1 {
     width: 75%;
     margin-top: 2em;
     padding: 1em 1em 1em 1em;
     display: right;
-    }
-
+}
 .row2 { 
     width: 50%;
     margin-top: 2em;
     padding: 1em 1em 1em 1em;
     display: right;
-    }
-
+}
 .row3 {
     width: 25%;
     margin-top: 2em;
     padding: 1em 1em 1em 1em;
     display: right;
-    }
-
+}
 .row4 {
     width: 15%;
     margin-top: 2em;
     padding: 1em 1em 1em 1em;
     display: right;
-    }
+}
 .one column {
     width: 8.33%;
-    }
-
+}
 .two columns {
     width: 16.66%;
-    }
-
+}
 .three columns {
     width: 25%;
-    }
-
+}
 .four columns {
     width: 33.33%;
     display: center;
     border: 0em 1em 0em 1em;
     float:left;
-    }
-
+}
 .five columns {
     width: 41.66%;
     display: center;
     border: 0em 1em 0em 1em;
-    }
-
+}
 .six columns {
     width: 50%;
-    
     border: 2em 0em 0em 2em;
-    }
-
+}
 .seven columns {
     width: 58.33%;
     padding: 2em 2em 2em 2em;
-    }
-
+}
 .eight columns {
     width: 66.66%;
-    }
-
+}
 .nine columns {
     width: 75%;
-    }
-
+}
 .ten columns{
     width: 83.33%;
-    
-    }
-
+}
 .eleven columns {
     width: 91.66%;
     display: center;
-    }
-
+}
 .twelve columns{
     width: 100%;
     display: center;
-    }
-
-  /**********************************************************************/
+}
+/**********************************************************************/
 /*PAGE FOOTER*/
-
 footer {
 	text-align: center;
 	font-weight: bold;
@@ -660,19 +369,14 @@ footer {
 	width: 100%;
     color: black;  
     font-size: 1.1em; /* Increased font-size*/
-   
-	}
-
+}
 .social-bar {
     width: 100%; /* Set a specific width*/
     opacity: 2;
     color: black;
     align-content: center;
     display:center;
-    
-    }
-  
-
+}
 .social-bar a {
     display: inline-flex; /* Make the links appear below each other instead of side-by-side*/
     text-align: center; /* Center-align text*/
@@ -680,35 +384,25 @@ footer {
     transition: all 0.3s ease; /* Add transition for hover effects*/
     color:black; /* White text color*/
     font-size: 2em; /* Increased font-size*/
-	}
-
+}
 .social-bar a:hover {
     background-color: #4CAF50 ; /* Add a hover color */
-	}
-
+}
 .active {
     background-color: #4CAF50; /* Add an active/current color */
-	}
-
+}
 /******************************************************/
-
-/***********************************************************************************/
 /*IMAGE CONTENT*/
-
 /* Homepage(Index Page) Background Image*/
 .graphichome {
-/* The image used */
     background-image: url("../images/workoffice.jpg");
     height: 100%;
     margin: 0;
-        
-/* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    }
-    
+}
 /*About Me - Image */	
 .graphicme { 
     background-image: url("../");
@@ -718,19 +412,17 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    }	
-    
+}	
 /* Reflection Blog One - Image */
 .grpahicpink { 
     background-image: url("../images/pinkgeo.png");
-    height: 260%;
+    height: 160%;
     margin:0; 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    }
-    
+}
 /*c1-time and habits reflection - Image*/
 .graphicwhite { 
     background-image: url("../images/whitewash.jpg");
@@ -740,8 +432,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    }
-   
+}
 /*Udacity Blog Part 1 - Images*/	
 .graphicgeo { 
     background-image: url("../images/geometric.png");
@@ -751,8 +442,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    }
-    
+}
 /*Ucadity Blog Part 2 - Images */
 .graphicspace { 
     background-image: url("../images/space.jpg");
@@ -762,8 +452,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    }
-        
+}
 /*Emotional Intel - Image */	
 .graphiczigzag { 
     background-image: url("../images/zigzag.jpg");
@@ -773,7 +462,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    }
+}
 /**********************************************************************/
 /*RED BOARDER TEMPLATE BOXES
 * {
@@ -785,9 +474,9 @@ footer {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-}
+}*/
 /***************************************/
-
+/****GOOGLE FONTS****/
 /*font-family: 'Oldenburg', cursive;
 
 font-family: 'IBM Plex Sans Condensed', sans-serif;
@@ -835,5 +524,7 @@ font-family: 'Stardos Stencil', cursive;
 font-family: 'Oleo Script Swash Caps', cursive;
 
 font-family: 'Voces', cursive;*/
+
+/*******************END*****************************/
 
 
