@@ -1,4 +1,5 @@
 /********************************************************/
+/***MAIN HTML***/
 body, html {
     height: 125%;
     width:  100%;
@@ -35,6 +36,8 @@ header {
     background:black;
     opacity: 0.6;   
 }
+
+/****HOMEPAGE/INDEX HEADER/BORDER***/
 header1 {
     border: 0.40em double #4CAF50;
     background-size: cover;
@@ -46,6 +49,8 @@ header1 {
     display: flex;
     justify-content: center;  
 }
+
+/***HOMEPAGE INTEGRITY HEADER/BORDER ***/
 header2 {
     word-spacing: 0.1em;
     font-size:2.7vw;
@@ -66,6 +71,8 @@ header3 {
     display: flex;
     justify-content: center;   
 }
+
+/**TECHNICAL/REFLECTION BLOG HEADER/BORDER**/
 header4 {
     border: 0.40em double#ffff00;
     background-size: cover;
@@ -77,6 +84,7 @@ header4 {
     display: flex;
     justify-content: center;  
 }
+
 header5 {
     border: 0.40em double orangered;
     background-size: cover;
@@ -88,6 +96,8 @@ header5 {
     display: flex;
     justify-content: center; 
 }  
+
+/***MINDFULNESS BLOG HEADER/BORDER***/
 header6 {
     border: 0.40em double #66a3ff;
     background-size: cover;
@@ -99,6 +109,8 @@ header6 {
     display: flex;
     justify-content: center;  
 }
+
+/***UDACITY 2  HEADER/BORDER ***/
 header7 {
     border: 0.40em double#ffb3b3;
     background-size: cover;
@@ -110,6 +122,7 @@ header7 {
     display: flex;
     justify-content: center;
 }
+/***PINK GEO HEADER/BORDER***/
 header8 {
     border: 0.40em double#ff4da6;
     background-size: cover;
@@ -325,13 +338,16 @@ ul.a {
 .four columns {
     width: 33.33%;
     display: center;
+   
     border: 0em 1em 0em 1em;
     float:left;
 }
 .five columns {
     width: 41.66%;
-    display: center;
-    border: 0em 1em 0em 1em;
+  
+    margin: 0em 2em, 0em, 2em;
+    border: 0em 0.5em 0em 0.5em;
+    justify-content: center;
 }
 .six columns {
     width: 50%;
