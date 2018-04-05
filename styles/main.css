@@ -7,132 +7,55 @@ body, html {
     padding:0;    
 }
 h1  {   
-    font-family: 'Croissant One', cursive;
-    font-size:8vw;
-    font-weight: bold;
-  	color: #f9f9f9;
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size:4vw;
+    color: #f9f9f9;
     width:  100%;
-    background-size: cover;
-    display: flex;
-    justify-content: center;  
+    text-align: center;
+     
+      
 } 
 h2  {
-    font-family: 'Croissant One', cursive;
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
     word-spacing: 0.1em;
-    font-size: 6vw;;
+    font-size: 2.5vw;
     color:black;
+    text-align: center;
+    border: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;   
+}
+h3  {
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    word-spacing: 0.1em;
+    font-size: 1.5vw;
+    color:black;
+    text-align: center;
+    border: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em;  
 }
 p 	{
     font-family: 'IBM Plex Sans Condensed', sans-serif; 
     font-size: 100%;
     color: #000;
-    padding: 0.5em 0.5em 0.5em 0.5em;    
+    border: 0.5em 0.5em 0.5em 0.5em;
+    padding: 0.5em 0.5em 0.5em 0.5em; 
 }
-
 nav {
     display: block;
 }
+
 header {
     background:black;
-    opacity: 0.6;   
+    opacity: 0.6;
 }
 
-/****HOMEPAGE/INDEX HEADER/BORDER***/
-header1 {
-    border: 0.40em double #4CAF50;
-    background-size: cover;
-    color: #f9f9f9;     
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size:2.625em;
-    font-weight: bold;
-    width:  90%;  
+.borderline {
+    border: 0.20em double black;  
     display: flex;
-    justify-content: center;  
-}
-
-/***HOMEPAGE INTEGRITY HEADER/BORDER ***/
-header2 {
-    word-spacing: 0.1em;
-    font-size:2.7vw;
-    color:green;
-    background-size: cover;
-    font-family: 'Pompiere', cursive;
-    font-weight: bold;
-    width:  90%;  
-    display: flex;
-    justify-content: center;  
-}
-header3 {
-    color: black;     
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size:2.625em;
-    font-weight: bold;
-    width:  90%;  
-    display: flex;
-    justify-content: center;   
-}
-
-/**TECHNICAL/REFLECTION BLOG HEADER/BORDER**/
-header4 {
-    border: 0.40em double#ffff00;
-    background-size: cover;
-    color: #f9f9f9;     
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size:2.625em;
-    font-weight: bold;
-    width:  90%;  
-    display: flex;
-    justify-content: center;  
-}
-
-header5 {
-    border: 0.40em double orangered;
-    background-size: cover;
-    color: #f9f9f9;     
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size:2.625em;
-    font-weight: bold;
-    width:  90%;  
-    display: flex;
-    justify-content: center; 
-}  
-
-/***MINDFULNESS BLOG HEADER/BORDER***/
-header6 {
-    border: 0.40em double #66a3ff;
-    background-size: cover;
-    color: #f9f9f9;     
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size:2.625em;
-    font-weight: bold;
-    width:  90%;  
-    display: flex;
-    justify-content: center;  
-}
-
-/***UDACITY 2  HEADER/BORDER ***/
-header7 {
-    border: 0.40em double#ffb3b3;
-    background-size: cover;
-    color: #f9f9f9;     
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size:2.625em;
-    font-weight: bold;
-    width:  90%;  
-    display: flex;
-    justify-content: center;
-}
-/***PINK GEO HEADER/BORDER***/
-header8 {
-    border: 0.40em double#ff4da6;
-    background-size: cover;
-    color: #f9f9f9;     
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size:2.625em;
-    font-weight: bold;
-    width:  90%;  
-    display: flex;
-    justify-content: center;
+}    
+    
+#div.a {
+    display: block;
 }
 div.ul.a{
     -webkit-column-count: 3; /* Chrome, Safari, Opera */
@@ -142,22 +65,148 @@ div.ul.a{
 ul.a {
     list-style-position: inside;
     padding: 0.5em 0.5em 0.5em 0.5em;    
-}  
-.container-fluid {   
-    display: flex; /* or inline-flex */    
-    flex-grow: 1; /* default 0 */     
+} 
+/****HOMEPAGE/INDEX HEADER/BORDER***/
+header1 {
+    border: 0.40em double #4CAF50;
+    color: #f9f9f9;     
+    background-size: cover;
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size: 2.625em;
+    font-weight: bold;   
+    display: inline;
 }
-.container-fluid1 {   
-    display: right; /* or inline-flex */  
-    margin-left: 11em;
+/***HOMEPAGE INTEGRITY HEADER/BORDER ***/
+header2 {
+    color:green;
+    word-spacing: 0.1em;
+    background-size: cover;
+    font-size:2.7vw;
+    font-family: 'Pompiere', cursive;
+    font-weight: bold;
+    display: center;     
+}
+header3 {
+    border: 0.40em double rgb(111, 76, 175);
+    color: black;  
+    background-size: cover;   
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size: 2.625em;
+    font-weight: bold;
+    display: inline;
 }
 
+/**TECHNICAL/REFLECTION BLOG HEADER/BORDER**/
+header4 {
+    border: 0.40em double#ffff00;
+    color: #f9f9f9; 
+    background-size: cover;
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size: 2.625em;
+    font-weight: bold;
+    display: inline;   
+}
+
+header5 {
+    border: 0.40em double orangered;
+    color: #f9f9f9;
+    background-size: cover;
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size:2.625em;
+    font-weight: bold;
+    display: inline; 
+}  
+/***MINDFULNESS BLOG HEADER/BORDER***/
+header6 {
+    border: 0.40em double #66a3ff;
+    color: #f9f9f9;
+    background-size: cover;     
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size: 2.625em;
+    font-weight: bold;
+    display: inline;    
+}
+
+/***UDACITY 2  HEADER/BORDER ***/
+header7 {
+    border: 0.40em double#ffb3b3;
+    color: #f9f9f9; 
+    background-size: cover;
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size: 2.625em;
+    font-weight: bold;
+    display: inline;
+   
+}
+/***PINK GEO HEADER/BORDER***/
+header8 {
+    border: 0.40em double#ff4da6;
+    color: #f9f9f9;
+    background-size: cover;     
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-size: 2.625em;
+    font-weight: bold;
+    display: inline;    
+}
+
+/********************************************************/
+/***CONTAINER/FLEX/MEDIA ELEMENTS/***/
+/* Large */
+
+.flex-item {
+    width: 6.250em;  
+    height: 6.250em; 
+    margin: auto;     
+}
+.wrapper {
+    display: flex;
+    flex-flow: row wrap;
+}
+/* We tell all items to be 100% width, via flex-basis */
+  .wrapper > * {
+    flex: 1 100%;
+}
+/* We rely on source order for mobile-first approach
+   * in this case:
+   * 1. header
+   * 2. article
+   * 3. aside 1
+   * 4. aside 2
+   * 5. footer
+   */
+/* Medium screens */
+  @media all and (min-width: 37.500em) {
+/* We tell both sidebars to share a row */
+.aside { flex: 1 auto; }
+}
+/* Large screens */
+  @media all and (min-width: 50.000em) {
+/* We invert order of first sidebar and main
+* And tell the main element to take twice as much width as the other two sidebars 
+*/
+.main { flex: 2 0em; }
+.aside-1 { order: 1; }
+.main    { order: 2; }
+.aside-2 { order: 3; }
+.footer  { order: 4; }
+}
+.container  {/*Note that CSS columns have no effect on a flex container. */
+    display: inline;
+}
+.container1 {   
+    display: center; /* or inline-flex */  
+    flex-grow: 1; /* default 0 / Negative numbers are invalid. */ 
+}
+.container-fluid {   
+    display: inline-block; /* or inline-flex */    
+    flex-grow: 1; /* default 0/ Negative numbers are invalid.  */ 
+    /*flex-wrap: nowrap | wrap | wrap-reverse;*/
+}
 .flex-container > * {
     padding: 0.938em;
     -webkit-flex: 1 100%;
     flex: 1 100%;
 }
-
 /*************************************************************************/
 /* MAIN DROPDOWN CODE*/
 
@@ -165,9 +214,7 @@ ul.a {
 .dropdown {
     position: relative;
     display: inline-block;
-    transform: translate(-50%, 0) !important;
 }
-
 /*****HOMEPAGE/ BUTTONS******/
 .dropbtn1 {
     background-color: #4CAF50;
@@ -178,10 +225,9 @@ ul.a {
     min-width: 1.000em;
     z-index: 1; 
     cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;   
+    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+  
 }
-
-
 /****REFLECTION BLOG ONE - DROP DOWN BUTTONS****/
 .dropbtn4 {
     background-color:#ff4da6;
@@ -194,7 +240,6 @@ ul.a {
     cursor: pointer;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 } 
-
 /****UDACITY BLOG PART 1 - DROP DOWN BUTTONS***/
 .dropbtn5 {
     background-color: orangered;
@@ -207,7 +252,6 @@ ul.a {
     cursor: pointer;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }
-  
 /****UDACITY BLOG PART 2 - DROP DOWN BUTTONS***/
 .dropbtn6 {
     background-color: #ffb3b3;
@@ -220,7 +264,6 @@ ul.a {
     cursor: pointer;
     font-family: 'IBM Plex Sans Condensed', sans-serif;     
 }    
-    
 .dropbtn7 {
     background-color:#b3b3ff;
     color: #8000ff;
@@ -232,7 +275,6 @@ ul.a {
     cursor: pointer;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
 }        
-
 .dropbtn8 {
     background-color: #b3ffff;
     color: #00cccc;
@@ -244,7 +286,6 @@ ul.a {
     cursor: pointer;
     font-family: 'IBM Plex Sans Condensed', sans-serif;       
 }
-
 /****TIME AND HABITS BLOG - DROP DOWN BUTTONS***/
 .dropbtn9 {
     background-color:#ffff00;
@@ -257,7 +298,6 @@ ul.a {
     cursor: pointer;
     font-family: 'IBM Plex Sans Condensed', sans-serif;    
 }
-
 /***EMOTIONAL INTEL BLOG - DROP DOWN BUTTON***/
 .dropbtn10 {
     background-color:#66a3ff;
@@ -287,44 +327,35 @@ ul.a {
     display: block;
     text-decoration: none;
     text-align: center; 
-       
 }
-
 /* Show the dropdown menu on hover*/ 
 .dropdown:hover .dropdown-content {
     display: block;
 }
-
 /****ROWS/COLUMNS CODE****/
 .row {
-    width: 105%;
-    margin-bottom: 1.5em;
-    margin-top: 1.5em;
-    display: center;
+    width: 100%; 
+    margin-top: 1em;   
+    padding: 0em 0.5em 0em 1em;
 }
 .row1 {
     width: 75%;
-    margin-top: 2em;
-    padding: 1em 1em 1em 1em;
-    display: right;
+    margin-top: 1em;
+    padding:  0em 0.5em 0em 1em;
+    vertical-align: baseline;
 }
 .row2 { 
     width: 50%;
-    margin-top: 2em;
-    padding: 1em 1em 1em 1em;
-    display: right;
+    margin-top: 1em;
+    padding:  0em 0.5em 0em 1em;
 }
 .row3 {
     width: 25%;
-    margin-top: 2em;
-    padding: 1em 1em 1em 1em;
-    display: right;
+    padding:  0em 0.5em 0em 1em;
 }
 .row4 {
-    width: 15%;
-    margin-top: 2em;
-    padding: 1em 1em 1em 1em;
-    display: right;
+    width:15%;
+    padding:  0em 0.5em 0em 1em;
 }
 .one column {
     width: 8.33%;
@@ -337,14 +368,12 @@ ul.a {
 }
 .four columns {
     width: 33.33%;
-    display: center;
-   
+    align-content: baseline;
     border: 0em 1em 0em 1em;
-    float:left;
 }
+
 .five columns {
     width: 41.66%;
-  
     margin: 0em 2em, 0em, 2em;
     border: 0em 0.5em 0em 0.5em;
     justify-content: center;
@@ -373,6 +402,7 @@ ul.a {
 .twelve columns{
     width: 100%;
     display: center;
+   
 }
 /**********************************************************************/
 /*PAGE FOOTER*/
@@ -490,7 +520,7 @@ footer {
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
     box-sizing: border-box;
-}*/
+}
 /***************************************/
 /****GOOGLE FONTS****/
 /*font-family: 'Oldenburg', cursive;
@@ -540,7 +570,4 @@ font-family: 'Stardos Stencil', cursive;
 font-family: 'Oleo Script Swash Caps', cursive;
 
 font-family: 'Voces', cursive;*/
-
 /*******************END*****************************/
-
-
