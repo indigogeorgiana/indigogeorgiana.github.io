@@ -148,7 +148,6 @@ header8 {
     font-weight: bold;
     display: inline;    
 }
-
 /********************************************************/
 /***CONTAINER/FLEX/MEDIA ELEMENTS/***/
 /* Large */
@@ -195,6 +194,10 @@ header8 {
 }
 .container1 {   
     display: center; /* or inline-flex */  
+    flex-grow: 1; /* default 0 / Negative numbers are invalid. */ 
+}
+.container2 { 
+    flex-wrap: wrap;  
     flex-grow: 1; /* default 0 / Negative numbers are invalid. */ 
 }
 .container-fluid {   
