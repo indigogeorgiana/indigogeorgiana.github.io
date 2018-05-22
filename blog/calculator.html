@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Web Dev Calculator</title>
+  <link rel="stylesheet" href="../styles/styles2.css">
+  <link href="https://fonts.googleapis.com/css?family=Cherry+Swash" rel="stylesheet">  
+ </head>
+<body>
+        <header>
+                <nav>
+                  <div class="container">
+                    <div class="row">
+                      <div class="twelve columns"> 
+                        <header1><strong>WEB DEV WANNABE BLOG</strong></header1>
+                          <div class="dropdown">
+                           <button class="dropbtn1">Home</button>
+                            <div class="dropdown-content">
+                              <ul>
+                                <a href="#">Home</a>
+                                      <a href="about-me.html">About me</a>
+                                      <a href="calculator.html">Calculator</a>
+                                      <a href="play-with-javascript.html">Web Dev Music</a>
+                                      <a href="blog-template1.html">Template 1</a>
+                                      <a href="blog-template2.html">Template 2</a>
+                                      <a href="blog-template3.html">Template 3</a>
+                                      <a href="blog-template4.html">Template 4</a>
+                                      <a href="blog-template5.html">Template 5</a>
+                                      <a href="blog-template6.html">Template 6</a>
+                              </ul>
+                            </div>   
+                          </div>
+                        <div class="dropdown">
+                          <button class="dropbtn1">Tech Blogs</button>
+                            <div class="dropdown-content">
+                              <ul> 
+                                <a href="c1-time-and-habits-blog.html">Time & Habits</a>
+                                <a href="udacity-blog-part1.html">Udacity Part 1</a>
+                                <a href="udacity-blog-part-2.html">Udacity Part 2</a>
+                                <a href="t3-design-to-web-blog.html">Design to Web</a>
+                                <a href="t4-javascript-basics.html">JavaScript Basics</a>
+                                <a href="t5-problem-solving.html">Problem Solving</a>
+                                <a href="t6-js-language.html">JavaScript Language</a>
+                                <a href="t6-scope.html">Scope</a>            
+                              </ul>
+                            </div>
+                        </div>
+                      <div class="dropdown">
+                        <button class="dropbtn1">Mindful Blogs</button>
+                          <div class="dropdown-content">
+                            <ul>
+                              <a href="reflection-blog.html">Reflect Blog</a>
+                              <a href="emotional-intelligence-blog.html">Emotional Intel</a>
+                              <a href="c3-meditation-process.html">Meditation Process</a>
+                              <a href="c4-daily-mindfulness.html">Daily Mindfulness</a>
+                              <a href="c5-self-confidence.html">Self Confidence</a>
+                              <a href="c6-control.html">Control</a>
+                              <a href="c7-self-motivation.html">Self Motivation</a>
+                              <a href="c8-connecting.html">Connecting</a>
+                              <a href="c9-leadership.html">Leadership</a>
+                            </ul>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </nav>  
+            </header>
+  <h1>Web Dev Wannabe</h1>
+    <h2>Calculator</h2>
+      <form id="calculator">
+        <input type="text" name="screen" id="display" placeholder="0." disabled>
+          <br>
+            <input type='button' value='C' id='keys' onClick='addToInput("c")'>
+            <input type='button' value='CE' id='keys' onClick='goBack()'>
+            <input type='button' value='x^2' id='keys'onClick='tothepower()'>
+            <input type='button' value='+' id='keys' onClick='addToInput("+")'>
+            <br>
+  
+            <input type='button' value='9' id='keys' onClick='addToInput("9")'>
+            <input type='button' value='8' id='keys' onClick='addToInput("8")'>
+            <input type='button' value='7' id='keys' onClick='addToInput("7")'>
+            <input type='button' value='-' id='keys' onClick='addToInput("-")'>
+            <br>
+      
+            <input type='button' value='6' id='keys' onClick='addToInput("6")'>
+            <input type='button' value='5' id='keys' onClick='addToInput("5")'>
+            <input type='button' value='4' id='keys' onClick='addToInput("4")'>
+            <input type='button' value='*' id='keys' onClick='addToInput("*")'>
+            <br>
+    
+            <input type='button' value='3' id='keys' onClick='addToInput("3")'>
+            <input type='button' value='2' id='keys' onClick='addToInput("2")'>
+            <input type='button' value='1' id='keys' onClick='addToInput("1")'>
+            <input type='button' value='/' id='keys' onClick='addToInput("/")'>
+            <br>
+            
+            <input type='button' value='0' id='keys' onClick='addToInput("0")'>
+            <input type='button' value='.' id='keys' onClick='addToInput(".")'>
+            <input type='button' value='=' id='equal' onClick='total()'>
+            <br>                   
+        </form>
+        <script  src="../js/index.js"></script>
+      </div>
+   </body>
+</html>
+
+ 
+
+  
+
+
+

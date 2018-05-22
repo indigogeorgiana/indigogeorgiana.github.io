@@ -1,0 +1,91 @@
+body {
+    background-image: url("../images/colourful.jpg");
+    background-size: cover;
+    text-align: center;
+    font-family: 'Cherry Swash', cursive;    
+  }
+  
+  h1 {
+    color:black;
+    font-weight:bold;
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    color:black;
+    font-weight:bold;  
+    font-size: 1.5em;   
+  }
+  
+  #display {
+    margin-bottom: 10px;
+    height: 20px;
+    width: 220px;
+    border: 1px solid black;
+    border-radius:5px;
+    box-shadow: 0px 0px 1px 1px black;
+    text-align: right;
+    font: 20px bold;
+    }
+  
+  #calculator {
+    background-color: palevioletred;
+    position: relative;
+    width: 350px;
+    border: 2px solid black;
+    border-radius: 12px;
+    margin: 0px auto;
+    padding: 20px 20px 100px 20px;
+    height: 325;
+    border-radius:20px;
+  }
+  
+  #keys {
+    width: 50px;
+    height: 35px;
+    margin: 4px;
+    box-shadow: 0px 0px 2px 1px black;
+    border-radius:2px;
+    outline: none;
+  }
+  
+  #equal {
+    width: 110px;
+    height: 35px;
+    margin: 4px;
+    box-shadow: 0px 0px 2px 1px black;
+    border-radius:2px;
+    outline: none;
+  
+  }
+  
+  input[type=button] {
+    background: palevioletred;
+    width: 20%;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 7px;
+    margin-left: 13px;
+    margin-top: 10px;
+    }
+  
+  input[type=button]:active {
+    background-color: #666;
+    box-shadow: 0px 5px #666;
+    transform: translateY(4px);
+    }
+  
+  input[type=button]:hover {
+    background-color: #666;
+    color: black;
+    }
+    
+  input[type = text] {
+    position: relative;
+    display: block;
+    width: 90%;
+    margin: 5px auto;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 4px 0px 12px black inset;
+    }
