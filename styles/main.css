@@ -1,155 +1,119 @@
 /********************************************************/
 /***MAIN HTML***/
-body, html {
-    height: 125%;
-    width:  100%;
-    margin: 0;
-    padding:0;    
+* {
+    box-sizing: border-box;
+    border: 0.5px solid blue;
 }
+
 h1  {   
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size:4vw;
-    color: #f9f9f9;
+   font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    color: black;
     width:  100%;
-    text-align: center;
-     
-      
-} 
+    } 
+
 h2  {
     font-family: 'IBM Plex Sans Condensed', sans-serif; 
     word-spacing: 0.1em;
     font-size: 2.5vw;
     color:black;
-    text-align: center;
-    border: 0.5em 0.5em 0.5em 0.5em;
-    padding: 0.5em 0.5em 0.5em 0.5em;   
+    text-align: center;    
 }
+
 h3  {
     font-family: 'IBM Plex Sans Condensed', sans-serif; 
     word-spacing: 0.1em;
     font-size: 1.5vw;
     color:black;
     text-align: center;
-    border: 0.5em 0.5em 0.5em 0.5em;
-    padding: 0.5em 0.5em 0.5em 0.5em;  
-}
-p 	{
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size: 100%;
-    color: #000;
-    border: 0.5em 0.5em 0.5em 0.5em;
-    padding: 0.5em 0.5em 0.5em 0.5em; 
-}
-nav {
-    display: block;
 }
 
+.webdevlogo{
+    width: 30rem;
+    height: auto;
+    border-radius: 55%;
+    z-index: 200;
+    margin: 20rem;
+    border: 3px solid black;
+}
+.weblettering{
+    height: auto;
+    border-radius: 55%;
+    z-index: 200;
+
+}
+
+#navicon{
+    width: 10rem;
+    height: 2rem;
+    background: url("../images/touchme.png") no-repeat center center;
+    float: right;
+    z-index: 100;
+}
+
+a:hover#navicon {
+	background-color: grey;
+}
+
+nav:hover ul {
+    display: block;
+    z-index: 200;
+}
+
+nav ul, nav:active ul { 
+    display: none;
+    position: absolute;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 0;
+    background: #fff;
+    border: 0.2rem solid black;
+    right: 2.5rem;
+    top: 6.5rem;
+    width: 40%;   
+}
+
+nav li {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 0;
+    margin: 0;
+}
+
+.shade {
+    color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+}
+
+.left-nav {
+    width: 50%;
+    float: left;
+    vertical-align: middle;
+    padding: 3rem;
+}
+
+.right-nav {
+    width: 15rem;
+}
+ 
 header {
-    background:black;
-    opacity: 0.6;
+    width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+    z-index: 100;
+    display: inline-block;
+    background-color: white; 
 }
 
-.borderline {
-    border: 0.20em double black;  
-    display: flex;
-}    
-    
-#div.a {
-    display: block;
-}
-div.ul.a{
-    -webkit-column-count: 3; /* Chrome, Safari, Opera */
-    -moz-column-count: 3; /* Firefox */
-    column-count: 3;
-}
-ul.a {
-    list-style-position: inside;
-    padding: 0.5em 0.5em 0.5em 0.5em;    
-} 
-/****HOMEPAGE/INDEX HEADER/BORDER***/
-header1 {
-    border: 0.40em double #4CAF50;
-    color: #f9f9f9;     
-    background-size: cover;
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size: 2.625em;
-    font-weight: bold;   
-    display: inline;
-}
-/***HOMEPAGE INTEGRITY HEADER/BORDER ***/
-header2 {
-    color:green;
-    word-spacing: 0.1em;
-    background-size: cover;
-    font-size:2.7vw;
-    font-family: 'Pompiere', cursive;
-    font-weight: bold;
-    display: center;     
-}
-header3 {
-    border: 0.40em double rgb(111, 76, 175);
-    color: black;  
-    background-size: cover;   
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size: 2.625em;
-    font-weight: bold;
-    display: inline;
-}
 
-/**TECHNICAL/REFLECTION BLOG HEADER/BORDER**/
-header4 {
-    border: 0.40em double#ffff00;
-    color: #f9f9f9; 
-    background-size: cover;
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size: 2.625em;
-    font-weight: bold;
-    display: inline;   
-}
-
-header5 {
-    border: 0.40em double orangered;
-    color: #f9f9f9;
-    background-size: cover;
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size:2.625em;
-    font-weight: bold;
-    display: inline; 
-}  
-/***MINDFULNESS BLOG HEADER/BORDER***/
-header6 {
-    border: 0.40em double #66a3ff;
-    color: #f9f9f9;
-    background-size: cover;     
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size: 2.625em;
-    font-weight: bold;
-    display: inline;    
-}
-
-/***UDACITY 2  HEADER/BORDER ***/
-header7 {
-    border: 0.40em double#ffb3b3;
-    color: #f9f9f9; 
-    background-size: cover;
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size: 2.625em;
-    font-weight: bold;
-    display: inline;
-   
-}
-/***PINK GEO HEADER/BORDER***/
-header8 {
-    border: 0.40em double#ff4da6;
-    color: #f9f9f9;
-    background-size: cover;     
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-    font-size: 2.625em;
-    font-weight: bold;
-    display: inline;    
-}
 /********************************************************/
-/***CONTAINER/FLEX/MEDIA ELEMENTS/***/
+/**CONTAINER/MEDIA**/
 /* Large */
 
 .flex-item {
@@ -161,28 +125,18 @@ header8 {
     display: flex;
     flex-flow: row wrap;
 }
-/* We tell all items to be 100% width, via flex-basis */
-  .wrapper > * {
+
+.wrapper > * {
     flex: 1 100%;
 }
-/* We rely on source order for mobile-first approach
-   * in this case:
-   * 1. header
-   * 2. article
-   * 3. aside 1
-   * 4. aside 2
-   * 5. footer
-   */
+
 /* Medium screens */
   @media all and (min-width: 37.500em) {
-/* We tell both sidebars to share a row */
 .aside { flex: 1 auto; }
 }
 /* Large screens */
   @media all and (min-width: 50.000em) {
-/* We invert order of first sidebar and main
-* And tell the main element to take twice as much width as the other two sidebars 
-*/
+
 .main { flex: 2 0em; }
 .aside-1 { order: 1; }
 .main    { order: 2; }
@@ -210,143 +164,14 @@ header8 {
     -webkit-flex: 1 100%;
     flex: 1 100%;
 }
-/*************************************************************************/
-/* MAIN DROPDOWN CODE*/
-
-/* Style The Dropdown Button */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-/*****HOMEPAGE/ BUTTONS******/
-.dropbtn1 {
-    background-color: #4CAF50;
-    color:black;     
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
-  
-}
-/****REFLECTION BLOG ONE - DROP DOWN BUTTONS****/
-.dropbtn4 {
-    background-color:#ff4da6;
-    color: black;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;   
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-} 
-/****UDACITY BLOG PART 1 - DROP DOWN BUTTONS***/
-.dropbtn5 {
-    background-color: orangered;
-    color: black;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1;   
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-}
-/****UDACITY BLOG PART 2 - DROP DOWN BUTTONS***/
-.dropbtn6 {
-    background-color: #ffb3b3;
-    color: #ff1a1a ;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;   
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;     
-}    
-.dropbtn7 {
-    background-color:#b3b3ff;
-    color: #8000ff;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;   
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;
-}        
-.dropbtn8 {
-    background-color: #b3ffff;
-    color: #00cccc;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;          
-    min-width: 1.000em;   
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;       
-}
-/****TIME AND HABITS BLOG - DROP DOWN BUTTONS***/
-.dropbtn9 {
-    background-color:#ffff00;
-    color: black;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;   
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;    
-}
-/***EMOTIONAL INTEL BLOG - DROP DOWN BUTTON***/
-.dropbtn10 {
-    background-color:#66a3ff;
-    color: #003d99;
-    width: 9.375em;
-    height: 2.250em; 
-    font-size: 1em;
-    min-width: 1.000em;
-    z-index: 1; 
-    cursor: pointer;
-    font-family: 'IBM Plex Sans Condensed', sans-serif;   
-}       
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 3em;
-    box-shadow: 0.5em 2em 3em 2em rgba(0,0,0,0.2);
-    z-index: 1;    
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-    text-anchor: end;
-    background-color: blanchedalmond;
-    color: black;
-    display: block;
-    text-decoration: none;
-    text-align: center; 
-}
-/* Show the dropdown menu on hover*/ 
-.dropdown:hover .dropdown-content {
-    display: block;
-}
+   
 /****ROWS/COLUMNS CODE****/
 .row {
     width: 100%; 
     margin-top: 1em;   
     padding: 0em 0.5em 0em 1em;
 }
-.row1 {
-    width: 75%;
-    margin-top: 1em;
-    padding:  0em 0.5em 0em 1em;
-    vertical-align: baseline;
-}
+
 .row2 { 
     width: 50%;
     margin-top: 1em;
@@ -360,52 +185,23 @@ header8 {
     width:15%;
     padding:  0em 0.5em 0em 1em;
 }
+
 .one column {
     width: 8.33%;
 }
-.two columns {
-    width: 16.66%;
-}
+
 .three columns {
     width: 25%;
 }
-.four columns {
-    width: 33.33%;
-    align-content: baseline;
-    border: 0em 1em 0em 1em;
-}
 
-.five columns {
-    width: 41.66%;
-    margin: 0em 2em, 0em, 2em;
-    border: 0em 0.5em 0em 0.5em;
-    justify-content: center;
-}
 .six columns {
     width: 50%;
     border: 2em 0em 0em 2em;
 }
-.seven columns {
-    width: 58.33%;
-    padding: 2em 2em 2em 2em;
-}
-.eight columns {
-    width: 66.66%;
-}
-.nine columns {
-    width: 75%;
-}
-.ten columns{
-    width: 83.33%;
-}
-.eleven columns {
-    width: 91.66%;
-    display: center;
-}
+
 .twelve columns{
     width: 100%;
-    display: center;
-   
+    display: center;   
 }
 /**********************************************************************/
 /*PAGE FOOTER*/
@@ -440,137 +236,5 @@ footer {
 .active {
     background-color: #4CAF50; /* Add an active/current color */
 }
-/******************************************************/
-/*IMAGE CONTENT*/
-/* Homepage(Index Page) Background Image*/
-.graphichome {
-    background-image: url("../images/workoffice.jpg");
-    height: 100%;
-    margin: 0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-/*About Me - Image */	
-.graphicme { 
-    background-image: url("../");
-    height: 150%; 
-    margin:0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}	
-/* Reflection Blog One - Image */
-.graphicpinkgeo { 
-    background-image: url("../images/pinkgeo.png");
-    height: 160%;
-    margin:0; 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-/*c1-time and habits reflection - Image*/
-.graphicwhite { 
-    background-image: url("../images/whitewash.jpg");
-    height: 270%; 
-    margin:0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-/*Udacity Blog Part 1 - Images*/	
-.graphicgeo { 
-    background-image: url("../images/geometric.png");
-    height: 500%; 
-    margin:0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-/*Ucadity Blog Part 2 - Images */
-.graphicspace { 
-    background-image: url("../images/space.jpg");
-    height: 220%; 
-    margin:0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-/*Emotional Intel - Image */	
-.graphiczigzag { 
-    background-image: url("../images/zigzag.jpg");
-    height: 270%; 
-    margin:0;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-}
-/**********************************************************************/
-/*RED BOARDER TEMPLATE BOXES
-* {
-    border: 1px solid red !important;
-}
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-/***************************************/
-/****GOOGLE FONTS****/
-/*font-family: 'Oldenburg', cursive;
 
-font-family: 'IBM Plex Sans Condensed', sans-serif;
-
-font-family: 'Hind', sans-serif;
-
-font-family: 'Bree Serif', serif;
-
-font-family: 'Berkshire Swash', cursive;
-
-font-family: 'Cairo', sans-serif;
-
-font-family: 'Satisfy', cursive;
-
-font-family: 'Philosopher', sans-serif;
-
-font-family: 'Pontano Sans', sans-serif;
-
-font-family: 'Amita', cursive;
-
-font-family: 'Alice', serif;
-
-font-family: 'Fredericka the Great', cursive;
-
-font-family: 'Cutive', serif;
-
-font-family: 'Pompiere', cursive;
-
-font-family: 'Geo', sans-serif;
-
-font-family: 'Andika', sans-serif;
-
-font-family: 'Vast Shadow', cursive;
-
-font-family: 'Lemon', cursive;
-
-font-family: 'Lily Script One', cursive;
-
-font-family: 'Fondamento', cursive;
-
-font-family: 'Cherry Swash', cursive;
-
-font-family: 'Stardos Stencil', cursive;
-
-font-family: 'Oleo Script Swash Caps', cursive;
-
-font-family: 'Voces', cursive;*/
-/*******************END*****************************/
