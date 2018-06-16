@@ -2,7 +2,6 @@
 // var num = box.value;
 // var len = num.length-1;
 
-
 // //CREATE A FUNCTION TO ADD INPUT TO SCREEN
 // function addToInput(x) {
 //    box.value += x;
