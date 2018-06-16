@@ -1,78 +1,63 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Javascript Language</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="../styles/main.css" rel="stylesheet" type="text/css"/> 
-  <link href="https://fonts.googleapis.com/css?family=Philosopher|Pompiere|Pontano+Sans|Satisfy|Stardos+Stencil|Vast+Shadow|Voces" rel="stylesheet">  
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
-</head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../styles/main.css" rel="stylesheet" type="text/css"/> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" />
+    <title>JS Language</title>
+    </head>
 <body>
-  <div class="graphicspace">
-    <header>
-      <nav>
-        <div class="container">
-          <div class="row">
-            <div class="twelve columns"> 
-              <header7><strong>WEB DEV WANNABE BLOG</strong></header7>
-                <div class="dropdown">
-                  <button class="dropbtn6">Home</button>
-                    <div class="dropdown-content">
-                      <ul>
-                        <a href="#">Home</a>
-                        <a href="about-me.html">About me</a>
-                        <a href="calculator.html">Calculator</a>
-                        <a href="play-with-javascript.html">Web Dev Music</a>
-                        <a href="blog-template1.html">Template 1</a>
-                        <a href="blog-template2.html">Template 2</a>
-                        <a href="blog-template3.html">Template 3</a>
-                        <a href="blog-template4.html">Template 4</a>
-                        <a href="blog-template5.html">Template 5</a>
-                        <a href="blog-template6.html">Template 6</a>
-                      </ul>
-                    </div>   
-                </div>
-              <div class="dropdown">
-                <button class="dropbtn7">Tech Blogs</button>
-                  <div class="dropdown-content">
-                    <ul> 
-                      <a href="c1-time-and-habits-blog.html">Time & Habits</a>
-                      <a href="udacity-blog-part1.html">Udacity Part 1</a>
-                      <a href="udacity-blog-part-2.html">Udacity Part 2</a>
-                      <a href="t3-design-to-web-blog.html">Design to Web</a>
-                      <a href="t4-javascript-basics.html">JavaScript Basics</a>
-                      <a href="t5-problem-solving.html">Problem Solving</a>       
-                      <a href="t6-js-language.html">JavaScript Language</a>
-                      <a href="t6-scope.html">Scope</a>  
-                    </ul>
-                  </div>
-              </div>
-            <div class="dropdown">
-              <button class="dropbtn8">Mindful Blogs</button>
-                <div class="dropdown-content">
-                  <ul>
-                    <a href="reflection-blog.html">Reflect Blog</a>
-                    <a href="emotional-intelligence-blog.html">Emotional Intel</a>
-                    <a href="c3-meditation-process.html">Meditation Process</a>
-                    <a href="c4-daily-mindfulness.html">Daily Mindfulness</a>
-                    <a href="c5-self-confidence.html">Self Confidence</a>
-                    <a href="c6-control.html">Control</a>
-                    <a href="c7-self-motivation.html">Self Motivation</a>
-                    <a href="c8-connecting.html">Connecting</a>
-                    <a href="c9-leadership.html">Leadership</a>
-                  </ul>
-                </div>
+    <nav>
+        <img href="../images/webdev.jpg" type="logo" sizes="24x24">
+          <h1>webdev wannabe</h1>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Home</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="blog/about-me.html">About the Developer</a>
+              <a href="blog/play-with-javascript.html">WebDev Music</a>
+              <a href="">Group Project</a>
+              <a href="">Group Project</a>
+              <a href="">Group Project</a>
+              <a href="">Group Project</a>
+              <a href="">Group Project</a>
+              <a href="">Group Project</a>
+              <a href="">Group Project</a> 
+              <a href="">Calculator</a>
             </div>
-        </div>
-      </div>
-      </div>
-      </nav>  
-  </header>
-<div class="row">
+          </div>
+          <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">Techblog</button>
+              <div id="myDropdown" class="dropdown-content">
+                <a href="blog/c1-time-and-habits-blog.html"class="shade">Time & Habits</a>
+                <a href="blog/udacity-blog-part1.html">Udacity Part 1</a> 
+                <a href="blog/udacity-blog-part-2.html">Udacity Part 2</a> 
+                <a href="blog/t3-design-to-web-blog.html">Design to Web</a> 
+                <a href="blog/t4-javascript-basics.html">JS Basics</a>
+                <a href="blog/t5-problem-solving.html">Problem Solving</a>  
+                <a href="blog/t6-js-language.html">JavaScript</a> 
+                <a href="blog/t6-scope.html">Scope</a>  
+              </div>
+            </div>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Mindful</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="blog/reflection-blog.html">Reflections</a> 
+                  <a href="blog/emotional-intelligence-blog.html">Emotional Intel</a>
+                  <a href="blog/c3-meditation-process.html">Meditation</a>
+                  <a href="blog/c4-daily-mindfulness.html">Daily Mindfulness</a>
+                  <a href="blog/c5-self-confidence.html">Self-confidence</a>
+                  <a href="blog/c6-control.html">Control</a>
+                  <a href="blog/c7-self-motivation.html">Self-motivation</a>
+                  <a href="blog/c8-connecting.html">Connecting</a>
+                  <a href="c9-leadership.html">Leadership</a> 
+                </div>
+              </div>
+      </nav>
   <div class="twelve columns">
     <center>
       <h2>

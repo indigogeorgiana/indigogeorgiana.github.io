@@ -4,32 +4,92 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="main/style.css" rel="stylesheet" type="text/css"/> 
+    <link href="./styles/main.css" rel="stylesheet" type="text/css"/> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"> 
-    <link rel="icon" type="image/jpg" href="images/webdev.jpg" sizes="16x16" />
+    <link rel="icon" type="image/jpg" href="./images/webdev.jpg" sizes="16x16" />
     <title>Web Dev Main</title>
   </head>
- <body>
+<body>
+  <nav>
+    <img src="images/whitewash.jpg" id="nav-image">
+      <h1>webdev wannabe</h1>
+    <div class="dropdown">
+      <button onclick="myFunction()" class="dropbtn">Home</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="blog/about-me.html">About the Developer</a>
+          <a href="blog/play-with-javascript.html">WebDev Music</a>
+          <a href="">Group Project</a>
+          <a href="">Group Project</a>
+          <a href="">Group Project</a>
+          <a href="">Group Project</a>
+          <a href="">Group Project</a>
+          <a href="">Group Project</a>
+          <a href="">Group Project</a> 
+          <a href="">Calculator</a>
+        </div>
+      </div>
+      <div class="dropdown">
+          <button onclick="myFunction()" class="dropbtn">Techblog</button>
+          <div id="myDropdown" class="dropdown-content">
+            <a href="blog/c1-time-and-habits-blog.html"class="shade">Time & Habits</a>
+            <a href="blog/udacity-blog-part1.html">Udacity Part 1</a> 
+            <a href="blog/udacity-blog-part-2.html">Udacity Part 2</a> 
+            <a href="blog/t3-design-to-web-blog.html">Design to Web</a> 
+            <a href="blog/t4-javascript-basics.html">JS Basics</a>
+            <a href="blog/t5-problem-solving.html">Problem Solving</a>  
+            <a href="blog/t6-js-language.html">JavaScript</a> 
+            <a href="blog/t6-scope.html">Scope</a>  
+          </div>
+        </div>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Mindful</button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="blog/reflection-blog.html">Reflections</a> 
+              <a href="blog/emotional-intelligence-blog.html">Emotional Intel</a>
+              <a href="blog/c3-meditation-process.html">Meditation</a>
+              <a href="blog/c4-daily-mindfulness.html">Daily Mindfulness</a>
+              <a href="blog/c5-self-confidence.html">Self-confidence</a>
+              <a href="blog/c6-control.html">Control</a>
+              <a href="blog/c7-self-motivation.html">Self-motivation</a>
+              <a href="blog/c8-connecting.html">Connecting</a>
+              <a href="c9-leadership.html">Leadership</a> 
+            </div>
+        </div>
+  </nav>
+<header>
+<div>
 
 
+</div>
 
-
+</header>
+<footer>
+      <strong>Follow me</strong>    
+        <div class="social-bar">
+          <a href="https://github.com/indigogeorgiana" class="fa fa-github-square" style="font-size:2.250em"></a>
+          <a href="https://plus.google.com/u/0/105371997975696575090" class="fa fa-google-plus-square" style="font-size:2.250em"></a>
+          <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160/" class="fa fa-linkedin-square" style="font-size:2.250em"></a> 
+          <a href="https://www.freecodecamp.org/indigogeorgiana" class="fa fa-free-code-camp" style="font-size:2.250em"></a>
+          <a href="https://twitter.com/GhostWriterGurl?lang=en" class="fa fa-twitter-square" style="font-size:2.250em"></a>
+          </br>
+          2018 &#169; Web Dev Wannabe
+        </div>
+  </footer> 
 </body>
 </html> 
-
 <script>
-    // Close the dropdown menu if the user clicks outside of it
-    window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName('dropdown-content')
-        let i
-        for (i = 0; i < dropdowns.length; i++) {
-          let openDropdown = dropdowns[i]
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show')
-          }
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      let dropdowns = document.getElementsByClassName('dropdown-content')
+      let i
+      for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i]
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show')
         }
       }
     }
-    </script>
+  }
+</script>
