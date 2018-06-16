@@ -6,14 +6,14 @@
 }
 
 h1  {   
-    font-family: 'Dancing Script', cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 4rem;
     color: black;
     width:  100%;
     } 
 
 h2  {
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     word-spacing: 0.1em;
     font-size: 2.5vw;
     color:black;
@@ -21,14 +21,14 @@ h2  {
 }
 
 h3  {
-    font-family: 'IBM Plex Sans Condensed', sans-serif; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     word-spacing: 0.1em;
     font-size: 1.5vw;
     color:black;
     text-align: center;
 }
 
-.webdevlogo{
+/* .webdevlogo{
     width: 30rem;
     height: auto;
     border-radius: 55%;
@@ -41,18 +41,29 @@ h3  {
     border-radius: 55%;
     z-index: 200;
 
-}
+} */
 
-#navicon{
+/* #navicon{
     width: 10rem;
     height: 2rem;
-    background: url("../images/touchme.png") no-repeat center center;
+    background: url("") no-repeat center center;
     float: right;
     z-index: 100;
+} */
+
+/* a:hover#navicon {
+	background-color: grey;
+}*/
+
+.left-nav {
+    width: 50%;
+    float: left;
+    vertical-align: middle;
+    padding: 3rem;
 }
 
-a:hover#navicon {
-	background-color: grey;
+.right-nav {
+    width: 15rem;
 }
 
 nav:hover ul {
@@ -82,25 +93,10 @@ nav li {
     margin: 0;
 }
 
-.shade {
-    color: black;
-}
-
 h1, h2, h3, h4, h5, h6 {
     text-transform: uppercase;
 }
 
-.left-nav {
-    width: 50%;
-    float: left;
-    vertical-align: middle;
-    padding: 3rem;
-}
-
-.right-nav {
-    width: 15rem;
-}
- 
 header {
     width: 100%;
 	position: fixed;
@@ -109,7 +105,7 @@ header {
     z-index: 100;
     display: inline-block;
     background-color: white; 
-}
+} */
 
 
 /********************************************************/
@@ -165,7 +161,7 @@ header {
     flex: 1 100%;
 }
    
-/****ROWS/COLUMNS CODE****/
+/* ***ROWS/COLUMNS CODE***
 .row {
     width: 100%; 
     margin-top: 1em;   
@@ -202,7 +198,7 @@ header {
 .twelve columns{
     width: 100%;
     display: center;   
-}
+} */
 /**********************************************************************/
 /*PAGE FOOTER*/
 footer {
