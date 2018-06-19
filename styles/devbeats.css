@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	background-image:url(..images/heart.svg) no-repeat;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
+h1{
+	
+	font-family: 'Hind', sans-serif;
+}
+
+.container{   
+   display: center;   
+}
+
+.cantstop {
+	background: url(../images/stop.svg) no-repeat;
+}
+
+.pushme {
+	background: url(../images/pushme.svg) no-repeat;
+}
+
+.skate {
+	background: url(../images/rollerskatejam.svg) no-repeat;	
+}
+
+
+button#playpausebtn{
+	background: url(../images/pausebtn.svg) no-repeat;
+}
+
+button#mutebtn {
+	background: url(../images/mutebtn.svg) no-repeat;	
+}
+
+body{
+  font-family: 'Nosifer', cursive;
+}
+
+h1{
+  font-family: 'Nosifer', cursive;
+  font-weight: bold;
+  font-size: 4rem;
+}
+
+
+
+
+ 

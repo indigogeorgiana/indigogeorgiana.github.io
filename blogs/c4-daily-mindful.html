@@ -9,12 +9,12 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
     <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" />
-    <title>Web Dev Music</title><div class="row">
-    </head>
+  <title>Daily Mindfulness</title>
+  </head>
     <body>
+        <h1 class="left-head">webdev wannabe</h1>
     <nav>
-        <img href="../images/webdev.jpg" type="logo" sizes="24x24">
-          <h1>webdev wannabe</h1>
+        
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Home</button>
             <div id="myDropdown" class="dropdown-content">
@@ -60,20 +60,18 @@
       </nav>
              
 <div class="row">
- 
-    <center>
-      <h2><strong>Searching inside yourself: The Unexpected Path to Achieving Success, 
-        Happiness(and World Peace)</strong>
-      </h2>
-      <h3>
-        <strong>
-          Chapter 3 - Extending the Benefits of Mindfulness beyond Sitting
-        </strong>
-      </h3>
-    </center>
-  </div>
- 
- <div class="row2">
+  <center>
+    <h2><strong>Searching inside yourself: The Unexpected Path to Achieving Success, 
+      Happiness(and World Peace)</strong>
+    </h2>
+    <h3>
+      <strong>
+        Chapter 3 - Extending the Benefits of Mindfulness beyond Sitting
+      </strong>
+    </h3>
+  </center>
+</div>
+<div class="row2">
    
       <h3>What did you learn from your mindfulness conversation?</h3>
         <p>
@@ -108,6 +106,7 @@
         Mindfulness, I declare, is useful everywhere. — <strong>Buddha</strong>
     </h3>
   </center>
+  
   <footer>
       <strong>Follow me</strong>    
         <div class="social-bar">
@@ -119,22 +118,25 @@
          </br>
          2018 &#169; Web Dev Wannabe
         </div>
-    </footer> 
-</body>
-</html> 
-
-<script>
-  // Close the dropdown menu if the user clicks outside of it
-  window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      let dropdowns = document.getElementsByClassName('dropdown-content')
-      let i
-      for (i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i]
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show')
+    </footer>
+    <script>
+      /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+      function myFunction() {
+      document.getElementById("myDropdown").classList.toggle("show");
+      }
+      // Close the dropdown menu if the user clicks outside of it
+      window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+          let dropdowns = document.getElementsByClassName('dropdown-content')
+          let i
+          for (i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i]
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show')
+            }
+          }
         }
       }
-    }
-  }
-  </script>   
+      </script>      
+</body>
+</html>

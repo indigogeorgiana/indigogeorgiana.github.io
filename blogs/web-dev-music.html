@@ -4,26 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../styles/main.css" rel="stylesheet" type="text/css"/> 
+    <link href="../styles/devbeats.css" rel="stylesheet" type="text/css"/> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
     <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" />
-    <title>Web Dev Music</title>
+    <title>WebDev Music</title>
   </head>
   <body>
-<script>
-    var audio, playbtn, seek_bar;
-    function initAudioPlayer(){
-      audio = new Audio();
-      audio.src = "../audio/cant-stop.mp3"
-      audio.loop = true;
-      audio.play();
+   <center><h1>WebDev Beats</h1></center>
+   <br>
+    <center>
+      <img src ="../images/stop.svg" width="62" id"cantstop" type="button" alt="I can't stop" onClick="cantstopPlay">
+      <img src ="../images/pushme.svg" width="62" id"Push me" type="button" alt="Push me" onClick="pushmePlay">
+      <img src ="../images/rollerskatejam.svg" width="62" id"skate" type="button" alt="Roller Skate Jam" onClick="skatePlay">
 
-    }
-    window.addEventListener("load", initAudioPlayer);
+      <br>
+      <br>
+      <img src="../images/playbtn.svg" id="playpausebtn" width="62" height="62" type="button" alt="Mute" onClick="mute">
+      <img src="../images/mutebtn.svg" id="playpausebtn" width="62" height="62" type="button" alt="Mute" onClick="mute">
+    </center>
+    <div id="waveform">
+
+
+
+    </div>
+</body>
+</html>
+<script>
+
+var audio; 
+var playbtn; 
+var mutebtn;
+var cantstop;
+var pushme;
+var skate; 
+
+window.addEventListener("load", initAudioPlayer); 
+  
+  function initAudioPlayer(){
+  "use strict";
+  audio = new Audio();
+    //Set object references
+    mutebtn = document.getElementById("mutebtn");
+  //Add Event Handling - Play/Pause/Mute	
+  mutebtn.addEventListener("click", mute);
+  
+  
+  playbtn = document.getElementById("playpausebtn");
+  playbtn.addEventListener("click", playPause);
+  
+
+	
+  cantstop = document.getElementById("cantstop")
+  cantstop.addEventListener("click", cantstopPlay);
+  
+	
+  pushme = document.getElementById("pushme");
+  pushme.addEventListener("click", pushmePlay); 
+  
+
+  skate = document.getElementById("skate");
+  skate.addEventListener("click", skatePlay);
+}
+
+//Music Icon functions
+function cantstopPlay(){
+  audio.src ="../audio/icantstop.mp3";
+  audio.loop = true;
+  audio.play();
+} 
+
+function pushmePlay(){
+  audio.src ="../audio/satisfaction.wav";	
+  audio.play();
+  audio.loop = true;
+}
+
+function skatePlay(){
+   audio.src ="../audio/rollerskatedisco.mp3";	
+   audio.play();
+   audio.loop = true;
+ }
+
+function playPause(){
+  "use strict";
+  if (audio.paused){
+    audio.play();
+    playbtn.style.background = "url(..images/pausebtn.svg) no-repeat";
+  } else{
+    audio.pause();
+    playbtn.style.background = "url(..images/playbtn.svg) no-repeat";
+  }			
+}
+  
+function mute(){
+  "use strict";
+  if(audio.muted){
+     audio.muted = false;
+     mutebtn.style.background = "url(..images/speakerbtn.svg) no-repeat";
+  }  else{
+     audio.muted = true;
+     mutebtn.style.background = "url(..images/mutebtn.svg) no-repeat";	
+  }
+}
+</script>
+
+<script>
+// Wave surfer Code
+let wavesurfer = WaveSurfer.create({
+  container: '#waveform',
+  waveColor: 'violet',
+  progressColor: 'purple'
+});
+
+wavesurfer.load('audio.wav');
 </script>
 
 
-</body>
-</html>
+
