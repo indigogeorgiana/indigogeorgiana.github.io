@@ -21,5 +21,5 @@ and team skills is what makes Dev Academy unique.
 
 Your welcome to come along with me on my journey and I look forward to some awesome learning along the way.
 
-Regards
 Indi
+
