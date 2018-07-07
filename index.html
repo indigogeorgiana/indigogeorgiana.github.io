@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/jpg" href="./images/webdev.jpg" sizes="16x16" />
+    <link rel="icon" type="image/jpg" href="images/webdev.jpg" sizes="16x16" />
     <title>Web Dev Wannabe</title>
   </head>
 <body>
@@ -65,7 +65,7 @@
   </header> 
 <footer>
   <center><strong>Follow me:</strong> 
-  <br>  </br> 
+    <br></br> 
     <div class="social-bar">
       <a href="https://github.com/indigogeorgiana">
         <i class="fa fa-github-square" style="font-size:46px"></i></a>
@@ -75,8 +75,8 @@
         <i class="fa fa-linkedin-square" style="font-size:46px"></i></a>
       <a href="https://twitter.com/GhostWriterGurl?lang=en">
         <i class="fa fa-twitter-square" style="font-size:46px"></i></a>
-      <br></br>
-     <strong>2018 &#169; Web Dev Wannabe</strong>
+    <br></br>
+    <strong>2018 &#169; Web Dev Wannabe</strong>
     </div>
   </center>
 </footer>
@@ -88,12 +88,12 @@
     // Close the dropdown menu if the user clicks outside of it
     window.onclick = function (event) {
       if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName('dropdown-content')
-        let i
+        let dropdowns = document.getElementsByClassName('dropdown-content');
+        let i;
         for (i = 0; i < dropdowns.length; i++) {
-          let openDropdown = dropdowns[i]
+          let openDropdown = dropdowns[i];
           if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show')
+            openDropdown.classList.remove('show');
           }
         }
       }

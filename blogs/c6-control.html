@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../styles/main.css" rel="stylesheet" type="text/css"/> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" />
     <title>Web Dev Music</title><div class="row">
     </head>
@@ -57,6 +57,7 @@
                   <a href="c9-leadership.html">Leadership</a> 
                 </div>
               </div>
+              <img class="head-image" src="images/drops.jpg"> 
       </nav>
              
 <div class="row">
@@ -136,33 +137,42 @@
 </center>
 <header> 
     <img class="image" src="https://stmed.net/sites/default/files/abstract-wallpapers-25162-9547401.jpg" id="nav-image" > 
-<footer>
-    <strong>Follow me</strong>    
-      <div class="social-bar">
-        <a href="https://github.com/indigogeorgiana" class="fa fa-github-square" style="font-size:2.250em"></a>
-        <a href="https://plus.google.com/u/0/105371997975696575090" class="fa fa-google-plus-square" style="font-size:2.250em"></a>
-        <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160/" class="fa fa-linkedin-square" style="font-size:2.250em"></a> 
-        <a href="https://www.freecodecamp.org/indigogeorgiana" class="fa fa-free-code-camp" style="font-size:2.250em"></a>
-        <a href="https://twitter.com/GhostWriterGurl?lang=en" class="fa fa-twitter-square" style="font-size:2.250em"></a>
-       </br>
-       2018 &#169; Web Dev Wannabe
-      </div>
-  </footer> 
-</body>
-</html> 
-
-<script>
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-  if (!event.target.matches('.dropbtn')) {
-    let dropdowns = document.getElementsByClassName('dropdown-content')
-    let i
-    for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i]
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show')
-      }
-    }
-  }
-}
-</script>  
+    <footer>
+      <center><strong>Follow me:</strong> 
+        <br></br> 
+        <div class="social-bar">
+          <a href="https://github.com/indigogeorgiana">
+            <i class="fa fa-github-square" style="font-size:46px"></i></a>
+          <a href="https://plus.google.com/u/0/105371997975696575090"> 
+            <i class="fa fa-google-plus-square" style="font-size:46px"></i></a>
+          <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160/">
+            <i class="fa fa-linkedin-square" style="font-size:46px"></i></a>
+          <a href="https://twitter.com/GhostWriterGurl?lang=en">
+            <i class="fa fa-twitter-square" style="font-size:46px"></i></a>
+        <br></br>
+        <strong>2018 &#169; Web Dev Wannabe</strong>
+        </div>
+      </center>
+    </footer>
+    <script>
+      /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+      function myFunction() {
+          document.getElementById("myDropdown").classList.toggle("show");
+            }
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            let dropdowns = document.getElementsByClassName('dropdown-content');
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+              let openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>    
+    </body>
+    </html> 
+     
