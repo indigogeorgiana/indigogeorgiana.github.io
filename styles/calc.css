@@ -1,91 +1,197 @@
  body {
     background-image: url("../images/colourful.jpg");
     background-size: cover;
-    text-align: center;
-    font-family: 'Cherry Swash', cursive;    
+    font-family: 'Righteous', cursive;   
   }
   
   h1 {
     color:black;
     font-weight:bold;
     font-size: 2.5em;
+    font-family: 'Righteous', cursive;
   }
   
-  h2 {
-    color:black;
-    font-weight:bold;  
-    font-size: 1.5em;   
+
+  
+#display {
+  margin-bottom: 10px;
+  height: 20px;
+  width: 220px;
+  border: 1px solid black;
+  border-radius:5px;
+  box-shadow: 0px 0px 1px 1px black;
+  text-align: right;
+  font: 20px bold;
+  }
+
+#calculator {
+  background-color: rgb(218, 27, 90);
+  position: relative;
+  width: 350px;
+  border: 2px solid black;
+  border-radius: 12px;
+  margin: 0px auto;
+  padding: 20px 20px 100px 20px;
+  height: 325;
+  border-radius:20px;
+}
+
+#keys {
+  width: 50px;
+  height: 35px;
+  margin: 4px;
+  box-shadow: 0px 0px 2px 1px black;
+  border-radius:2px;
+  outline: none;
+  font-family: 'Righteous', cursive;
+}
+
+#equal {
+  width: 110px;
+  height: 35px;
+  margin: 4px;
+  box-shadow: 0px 0px 2px 1px black;
+  border-radius:2px;
+  outline: none;
+
+}
+
+input[type=button] {
+  background: palevioletred;
+  width: 20%;
+  font-size: 20px;
+  font-weight: 900;
+  border-radius: 7px;
+  margin-left: 13px;
+  margin-top: 10px;
+  }
+
+input[type=button]:active {
+  background-color: #666;
+  box-shadow: 0px 5px #666;
+  transform: translateY(4px);
+  }
+
+input[type=button]:hover {
+  background-color: #666;
+  color: black;
   }
   
-  #display {
-    margin-bottom: 10px;
-    height: 20px;
-    width: 220px;
-    border: 1px solid black;
-    border-radius:5px;
-    box-shadow: 0px 0px 1px 1px black;
-    text-align: right;
-    font: 20px bold;
-    }
+input[type = text] {
+  position: relative;
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 4px 0px 12px black inset;
+  } 
+
+/***NAVIGATION***/
+.left-nav {
+  width: 65%;
+  float: left;
+  vertical-align: middle;
+  padding-left: 2.3rem;
+ }
+
+.right-nav {
+  width: 35%;
+  height: 0.2rem;
+  float: right;
+  vertical-align: bottom;
+  padding-top: 2rem;
+  border-top: 2rem;
+}
   
-  #calculator {
-    background-color: palevioletred;
-    position: relative;
-    width: 350px;
-    border: 2px solid black;
-    border-radius: 12px;
-    margin: 0px auto;
-    padding: 20px 20px 100px 20px;
-    height: 325;
-    border-radius:20px;
-  }
-  
-  #keys {
-    width: 50px;
-    height: 35px;
-    margin: 4px;
-    box-shadow: 0px 0px 2px 1px black;
-    border-radius:2px;
-    outline: none;
-  }
-  
-  #equal {
-    width: 110px;
-    height: 35px;
-    margin: 4px;
-    box-shadow: 0px 0px 2px 1px black;
-    border-radius:2px;
-    outline: none;
-  
-  }
-  
-  input[type=button] {
-    background: palevioletred;
-    width: 20%;
-    font-size: 20px;
-    font-weight: 900;
-    border-radius: 7px;
-    margin-left: 13px;
-    margin-top: 10px;
-    }
-  
-  input[type=button]:active {
-    background-color: #666;
-    box-shadow: 0px 5px #666;
-    transform: translateY(4px);
-    }
-  
-  input[type=button]:hover {
-    background-color: #666;
-    color: black;
-    }
-    
-  input[type = text] {
-    position: relative;
-    display: block;
-    width: 90%;
-    margin: 5px auto;
-    font-size: 20px;
-    padding: 10px;
-    box-shadow: 4px 0px 12px black inset;
-    } 
+/****PAGE FOOTER****/
+footer {
+  position: bottom;
+  font-weight: bold;
+  text-align: center;
+}
+
+.social-bar {
+width: 100%;
+  color: black;
+  align-content: center;
+  display:center;
+  border: black;
+}
+
+.social-bar a {    
+  display: inline-flex; 
+  text-align: center; 
+  padding: 0.3em 0.3em 0.3em 0.3em; 
+  transition: all 0.3s ease; 
+  color:black;
+  font-size: 3em; 
+}
+
+.social-bar a:hover {
+  background-color: rgb(218, 27, 90);
+  color: black;
+}
+
+.active {
+  background-color:  rgb(218, 27, 90);
+  color: black; 
+}
+
+
+/****DROP DOWN BUTTONS****/
+.dropbtn {
+  background-color:  
+  rgb(218, 27, 90);;
+  color: black;
+  padding: 18px;
+  font-size: 20px;
+  font-family: 'Righteous', cursive;
+  border: none; 
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color:  palevioletred;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  right: 0;
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem;
+  border-right: 3rem;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 80px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+* {
+  box-sizing: border-box;
+  border: 0.5px solid transparent;
+}

@@ -8,7 +8,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" />
+    <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" >
     <title>Blogs Template</title><div class="row">
     </head>
 <body>
@@ -20,14 +20,14 @@
             <div id="myDropdown" class="dropdown-content">
               <a href="../blogs/about-me.html">About the Developer</a>
               <a href="../blogs/play-with-javascript.html">WebDev Music</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a> 
-              <a href="">Calculator</a>
+              <a href="">Group Project 1</a>
+              <a href="">Group Project 2</a>
+              <a href="">Group Project 3</a>
+              <a href="">Group Project 4</a>
+              <a href="">Group Project 5</a>
+              <a href="">Group Project 6</a>
+              <a href="">Group Project 7</a> 
+              <a href="../blogs/calculator.html">Calculator</a>
             </div>
           </div>
           <div class="dropdown">
@@ -54,43 +54,44 @@
                 <a href="../blogs/c6-control.html">Control</a>
                 <a href="../blogs/c7-self-motivation.html">Self-motivation</a>
                 <a href="../blogs/c8-connecting.html">Connecting</a>
-                <a href="../blogss/c9-leadership.html">Leadership</a> 
+                <a href="../blogs/c9-leadership.html">Leadership</a> 
               </div>
             </div>
-
+            <img class="head-image" src="../images/drops.jpg">  
       </nav>
     </div>
-      <header> 
-       
-      </header>
-      <footer>
-        <strong>Follow me</strong> 
-          <br></br>   
-          <div class="social-bar">
-            <a href="https://github.com/indigogeorgiana" class="fa fa-github-square" style="font-size:2.250em"></a>
-            <a href="https://plus.google.com/u/0/105371997975696575090" class="fa fa-google-plus-square" style="font-size:2.250em"></a>
-            <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160/" class="fa fa-linkedin-square" style="font-size:2.250em"></a> 
-            <a href="https://www.freecodecamp.org/indigogeorgiana" class="fa fa-free-code-camp" style="font-size:2.250em"></a>
-            <a href="https://twitter.com/GhostWriterGurl?lang=en" class="fa fa-twitter-square" style="font-size:2.250em"></a>
-            <br></br>
-            2018 &#169; Web Dev Wannabe
-          </div>
-      </footer> 
-  </body>
-  </html> 
+  <header> 
   
+  </header>
+  <footer>
+    <center><strong>Follow me:</strong></center> 
+      <br></br>   
+        <div class="social-bar">
+          <a href="https://github.com/indigogeorgiana" class="fa fa-github-square" style="font-size:46px"></a>
+          <a href="https://plus.google.com/u/0/105371997975696575090" class="fa fa-google-plus-square" style="font-size:46px"></a>
+          <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160/" class="fa fa-linkedin-square" style="font-size:46px"></a> 
+          <a href="https://www.freecodecamp.org/indigogeorgiana" class="fa fa-free-code-camp" style="font-size:46px"></a>
+          <a href="https://twitter.com/GhostWriterGurl?lang=en" class="fa fa-twitter-square" style="font-size:46px"></a>
+          <br></br>
+          2018 &#169; Web Dev Wannabe
+        </div>
+    </footer> 
   <script>
-      // Close the dropdown menu if the user clicks outside of it
-      window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-          let dropdowns = document.getElementsByClassName('dropdown-content')
-          let i
-          for (i = 0; i < dropdowns.length; i++) {
-            let openDropdown = dropdowns[i]
-            if (openDropdown.classList.contains('show')) {
-              openDropdown.classList.remove('show')
-            }
-          }
+    function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+      let dropdowns = document.getElementsByClassName('dropdown-content')
+      let i
+      for (i = 0; i < dropdowns.length; i++) {
+        let openDropdown = dropdowns[i]
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show')
         }
       }
-      </script>             
+    }
+  }
+</script> 
+</body>
+</html>             
