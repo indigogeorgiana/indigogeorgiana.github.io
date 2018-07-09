@@ -21,14 +21,13 @@
             <div id="myDropdown" class="dropdown-content">
               <a href="../blogs/about-me.html">About the Developer</a>
               <a href="../blogs/play-with-javascript.html">WebDev Music</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a>
-              <a href="">Group Project</a> 
-              <a href="">Calculator</a>
+              <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
+              <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
+              <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
+              <a href="https://github.com/indigogeorgiana/dailyMe">Group Project 4</a>
+              <a href="https://github.com/indigogeorgiana/GarageSale">Group Project 5</a>
+              <a href="https://github.com/indigogeorgiana/thefullstack">Solo Project</a> 
+              <a href="../blogs/calculator.html">Calculator</a>
             </div>
           </div>
           <div class="dropdown">
@@ -205,8 +204,10 @@
               <i class="fa fa-github-square" style="font-size:46px"></i></a>
             <a href="https://plus.google.com/u/0/105371997975696575090"> 
               <i class="fa fa-google-plus-square" style="font-size:46px"></i></a>
-            <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160/">
+            <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160">
               <i class="fa fa-linkedin-square" style="font-size:46px"></i></a>
+            <a href="https://www.freecodecamp.org/indigogeorgiana">
+              <i class="fa fa-free-code-camp" style="font-size:46px"></i></a>  
             <a href="https://twitter.com/GhostWriterGurl?lang=en">
               <i class="fa fa-twitter-square" style="font-size:46px"></i></a>
           <br></br>
@@ -215,11 +216,10 @@
         </center>
       </footer>
       <script>
-        /* When the user clicks on the button, toggle between hiding and showing the dropdown content */
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
+      function myHome() {
+            document.getElementById("dropdown").classList.toggle("show");
               }
-          // Close the dropdown menu if the user clicks outside of it
+        
           window.onclick = function (event) {
             if (!event.target.matches('.dropbtn')) {
               let dropdowns = document.getElementsByClassName('dropdown-content');
@@ -232,7 +232,40 @@
               }
             }
           }
-        </script>    
+          function myTechblog() {
+            document.getElementById("dropdown2").classList.toggle("show");
+              }
+       
+          window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+              let dropdowns = document.getElementsByClassName('dropdown-content');
+              let i;
+              for (i = 0; i < dropdowns.length; i++) {
+                let openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                  openDropdown.classList.remove('show');
+                }
+              }
+            }
+          }
+       
+         function myMindful() {
+          document.getElementById("dropdown3").classList.toggle("show");
+            }
+       
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            let dropdowns = document.getElementsByClassName('dropdown-content');
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+              let openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+      </script>    
       </body>
       </html> 
       

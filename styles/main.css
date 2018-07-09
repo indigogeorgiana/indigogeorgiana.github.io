@@ -134,6 +134,14 @@ footer {
     border-right: 3rem;
 }
 
+.dropdown1 {
+    right: 0;
+    position: relative;
+    display: inline-block;
+    padding: 0.8rem;
+    border-right: 3rem;
+}
+
 .dropdown2 {
     right: 0;
     position: relative;

@@ -16,23 +16,22 @@
     <nav>
       <div class="right-nav">  
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Home</button>
-            <div id="myDropdown" class="dropdown-content">
+          <button onclick="myHome()" class="dropbtn">Home</button>
+            <div id="dropdown1" class="dropdown-content">
               <a href="../blogs/about-me.html">About the Developer</a>
               <a href="../blogs/play-with-javascript.html">WebDev Music</a>
-              <a href="">Group Project 1</a>
-              <a href="">Group Project 2</a>
-              <a href="">Group Project 3</a>
-              <a href="">Group Project 4</a>
-              <a href="">Group Project 5</a>
-              <a href="">Group Project 6</a>
-              <a href="">Group Project 7</a> 
+              <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
+              <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
+              <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
+              <a href="https://github.com/indigogeorgiana/dailyMe">Group Project 4</a>
+              <a href="https://github.com/indigogeorgiana/GarageSale">Group Project 5</a>
+              <a href="https://github.com/indigogeorgiana/thefullstack">Solo Project</a> 
               <a href="../blogs/calculator.html">Calculator</a>
             </div>
           </div>
           <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Techblogs</button>
-              <div id="myDropdown" class="dropdown-content">
+            <button onclick="myTechblog()" class="dropbtn">Techblogs</button>
+              <div id="dropdown2" class="dropdown-content">
                 <a href="../blogs/c1-time-and-habits-blog.html">Time & Habits</a>
                 <a href="../blogs/udacity-blog-part1.html">Udacity Part 1</a> 
                 <a href="../blogs/udacity-blog-part-2.html">Udacity Part 2</a> 
@@ -44,8 +43,8 @@
               </div>
           </div>
           <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Mindful</button>
-              <div id="myDropdown" class="dropdown-content">
+            <button onclick="myMindful()" class="dropbtn">Mindful</button>
+              <div id="dropdown3" class="dropdown-content">
                 <a href="../blogs/reflection-blog.html">Reflections</a> 
                 <a href="../blogs/emotional-intelligence-blog.html">Emotional Intel</a>
                 <a href="../blogs/c3-meditation-process.html">Meditation</a>
@@ -76,22 +75,58 @@
           2018 &#169; Web Dev Wannabe
         </div>
     </footer> 
-  <script>
-    function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    }
-    window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      let dropdowns = document.getElementsByClassName('dropdown-content')
-      let i
-      for (i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i]
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show')
+    <script>
+ 
+      function myHome() {
+          document.getElementById("homeDropdown").classList.toggle("show");
+            }
+      
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            let dropdowns = document.getElementsByClassName('dropdown-content');
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+              let openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+       
+        function myTechblog() {
+          document.getElementById("techDropdown").classList.toggle("show");
+            }
+     
+        window.onclick = function (event) {
+          if (!event.target.matches('.dropbtn')) {
+            let dropdowns = document.getElementsByClassName('dropdown-content');
+            let i;
+            for (i = 0; i < dropdowns.length; i++) {
+              let openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
+     
+       function myMindful() {
+        document.getElementById("mindfulDropdown").classList.toggle("show");
+          }
+     
+      window.onclick = function (event) {
+        if (!event.target.matches('.dropbtn')) {
+          let dropdowns = document.getElementsByClassName('dropdown-content');
+          let i;
+          for (i = 0; i < dropdowns.length; i++) {
+            let openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
         }
       }
-    }
-  }
-</script> 
+    </script>
 </body>
 </html>             

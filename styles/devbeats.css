@@ -1,7 +1,6 @@
-@charset "utf-8";
-/* CSS Document */
 body{
 	background-image:url(..images/heart.svg) no-repeat;
+
 }
 
 button {
@@ -12,7 +11,10 @@ button {
 
 h1{
 	
-	font-family: 'Hind', sans-serif;
+	font-family: 'Nosifer', cursive;
+	font-weight: bold;
+	font-size: 60ems;
+
 }
 
 .container{   
@@ -40,15 +42,9 @@ button#mutebtn {
 	background: url(../images/mutebtn.svg) no-repeat;	
 }
 
-body{
-  font-family: 'Nosifer', cursive;
-}
 
-h1{
-  font-family: 'Nosifer', cursive;
-  font-weight: bold;
-  font-size: 4rem;
-}
+
+
 
 
 
