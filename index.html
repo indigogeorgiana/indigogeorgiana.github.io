@@ -16,8 +16,8 @@
     <h1 class="nav" id="left-nav">Web Dev Wannabe</h1>  
       <div class="right-nav">
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Home</button>
-            <div id="myDropdown" class="dropdown-content">
+          <button onclick="myHome()" class="dropbtn">Home</button>
+            <div id="dropdown" class="dropdown-content">
               <a href="blogs/about-me.html">About the Developer</a>
               <a href="blogs/play-with-javascript.html">WebDev Music</a>
               <a href="">Group Project</a>
@@ -31,8 +31,8 @@
             </div>
         </div>
         <div class="dropdown">
-          <button onclick="myFunction()" class="dropbtn">Techblog</button>
-            <div id="myDropdown" class="dropdown-content">
+          <button onclick="myTechblog()" class="dropbtn">Techblog</button>
+            <div id="dropdown2" class="dropdown-content">
               <a href="blogs/c1-time-and-habits-blog.html">Time & Habits</a>
               <a href="blogs/udacity-blog-part1.html">Udacity Part 1</a> 
               <a href="blogs/udacity-blog-part-2.html">Udacity Part 2</a> 
@@ -44,8 +44,8 @@
             </div>
           </div>
           <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Mindfulness</button>
-              <div id="myDropdown" class="dropdown-content">
+            <button onclick="myMindful()" class="dropbtn">Mindfulness</button>
+              <div id="dropdown3" class="dropdown-content">
                 <a href="blogs/reflection-blog.html">Reflections</a> 
                 <a href="blogs/emotional-intelligence-blog.html">Emotional Intel</a>
                 <a href="blogs/c3-meditation-process.html">Meditation</a>
@@ -57,7 +57,7 @@
                 <a href="blogs/c9-leadership.html">Leadership</a> 
               </div>
           </div> 
-        <img class="head-image" src="images/drops.jpg">  
+        <img class="head-image" src="images/tauranga.jpg">  
       </div>       
     </nav>
   <header>
@@ -71,7 +71,7 @@
         <i class="fa fa-github-square" style="font-size:46px"></i></a>
       <a href="https://plus.google.com/u/0/105371997975696575090"> 
         <i class="fa fa-google-plus-square" style="font-size:46px"></i></a>
-      <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160/">
+      <a href="https://www.linkedin.com/in/indigo-phillips-b853ab160">
         <i class="fa fa-linkedin-square" style="font-size:46px"></i></a>
       <a href="https://www.freecodecamp.org/indigogeorgiana">
         <i class="fa fa-free-code-camp" style="font-size:46px"></i></a>  
@@ -83,17 +83,51 @@
   </center>
 </footer>
 <script>
-  function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
-    }
+function myHome() {
+      document.getElementById("dropdown").classList.toggle("show");
+        }
+  
     window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        let dropdowns = document.getElementsByClassName('dropdown-content');
+        let i;
+        for (i = 0; i < dropdowns.length; i++) {
+          let openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+    function myTechblog() {
+      document.getElementById("dropdown2").classList.toggle("show");
+        }
+ 
+    window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+        let dropdowns = document.getElementsByClassName('dropdown-content');
+        let i;
+        for (i = 0; i < dropdowns.length; i++) {
+          let openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+          }
+        }
+      }
+    }
+ 
+   function myMindful() {
+    document.getElementById("dropdown3").classList.toggle("show");
+      }
+ 
+  window.onclick = function (event) {
     if (!event.target.matches('.dropbtn')) {
       let dropdowns = document.getElementsByClassName('dropdown-content');
       let i;
       for (i = 0; i < dropdowns.length; i++) {
         let openDropdown = dropdowns[i];
         if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+          openDropdown.classList.remove('show');
         }
       }
     }
