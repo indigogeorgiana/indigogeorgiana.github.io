@@ -14,14 +14,16 @@
   </head>
   <body>
    <center><h1>Web Dev Beats</h1></center>
+  
    <br>
     <center>
-      <img src ="../images/stop.svg" width="62" id"cantstop" type="button" alt="I can't stop" onClick="cantstopPlay">
-      <img src ="../images/pushme.svg" width="62" id"Push me" type="button" alt="Push me" onClick="pushmePlay">
-      <img src ="../images/rollerskatejam.svg" width="62" id"skate" type="button" alt="Roller Skate Jam" onClick="skatePlay">
+      <img src="../images/headphones.svg" id="headphones" class="left-head" width="182" onClick="">
+      <img src ="../images/stop.svg" width="182" id"cantstop" type="button" alt="I can't stop" onClick="cantstopPlay">
+      <img src ="../images/pushme.svg" width="182" id"Push me" type="button" alt="Push me" onClick="pushmePlay">
+      <img src ="../images/rollerskatejam.svg" width="182" id"skate" type="button" alt="Roller Skate Jam" onClick="skatePlay">
 
-      <br>
-      <br>
+      <br></br>
+      <br></br>
       <img src="../images/playbtn.svg" id="playpausebtn" width="62" height="62" type="button" alt="Mute" onClick="mute">
       <img src="../images/mutebtn.svg" id="playpausebtn" width="62" height="62" type="button" alt="Mute" onClick="mute">
     </center>
@@ -87,10 +89,10 @@ function playPause(){
   "use strict";
   if (audio.paused){
     audio.play();
-    playbtn.style.background = "url(..images/pausebtn.svg) no-repeat";
+    playbtn.style.background = "url(..images/pause.png) no-repeat";
   } else{
     audio.pause();
-    playbtn.style.background = "url(..images/playbtn.svg) no-repeat";
+    playbtn.style.background = "url(..images/play.png) no-repeat";
   }			
 }
   
@@ -117,8 +119,11 @@ let wavesurfer = WaveSurfer.create({
 wavesurfer.load('audio.wav');
 </script>
 <footer>
-  <center><strong>Follow me:</strong> 
+    <br></br>
     <br></br> 
+    <br></br>  
+  <center><strong><h2>FOLLOW ME</h2></strong> 
+     <br></br> 
     <div class="social-bar">
       <a href="https://github.com/indigogeorgiana">
         <i class="fa fa-github-square" style="font-size:46px"></i></a>
@@ -131,60 +136,9 @@ wavesurfer.load('audio.wav');
       <a href="https://twitter.com/GhostWriterGurl?lang=en">
         <i class="fa fa-twitter-square" style="font-size:46px"></i></a>
     <br></br>
-    <strong>2018 &#169; Web Dev Wannabe</strong>
+    <strong><h3>2018 &#169; web dev wannabe</h3></strong>
     </div>
   </center>
-</footer>
-<script>
-function myHome() {
-      document.getElementById("dropdown").classList.toggle("show");
-        }
-  
-    window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName('dropdown-content');
-        let i;
-        for (i = 0; i < dropdowns.length; i++) {
-          let openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
-    function myTechblog() {
-      document.getElementById("dropdown2").classList.toggle("show");
-        }
- 
-    window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName('dropdown-content');
-        let i;
-        for (i = 0; i < dropdowns.length; i++) {
-          let openDropdown = dropdowns[i];
-          if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-          }
-        }
-      }
-    }
- 
-   function myMindful() {
-    document.getElementById("dropdown3").classList.toggle("show");
-      }
- 
-  window.onclick = function (event) {
-    if (!event.target.matches('.dropbtn')) {
-      let dropdowns = document.getElementsByClassName('dropdown-content');
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-</script>    
+</footer> 
 </body>
 </html> 
