@@ -8,14 +8,15 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="image/jpg" href="images/webdev.jpg" sizes="16x16" />
+    <link rel="icon" type="image/jpg" href="images/webdev.jpg" sizes="16x16"/>
     <title>Web Dev Wannabe</title>
   </head>
 <body>
-  <nav>  
-    <h1 class="nav" id="left-nav">web dev wannabe</h1>  
-      <div class="right-nav">
-        <div class="dropdown">
+  <div class="container">
+    <h1 id="left-head">web dev wannabe</h1>  
+      <nav> 
+        <div class="right-nav"> 
+        <div class="dropdown" id="container">
           <button onclick="myAbout()" class="dropbtn">About</button>
             <div id="dropdown1" class="dropdown-content">
               <a href="blogs/about-me.html">About the Developer</a>
@@ -28,8 +29,8 @@
               <a href="https://github.com/indigogeorgiana/thefullstack">Solo Project</a> 
               <a href="blogs/calculator.html">Calculator</a>
             </div>
-        </div>
-        <div class="dropdown">
+          </div>
+          <div class="dropdown" id="container">
           <button onclick="myTechblog()" class="dropbtn">Techblog</button>
             <div id="dropdown2" class="dropdown-content">
               <a href="blogs/c1-time-and-habits-blog.html">Time & Habits</a>
@@ -42,7 +43,7 @@
               <a href="blogs/t6-scope.html">Scope</a> 
             </div>
           </div>
-          <div class="dropdown">
+           <div class="dropdown" id="container">
             <button onclick="myMindful()" class="dropbtn">Mindfulness</button>
               <div id="dropdown3" class="dropdown-content">
                 <a href="blogs/reflection-blog.html">Reflections</a> 
@@ -56,13 +57,14 @@
                 <a href="blogs/c9-leadership.html">Leadership</a> 
               </div>
           </div> 
-        <img class="head-image" src="images/drops.jpg">  
-      </div>       
+        </div>
+      <img class="head-image" src="images/drops.jpg">            
     </nav>
   <header>
         
   </header> 
 <footer>
+  <div class="container">
   <center><strong>Follow me:</strong> 
     <br></br> 
     <div class="social-bar">
@@ -78,6 +80,7 @@
         <i class="fa fa-twitter-square" style="font-size:46px"></i></a>
     <br></br>
     <strong>2018 &#169; Web Dev Wannabe</strong>
+    </div>
     </div>
   </center>
 </footer>

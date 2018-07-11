@@ -11,15 +11,14 @@
     <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" />
     <title>Udacity Part 1</title>
     </head>
-    <h1 class="left-head">webdev wannabe</h1>
+
     <nav>
-      
-          <h1>webdev wannabe</h1>
+      <h1 class="left-nav">webdev wannabe</h1>
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Home</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="../blog/about-me.html">About the Developer</a>
-              <a href="../blog/play-with-javascript.html">WebDev Music</a>
+            <button onclick="myHome()" class="dropbtn">Home</button>
+            <div id="dropdown1" class="dropdown-content">
+              <a href="../blogs/about-me.html">About the Developer</a>
+              <a href="../blogs/play-with-javascript.html">WebDev Music</a>
               <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
               <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
               <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
@@ -30,8 +29,8 @@
             </div>
           </div>
           <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Tech../blog</button>
-              <div id="myDropdown" class="dropdown-content">
+              <button onclick="myTechblog()" class="dropbtn">Tech Blogs</button>
+              <div id="dropdown2" class="dropdown-content">
                 <a href="../blogs/c1-time-and-habits-../blog.html"class="shade">Time & Habits</a>
                 <a href="../blogs/udacity-../blog-part1.html">Udacity Part 1</a> 
                 <a href="../blogs/udacity-../blog-part-2.html">Udacity Part 2</a> 
@@ -43,8 +42,8 @@
               </div>
             </div>
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Mindful</button>
-                <div id="myDropdown" class="dropdown-content">
+                <button onclick="myMindful()" class="dropbtn">Mindful</button>
+                <div id="dropdown3" class="dropdown-content">
                   <a href="../blogs/reflection-../blog.html">Reflections</a> 
                   <a href="../blogs/emotional-intelligence-../blog.html">Emotional Intel</a>
                   <a href="../blogs/c3-meditation-process.html">Meditation</a>
@@ -56,7 +55,7 @@
                   <a href="../blogs/c9-leadership.html">Leadership</a> 
                 </div>
               </div>
-              <img class="head-image" src="images/drops.jpg"> 
+              <img class="head-image" src="../images/drops.jpg"> 
       </nav>
       <div class="twelve columns"> 
         <center>
@@ -197,7 +196,7 @@
       </footer>
       <script>
       function myHome() {
-            document.getElementById("dropdown").classList.toggle("show");
+            document.getElementById("dropdown1").classList.toggle("show");
               }
         
           window.onclick = function (event) {

@@ -67,6 +67,49 @@ button#mutebtn {
 	background: url(../images/mutebtn.svg) no-repeat;	
 }
 
+/* Larger than desktop */
+@media only screen and (min-width: 1000px) {
+	.container {
+			position: relative;
+			width: 1000px;
+			margin: auto;
+	}
+
+	#main {
+			width: 100%;
+	}
+
+	#blog-title {
+			width: 70%;
+	}
+
+	.blog-content {
+			width: 70%;
+	}
+}
+
+/* Larger than Desktop HD */
+@media only screen and (min-width: 1200px) {
+	.container {
+			position: relative;
+			width: 1200px;
+			margin: auto;
+	}
+
+	#main {
+			width: 100%;
+	}
+
+	#blog-title {
+			width: 70%;
+	}
+
+	.blog-content {
+			width: 70%;
+	}
+}
+
+
 
 
 
