@@ -12,15 +12,14 @@
     <title>Design to Web</title>
     </head>
   <body>
-      <h1 class="left-head">webdev wannabe</h1>
-      <nav>
-          <img href="../images/webdev.jpg" type="logo" sizes="24x24">
-            <h1>webdev wannabe</h1>
-          <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Home</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="../blog/about-me.html">About the Developer</a>
-                <a href="../blog/play-with-javascript.html">WebDev Music</a>
+      <nav> 
+          <div class="container">
+            <h1 id="left-nav">web dev wannabe</h1>     <div class="right-nav"> 
+                <div class="dropdown" id="container">
+              <button onclick="myHome()" class="dropbtn">Home</button>
+              <div id="dropdown1" class="dropdown-content">
+                <a href="../blogs/about-me.html">About the Developer</a>
+                <a href="../blogs/play-with-javascript.html">WebDev Music</a>
                 <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
                 <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
                 <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
@@ -30,55 +29,49 @@
                 <a href="../blogs/calculator.html">Calculator</a>
               </div>
             </div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Tech../blog</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="../blog/c1-time-and-habits-../blog.html"class="shade">Time & Habits</a>
-                  <a href="../blog/udacity-../blog-part1.html">Udacity Part 1</a> 
-                  <a href="../blog/udacity-../blog-part-2.html">Udacity Part 2</a> 
-                  <a href="../blog/t3-design-to-web-../blog.html">Design to Web</a> 
-                  <a href="../blog/t4-javascript-basics.html">JS Basics</a>
-                  <a href="../blog/t5-problem-solving.html">Problem Solving</a>  
-                  <a href="../blog/t6-js-language.html">JavaScript</a> 
-                  <a href="../blog/t6-scope.html">Scope</a>  
+            <div class="dropdown" id="container">
+                <button onclick="myTechblog()" class="dropbtn">Tech Blog</button>
+                <div id="dropdown2" class="dropdown-content">
+                  <a href="../blogs/c1-time-and-habits.html">Time & Habits</a>
+                  <a href="../blogs/udacity-blog-part1.html">Udacity Part 1</a> 
+                  <a href="../blogs/udacity-blog-part-2.html">Udacity Part 2</a> 
+                  <a href="../blogs/t3-design-to-web.html">Design to Web</a> 
+                  <a href="../blogs/t4-javascript-basics.html">JS Basics</a>
+                  <a href="../blogs/t5-problem-solving.html">Problem Solving</a>  
+                  <a href="../blogs/t6-js-language.html">JavaScript</a> 
+                  <a href="../blogs/t6-scope.html">Scope</a>  
                 </div>
               </div>
-              <div class="dropdown">
-                  <button onclick="myFunction()" class="dropbtn">Mindful</button>
-                  <div id="myDropdown" class="dropdown-content">
-                    <a href="../blog/reflection-../blog.html">Reflections</a> 
-                    <a href="../blog/emotional-intelligence-../blog.html">Emotional Intel</a>
-                    <a href="../blog/c3-meditation-process.html">Meditation</a>
-                    <a href="../blog/c4-daily-mindfulness.html">Daily Mindfulness</a>
-                    <a href="../blog/c5-self-confidence.html">Self-confidence</a>
-                    <a href="../blog/c6-control.html">Control</a>
-                    <a href="../blog/c7-self-motivation.html">Self-motivation</a>
-                    <a href="../blog/c8-connecting.html">Connecting</a>
-                    <a href="c9-leadership.html">Leadership</a> 
+              <div class="dropdown" id="container">
+                  <button onclick="myMindful()" class="dropbtn">Mindful</button>
+                  <div id="dropdown3" class="dropdown-content">
+                    <a href="../blogs/reflection.html">Reflections</a> 
+                    <a href="../blogs/emotional-intell.html">Emotional Intel</a>
+                    <a href="../blogs/c3-meditation-process.html">Meditation</a>
+                    <a href="../blogs/c4-daily-mindfulness.html">Daily Mindfulness</a>
+                    <a href="../blogs/c5-self-confidence.html">Self-confidence</a>
+                    <a href="../blogs/c6-control.html">Control</a>
+                    <a href="../blogs/c7-self-motivation.html">Self-motivation</a>
+                    <a href="../blogs/c8-connecting.html">Connecting</a>
+                    <a href="../blogs/c9-leadership.html">Leadership</a> 
                   </div>
                 </div>
-                <img class="head-image" src="images/drops.jpg"> 
+                </div>
+                </div>
+                <img class="head-image" src="../images/drops.jpg"> 
         </nav>
-        <div class="row">
-          <div class="twelve columns">
+      <main>
             <center>
-            <h2><strong>Technical ../Blog: Design to the Web</strong></h2>
+            <h2><strong>Technical Blog: Design to the Web</strong></h2>
             </center>
-          </div>
-        </div>
-      <div class= "container">
-        <div class="row2">
-          <div class="twelve columns">
+   
             <h3><strong> What a responsive site?</strong></h3>
               <p>
                 Simply put, a responsive site is an internet website that is coded and designed to be displayed on any 
                 size screen. Because of a technology boost resulting in the increased sale of smart phones more people 
                 are using these devices to access the internet. Thus demanding the greater need for responsive websites. 
               </p> 
-          </div>
-        </div>
-      <div class="row2">
-        <div class="twelve columns">
+     
           <h3><strong>Why responsiveness important?</strong></h3>
             <p>
               Responsive websites are far more flexible and can respond to resizing correctly. Old have some flaws in that
@@ -86,10 +79,7 @@
               the screen in unhappy visitors. Also for web developers and designers responsiveness has removed the need 
               for creating two separate websites, and more thought is put into the layout against all platforms.
             </p>
-            </div>
-          </div>
-        <div class="row2">
-          <div class="twelve columns">
+
           <h3><strong>What a wireframe is and why we use it?</strong></h3>
             <p>
               A wireframe is a rough draught or basic layout plan of a webpage, or what it might look like. Kind of like 
@@ -99,53 +89,16 @@
               a working system, thereby reducing overall development time. An example would be a team using a web framework 
               to develop a large website can focus more on writing code rather than the mechanics.
             </p>
-          </div>
-        </div>
-      </div>
-    <br>
-  <br>
-<br>
-  <br>
-    <br>
-      <br>
-        <br>
-<div class= "container">
-  <div class="row">
-    <div class="twelve columns">
-      <img src="../images/wireframe-../blog-page-desktop.jpg" alt="Wireframe Desktop ../Blog Page">
-    </div>          
-  </div>
-<div class="row">
-  <div class="twelve columns">
+   
+      <img src="../images/wireframe-blog-page-desktop.jpg" alt="Wireframe Desktop Blog Page">
+
     <img src="../images/wireframe-index-page-desktop.jpg" alt="Wireframe Desktop Index Page">
-  </div>
-</div>
-</div>
-<div class= "container">
-  <div class="row">
-    <div class="twelve columns">
+
       <center>
-        <img src="../images/wireframe-../blog-page-mobile.jpg" alt="Wireframe Mobile ../Blog Page">
+        <img src="../images/wireframe-blog-page-mobile.jpg" alt="Wireframe Mobile Blog Page">
         <img src="../images/wireframe-index-page-mobile.jpg" alt="Wireframe Mobile Index Page">
       </center>  
-    </div>
-  </div>
-</div>
-<br>
-  <br>
-    <br>
-      <br>
-    <br>
-  <br>
-<br> 
-<br>
-  <br>
-    <br>
-  <br> 
-<br>   
-<div class= "container">
-  <div class="row2">
-    <div class="twelve columns">   
+  
       <h3><strong>What mobile first design and Why is mobile first important?</strong></h3>
         <p>
             Mobile first design is the process of planning from the smallest screen first, then later working our way 
@@ -153,10 +106,7 @@
             most difficult to design for. From a usability perspective planning for a smaller screen first is the 
             most logical way forward when planning all content to display on screen.
         </p>
-    </div>
-  </div>
-<div class="row2">
-  <div class="twelve columns">       
+
     <h3><strong>Why I found wireframes difficult to implement?</strong></h3>
       <p>
           In the first build of my website I had not planned for a boxifying method. Although 
@@ -167,11 +117,7 @@
           its parameters I will have to complete it in my own spare time. I like to know how things really work and 
           I felt the ten hours spent was not enough time for me to get a full grasp.            
       </p>
-  </div>
-</div> 
-<div class="container">
-  <div class="row2">
-    <div class="twelve columns">       
+    
       <h3><strong>What are frameworks? What are their pros and cons?</strong></h3>
         <p>
           A framework is a basic structure which provides developers generic like code functionality. 
@@ -187,12 +133,10 @@
           general, is not suppos to be modified. In my understanding users can extend the frameworks, but they 
           really shouldn't modify its code.   
       </p>
-  </div>
-</div>
-<header> 
-    <img class="image" src="https://stmed.net/sites/default/files/abstract-wallpapers-25162-9547401.jpg" id="nav-image" >  
+    </main>
     <footer>
-      <center><strong>Follow me:</strong> 
+      <div class="container">
+      <center><strong>FOLLOW ME</strong> 
         <br></br> 
         <div class="social-bar">
           <a href="https://github.com/indigogeorgiana">
@@ -208,11 +152,12 @@
         <br></br>
         <strong>2018 &#169; Web Dev Wannabe</strong>
         </div>
+      </div>
       </center>
     </footer>
     <script>
     function myHome() {
-          document.getElementById("dropdown").classList.toggle("show");
+          document.getElementById("dropdown1").classList.toggle("show");
             }
       
         window.onclick = function (event) {

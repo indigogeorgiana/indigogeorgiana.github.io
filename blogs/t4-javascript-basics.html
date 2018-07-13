@@ -30,12 +30,12 @@
             </div>
           </div>
           <div class="dropdown" id="container">
-              <button onclick="myHome" class="dropbtn">Tech Blogs</button>
+              <button onclick="myTechblog" class="dropbtn">Tech Blogs</button>
               <div id="dropdown2" class="dropdown-content">
-                <a href="../blogs/c1-time-and-habits-../blogs.html"class="shade">Time & Habits</a>
-                <a href="../blogs/udacity-../blogs-part1.html">Udacity Part 1</a> 
-                <a href="../blogs/udacity-../blogs-part-2.html">Udacity Part 2</a> 
-                <a href="../blogs/t3-design-to-web-../blogs.html">Design to Web</a> 
+                <a href="../blogs/c1-time-and-habits-blog.html"class="shade">Time & Habits</a>
+                <a href="../blogs/udacity-blog-part1.html">Udacity Part 1</a> 
+                <a href="../blogs/udacity-blog-part-2.html">Udacity Part 2</a> 
+                <a href="../blogs/t3-design-to-web.html">Design to Web</a> 
                 <a href="../blogs/t4-javascript-basics.html">JS Basics</a>
                 <a href="../blogs/t5-problem-solving.html">Problem Solving</a>  
                 <a href="../blogs/t6-js-language.html">JavaScript</a> 
@@ -43,9 +43,9 @@
               </div>
             </div>
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Mindful</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="../blogs/reflection-../blogs.html">Reflections</a> 
+                <button onclick="myMindful()" class="dropbtn">Mindful</button>
+                <div id="dropdown3" class="dropdown-content">
+                  <a href="../blogs/reflection-blog.html">Reflections</a> 
                   <a href="../blogs/emotional-intelligence-../blogs.html">Emotional Intel</a>
                   <a href="../blogs/c3-meditation-process.html">Meditation</a>
                   <a href="../blogs/c4-daily-mindfulness.html">Daily Mindfulness</a>
@@ -56,16 +56,15 @@
                   <a href="../blogs/c9-leadership.html">Leadership</a> 
                 </div>
               </div>
-              <img class="head-image" src="images/drops.jpg"> 
+              </div>
+              </div>
+              <img class="head-image" src="../images/drops.jpg"> 
       </nav>
-  <div class="row">
-    <div class="twelve columns">
+<main>
       <center>
         <h2><strong>Technical ../Blogs - JavaScript Basics</strong></h2>
       </center>
-    </div>
-  <div class="four columns">
-      <div class="borderline">
+
         <h3><strong>How does JavaScript compare to HTML and CSS?</strong></h3> 
           <p>
               JavaScript is a scripting language that can be used together with HTML/CSS, but also utlized 
@@ -74,70 +73,49 @@
               JavaScript is used to define the interactive elements of a webpage that help to engage 
               visitors to the site.
           </p> 
-      </div>
-    </div>
-  <div class="four columns">
-    <div class ="borderline">
+
       <h3><strong>Explain control flow and loops using an example process.</strong></h3>
         <p>
             As loop's are executed from top to bottom I will explain the process I am going to create a 
             simple <em>if</em>, <em>else</em> <em>loop</em> while explaining the control flow process 
             in the form of step by step instructions.
         </p>  
-  </div> 
-</div>
-<img src="../images/scala_statement.jpg" alt="While and if flow control.">
-</div>
 
-  <div class="four columns"> 
-    <div class ="borderline">  
+<img src="../images/scala_statement.jpg" alt="While and if flow control.">
+
+
+
       <h3>Step 1:</h3>
         <p>
            Create a simple function called true or false with a value of <em>isItTrue</em>(condtion) with a 
            set of brackets and curly braces.
         </p>
-  </div>
-</div>   
-<div class="four columns"> 
-  <div class ="borderline">  
+
     <h3>Step 2:</h3>
       <p>
         Next, create a function called trueOrFalse which will return a value of isItTrue,  
       </p>
-  </div>
-</div>
-<br>
-<div class="four columns">
-  <div class ="borderline">            
+       
     <h3>Step 3:</h3>
       <p>    
         Create an if statement inside the function to return Then using an <em>if</em> statement. 
         This statement will use a function and loop to return a boolean condition. 
       </p>
-  </div>
-</div>
-<div class="four columns">
-  <div class ="borderline">        
+      
     <h3>Step 4:</h3>
       <p>
         The keyword <em>if</em> tells JavaScript to execute the code in the curly braces under certain 
         conditions, defined in the parentheses. When the condition evaluates to true and (isItTrue equals 1), the program executes the 
         statement inside the curly braces. 
       </p>
-  </div>
-</div>
-<div class="four columns"> 
-  <div class ="borderline">       
+    
     <h3>Step 5:</h3>
       <p>
         Now create an <em>else if</em> statement with JavaScript to execute the code in the curly braces under certain 
         conditions, defined in the parentheses.  When the Boolean condition evaluates to false, the statement 
         inside the curly braces will not execute.
       </p>
-  </div>
-</div>
-<div class="four columns">
-  <div class ="borderline">      
+     
     <h3>Step 6:</h3>
       <p>
           Finally create a <em>else</em> with a new set of curly braces. When the Boolean condition evaluates to false, the statement 
@@ -145,10 +123,7 @@
           or false." When the Boolean condition evaluates to false, the statement inside the curly braces 
           will execute.
       </p>
-  </div>
-</div>
-<div class="four columns"> 
-  <div class ="borderline">       
+ 
     <h3>Your final example should look something like this.</h3>
       <em>  function trueOfFalse(isItTrue) {
             if (isItTrue = 1) {
@@ -159,12 +134,7 @@
               return "Not true or false";
             }
           }</em>
-        </div> 
-    </div>
-<div class="container">
-<div class="row">    
-<div class="seven columns">
-  <div class="borderline">
+       
     <h3><strong>Explain the difference between accessing data from arrays and objects.</strong></h3>
       <p>
           JavaScript arrays are best described as a set of variables also known as a special type of objects. Arrays 
@@ -193,10 +163,9 @@
         </p>
     </div>
   </div>
-  <header> 
-      <img class="image" src="https://stmed.net/sites/default/files/abstract-wallpapers-25162-9547401.jpg" id="nav-image" > 
+</main>
       <footer>
-        <center><strong>Follow me:</strong> 
+        <center><strong>FOLLOW ME</strong> 
           <br></br> 
           <div class="social-bar">
             <a href="https://github.com/indigogeorgiana">
@@ -216,7 +185,7 @@
       </footer>
       <script>
       function myHome() {
-            document.getElementById("dropdown").classList.toggle("show");
+            document.getElementById("dropdown1").classList.toggle("show");
               }
         
           window.onclick = function (event) {
