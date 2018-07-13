@@ -11,14 +11,15 @@
     <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" />
     <title>Leadership</title>
 <body>
-    <h1 class="left-head">webdev wannabe</h1>
-    <nav>
-        
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Home</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="blog/about-me.html">About the Developer</a>
-              <a href="blog/play-with-javascript.html">WebDev Music</a>
+  <nav> 
+    <div class="container">
+      <h1 id="left-nav">web dev wannabe</h1>         
+      <div class="right-nav"> 
+          <div class="dropdown" id="container">
+            <button onclick="myHome()" class="dropbtn">Home</button>
+            <div id="dropdown1"              class="dropdown-content">
+              <a href="../blogs/about-me.html">About the Developer</a>
+              <a href="../blogs/play-with-javascript.html">WebDev Music</a>
               <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
               <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
               <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
@@ -29,97 +30,38 @@
             </div>
           </div>
           <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Techblog</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="blog/c1-time-and-habits-blog.html"class="shade">Time & Habits</a>
-                <a href="blog/udacity-blog-part1.html">Udacity Part 1</a> 
-                <a href="blog/udacity-blog-part-2.html">Udacity Part 2</a> 
-                <a href="blog/t3-design-to-web-blog.html">Design to Web</a> 
-                <a href="blog/t4-javascript-basics.html">JS Basics</a>
-                <a href="blog/t5-problem-solving.html">Problem Solving</a>  
-                <a href="blog/t6-js-language.html">JavaScript</a> 
-                <a href="blog/t6-scope.html">Scope</a>  
+              <button onclick="myTechblog()" class="dropbtn">Techblog</button>
+              <div id="dropdown2" class="dropdown-content">
+                <a href="../blogs/c1-time-and-habits.html">Time & Habits</a>
+                <a href="../blogs/udacity-blog-part1.html">Udacity Part 1</a> 
+                <a href="../blogs/udacity-blog-part-2.html">Udacity Part 2</a> 
+                <a href="../blogs/t3-design-to-web.html">Design to Web</a> 
+                <a href="../blogs/t4-javascript-basics.html">JS Basics</a>
+                <a href="../blogs/t5-problem-solving.html">Problem Solving</a>  
+                <a href="../blogs/t6-js-language.html">JavaScript</a> 
+                <a href="../blogs/t6-scope.html">Scope</a>  
               </div>
             </div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Mindful</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="blog/reflection-blog.html">Reflections</a> 
-                  <a href="blog/emotional-intelligence-blog.html">Emotional Intel</a>
-                  <a href="blog/c3-meditation-process.html">Meditation</a>
-                  <a href="blog/c4-daily-mindfulness.html">Daily Mindfulness</a>
-                  <a href="blog/c5-self-confidence.html">Self-confidence</a>
-                  <a href="blog/c6-control.html">Control</a>
-                  <a href="blog/c7-self-motivation.html">Self-motivation</a>
-                  <a href="blog/c8-connecting.html">Connecting</a>
-                  <a href="c9-leadership.html">Leadership</a> 
+            <div class="dropdown" id="container">
+                <button onclick="myMindful()" class="dropbtn">Mindful</button>
+                <div id="dropdown3" class="dropdown-content">
+                  <a href="../blogs/reflection-blog.html">Reflections</a> 
+                  <a href="../blogs/emotional-intell.html">Emotional Intel</a>
+                  <a href="../blogs/c3-meditation-process.html">Meditation</a>
+                  <a href="../blogs/c4-daily-mindfulness.html">Daily Mindfulness</a>
+                  <a href="../blogs/c5-self-confidence.html">Self-confidence</a>
+                  <a href="../blogs/c6-control.html">Control</a>
+                  <a href="../blogs/c7-self-motivation.html">Self-motivation</a>
+                  <a href="../blogs/c8-connecting.html">Connecting</a>
+                  <a href="../blogs/c9-leadership.html">Leadership</a> 
                 </div>
               </div>
+              </div>
+              </div>
+              <img class="head-image" src="../images/drops.jpg">      
       </nav>
-  <div class="graphicwhite">
-    <header>
-      <nav>
-        <div class="container">
-          <div class="row">
-            <div class="twelve columns"> 
-              <header4><strong>WEB DEV WANNABE BLOG</strong></header4>
-                <div class="dropdown">
-                  <button class="dropbtn9">Home</button>
-                    <div class="dropdown-content">
-                      <ul>
-                        <a href="#">Home</a>
-                            <a href="about-me.html">About me</a>
-                            <a href="calculator.html">Calculator</a>
-                            <a href="play-with-javascript.html">Web Dev Music</a>
-                            <a href="blog-template1.html">Template 1</a>
-                            <a href="blog-template2.html">Template 2</a>
-                            <a href="blog-template3.html">Template 3</a>
-                            <a href="blog-template4.html">Template 4</a>
-                            <a href="blog-template5.html">Template 5</a>
-                            <a href="blog-template6.html">Template 6</a>
-                      </ul>
-                    </div>   
-                </div>
-              <div class="dropdown">
-                <button class="dropbtn9">Tech Blogs</button>
-                  <div class="dropdown-content">
-                    <ul> 
-                      <a href="c1-time-and-habits-blog.html">Time & Habits</a>
-                      <a href="udacity-blog-part1.html">Udacity Part 1</a>
-                      <a href="udacity-blog-part-2.html">Udacity Part 2</a>
-                      <a href="t3-design-to-web-blog.html">Design to Web</a>
-                      <a href="t4-javascript-basics.html">JavaScript Basics</a>
-                      <a href="t5-problem-solving.html">Problem Solving</a>
-                      <a href="t6-js-language.html">JavaScript Language</a>
-                      <a href="t6-scope.html">Scope</a>            
-                    </ul>
-                  </div>
-              </div>
-            <div class="dropdown">
-              <button class="dropbtn9">Mindful Blogs</button>
-                <div class="dropdown-content">
-                  <ul>
-                    <a href="reflection-blog.html">Reflect Blog</a>
-                    <a href="emotional-intelligence-blog.html">Emotional Intel</a>
-                    <a href="c3-meditation-process.html">Meditation Process</a>
-                    <a href="c4-daily-mindfulness.html">Daily Mindfulness</a>
-                    <a href="c5-self-confidence.html">Self Confidence</a>
-                    <a href="c6-control.html">Control</a>
-                    <a href="c7-self-motivation.html">Self Motivation</a>
-                    <a href="c8-connecting.html">Connecting</a>
-                    <a href="c9-leadership.html">Leadership</a>
-                  </ul>
-                </div>
-            </div>
-
-            <img class="head-image" src="images/drops.jpg"> 
-          </div>
-        </div>
-      </div>
-    </nav>  
-  </header>
-  <div class="row">
-    <div class="twelve columns">
+ <main>
+             
       <center>
         <h2>
           <strong> 
@@ -133,11 +75,7 @@
         </strong>
       </h3>
       </center>
-    </div>
-  </div>
-  <br>
-<div class="row">
-  <div class="twelve columns">
+  
     <center>
       <h2>
         <strong> 
@@ -162,10 +100,7 @@
         </p>
      
     </center>
-  </div>
-</div>
-<div class="row">
-  <div class="twelve columns">
+ 
     <h3>
       <strong>
         Do the multiplying goodness meditation. How did you find it?
@@ -178,11 +113,7 @@
         everyone being good, when I knew this to be false. I found it was a challenege, so I had 
         to say it aloud. 
       </p>
-  </div>
-</div>
-<hr>
-  <div class="row">
-    <div class="twelve columns">
+  
       <h3>
         <strong>
           Do the Tonglen meditation. How did you find it?
@@ -197,11 +128,7 @@
           assess and look at often. What I learned was taking on negative thought was only made easy
           because I knew it would end in positive thoughts.
         </p>
-    </div>
-  </div>  
-  <br>
-<div class="row">
-  <div class="twelve columns">
+   
     <h3>
       <strong>
         How does the SCARF model apply to your Phase 0 experience so far? How will it apply to bootcamp?
@@ -231,10 +158,7 @@
         that sometimes life is not unfair. Through my lifetime I have learned to endure some hardships 
         as I am sure we all have. This has made me more resilent and tolerant.
       </p>
-  </div>              
-</div>
-<div class="row">
-  <div class="four columns">
+  
     <h3>
       <strong>
         Have a difficult conversation. How did it go?
@@ -247,12 +171,11 @@
         person replied. I was happy when the situation was resolved and apologies were shared all around. 
         Peace was again restored.
       </p>           
-  </div>
-</div>
-<header> 
-    <img class="image" src="https://stmed.net/sites/default/files/abstract-wallpapers-25162-9547401.jpg" id="nav-image" > 
+    </main>
+
     <footer>
-      <center><strong>Follow me:</strong> 
+      <div class="container">
+      <center><strong>FOLLOW ME</strong> 
         <br></br> 
         <div class="social-bar">
           <a href="https://github.com/indigogeorgiana">
@@ -268,11 +191,12 @@
         <br></br>
         <strong>2018 &#169; Web Dev Wannabe</strong>
         </div>
+        </div>
       </center>
     </footer>
     <script>
     function myHome() {
-          document.getElementById("dropdown").classList.toggle("show");
+          document.getElementById("dropdown1").classList.toggle("show");
             }
       
         window.onclick = function (event) {
