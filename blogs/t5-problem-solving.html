@@ -12,15 +12,15 @@
     <title>Problem Solving</title>
     </head>
 <body>
-    <h1 class="left-head">webdev wannabe</h1> 
-    <nav>
-        <img href="../images/webdev.jpg" type="logo" sizes="24x24">
-          <h1>webdev wannabe</h1>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Home</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="../blog/about-me.html">About the Developer</a>
-              <a href="../blog/play-with-javascript.html">WebDev Music</a>
+    <nav> 
+        <div class="container">
+          <h1 id="left-nav">web dev wannabe</h1>    
+          <div class="right-nav"> 
+            <div class="dropdown" id="container">
+            <button onclick="myHome()" class="dropbtn">Home</button>
+            <div id="dropdown1" class="dropdown-content">
+              <a href="../blogs/about-me.html">About the Developer</a>
+              <a href="../blogs/play-with-javascript.html">WebDev Music</a>
               <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
               <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
               <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
@@ -30,41 +30,43 @@
               <a href="../blogs/calculator.html">Calculator</a>
             </div>
           </div>
-          <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Techblog</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="../blog/c1-time-and-habits-blog.html"class="shade">Time & Habits</a>
-                <a href="../blog/udacity-blog-part1.html">Udacity Part 1</a> 
-                <a href="../blog/udacity-blog-part-2.html">Udacity Part 2</a> 
-                <a href="../blog/t3-design-to-web-blog.html">Design to Web</a> 
-                <a href="../blog/t4-javascript-basics.html">JS Basics</a>
-                <a href="../blog/t5-problem-solving.html">Problem Solving</a>  
-                <a href="../blog/t6-js-language.html">JavaScript</a> 
-                <a href="../blog/t6-scope.html">Scope</a>  
+          <div class="dropdown" id="container">
+              <button onclick="myTechblog()" class="dropbtn">Techblog</button>
+              <div id="dropdown2" class="dropdown-content">
+                <a href="../blogs/c1-time-and-habits-blog.html"class="shade">Time & Habits</a>
+                <a href="../blogs/udacity-blog-part1.html">Udacity Part 1</a> 
+                <a href="../blogs/udacity-blog-part-2.html">Udacity Part 2</a> 
+                <a href="../blogs/t3-design-to-web-blog.html">Design to Web</a> 
+                <a href="../blogs/t4-javascript-basics.html">JS Basics</a>
+                <a href="../blogs/t5-problem-solving.html">Problem Solving</a>  
+                <a href="../blogs/t6-js-language.html">JavaScript</a> 
+                <a href="../blogs/t6-scope.html">Scope</a>  
               </div>
             </div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Mindful</button>
-                <div id="myDropdown" class="dropdown-content">
-                  <a href="../blog/reflection-blog.html">Reflections</a> 
-                  <a href="../blog/emotional-intelligence-blog.html">Emotional Intel</a>
-                  <a href="../blog/c3-meditation-process.html">Meditation</a>
-                  <a href="../blog/c4-daily-mindfulness.html">Daily Mindfulness</a>
-                  <a href="../blog/c5-self-confidence.html">Self-confidence</a>
-                  <a href="../blog/c6-control.html">Control</a>
-                  <a href="../blog/c7-self-motivation.html">Self-motivation</a>
-                  <a href="../blog/c8-connecting.html">Connecting</a>
-                  <a href="../blog/c9-leadership.html">Leadership</a> 
+            <div class="dropdown" id="container">
+                <button onclick="myMindful()" class="dropbtn">Mindful</button>
+                <div id="dropdown3" class="dropdown-content">
+                  <a href="../blogs/reflection-blog.html">Reflections</a> 
+                  <a href="../blogs/emotional-intelligence-blog.html">Emotional Intel</a>
+                  <a href="../blogs/c3-meditation-process.html">Meditation</a>
+                  <a href="../blogs/c4-daily-mindfulness.html">Daily Mindfulness</a>
+                  <a href="../blogs/c5-self-confidence.html">Self-confidence</a>
+                  <a href="../blogs/c6-control.html">Control</a>
+                  <a href="../blogs/c7-self-motivation.html">Self-motivation</a>
+                  <a href="../blogs/c8-connecting.html">Connecting</a>
+                  <a href="../blogs/c9-leadership.html">Leadership</a> 
                 </div>
               </div>
-              <img class="head-image" src="images/drops.jpg"> 
+              </div>
+              </div>
+              <img class="head-image" src="../images/drops.jpg"> 
       </nav>
 
-    <div class="five columns">
+   <main>
       <center>
         <h2><strong>Problem Solving</strong></h2>
       </center> 
-    <div class="borderline">
+    
       <h3>
         <strong>
           Blocked on a coding problem? Explain how you solved the problem?
@@ -77,13 +79,7 @@
           other methods. Searching through my code I found no problems that I could discern as a fault. 
           However after running the code I received a "syntax error: missing var."
         </p> 
-    </div>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class= "five columns">
-    <div class="borderline">
+  
       <h3>
         <strong>
         First Method Used: Reading error messages
@@ -94,13 +90,7 @@
           missing and how I could possibly to solve the problem. However, everytime I attempted to fix 
           the error I continued to receive other syntax errors as I attempted a process of elimination. 
         </p>
-    </div>
-  </div> 
-</div>
-<br>
-<div class="row">
-  <div class="five columns">
-    <div class="borderline">
+
       <h3>
         <strong>
           Second Method Used: Googling
@@ -111,15 +101,7 @@
           I could learn. My way of thinking was the more I learnt about an error the better equipt I could be
           to solving the problem.
         </p>                             
-    </div>    
-  </div>
-</div>
-</div>
-<br>
-<div class="container2">
-<div class="row">  
-  <div class="five columns">
-    <div class="borderline">
+ 
       <h3><strong>What did you learn?</strong></h3>
         <p>
           In Sprint 5 I learned a lot about myself and how I handle problem solivng my code. While most 
@@ -127,12 +109,7 @@
           need to deploy a more refined method and a far better system to approach problem solving. One 
           that works better for myself given my knowledge and capabilities.
         </p>              
-    </div>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="five columns">
+  
     <center>
       <h2>
         <strong>
@@ -140,32 +117,20 @@
         </strong>
       </h2> 
     </center> 
-  <div class="borderline">
+
     <h3>Pseudocode</h3>
       <p>
         Pseudocode, is a good method for keeping your code organised making it easier for everyone to read. 
         It's also a good way of noting each piece of your code, keeping track of what you are trying to
         achieve.
       </p>
-    </div>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="five columns">
-    <div class="borderline">
+
       <h3>Trying something/ Rubber ducky</h3> 
         <p>
           I have not yet used either of these methods. But I will work my way through in the next sprint or 
           when I get blocked again.
         </p>
-    </div>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="five columns">
-    <div class="borderline">
+
       <h3>Reading error messages</h3>
         <p>
           Reading error messages can be quite difficult, especially if the error messages specificity can be too
@@ -174,27 +139,13 @@
           code I found no missing brackets, so I need a greater understanding of what the error message 
           is actually complaining about.
         </p>
-    </div>
-  </div>  
-</div>
-</div>
-<br>
-<div class="container2">
-<div class="row">
-  <div class="five columns">
-    <div class="borderline">
+ 
       <h3>Console.logging</h3>
         <p>
           Having used console log() throught out Sprint 4 and 5 I can honestly admit that being able to 
           utilize this for debugging purposes to display data from my exercise programs.
         </p>
-    </div>
-  </div>
-</div>
-<br>  
-<div class="row">
-  <div class="five columns">
-    <div class="borderline">
+
       <h3>
         <strong>
           Googling
@@ -207,13 +158,7 @@
           that laysout syntax, methods, elements and other properties is some cases showing the way the code 
           is used.
         </p>
-    </div>
-  </div>
-</div>
-<br>
-<div class="row">
-  <div class="five columns">
-    <div class="borderline">
+
       <h3>Asking your peers for help</h3>
         <p>
           During phase zero I have asked for help a couple of times and had a great response. I have reached
@@ -222,15 +167,7 @@
           learning and I don't wish to take time away from their own learning. Going into the next phase I 
           will be able to be face to face with my fellow students making pairing alot easier. 
         </p>
-    </div>
-  </div>
-</div>
-</div>
-<br>
-<div class="container2">
-<div class="row">
-  <div class="five columns">
-    <div class="borderline">  
+  
       <h3>
         <strong>
           Asking coaches for help
@@ -241,13 +178,7 @@
           they have answered all my questions. Also I have received some really good advice that has made 
           me alter how I approach my work.
         </p>
-    </div>
-  </div> 
-</div>
-<br>  
-<div class="row">
-  <div class="five columns">
-    <div class="borderline">
+
       <h3>
         <strong>
           How confident are you using the problem solving techniques? How did you feel throughout the 
@@ -259,13 +190,7 @@
           idea of having to work out a puzzle. I am not one hundred percent confident with all of the 
           problem solving techniques.
         </p>
-    </div>
-  </div>  
-</div>
-<br>
-<div class="row">
-  <div class="five columns">
-    <div class="borderline">
+ 
       <h3>
         <strong>
           Improving your process with reflection
@@ -279,14 +204,10 @@
           deploying a better more organised approach. I hope that this will help reduce the amount of time I 
           spend on any exercise.
         </p>
-    </div>
-  </div>  
-  <header> 
-    
-
-      </header>
+   </main>
       <footer>
-        <center><strong>Follow me:</strong> 
+        <div class="container">
+        <center><strong>FOLLOW ME</strong> 
           <br></br> 
           <div class="social-bar">
             <a href="https://github.com/indigogeorgiana">
@@ -302,11 +223,12 @@
           <br></br>
           <strong>2018 &#169; Web Dev Wannabe</strong>
           </div>
+          </div>
         </center>
       </footer>
       <script>
       function myHome() {
-            document.getElementById("dropdown").classList.toggle("show");
+            document.getElementById("dropdown1").classList.toggle("show");
               }
         
           window.onclick = function (event) {
