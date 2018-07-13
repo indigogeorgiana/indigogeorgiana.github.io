@@ -13,10 +13,11 @@
   </head>
 <body>
   <nav>
-    <h1 class="nav" id="left-head">Web Dev Wannabe</h1>
-      <div class="dropdown">
-        <button onclick="myFunction()" class="dropbtn">Home</button>
-          <div id="myDropdown" class="dropdown-content">
+    <h1 class="left-head">web dev wannabe</h1>
+    <div class="right-nav"> 
+      <div class="dropdown" id="container">
+        <button onclick="myHome()" class="dropbtn">Home</button>
+          <div id="dropdown1" class="dropdown-content">
               <a href="../blogs/about-me.html">About the Developer</a>
               <a href="../blogs/play-with-javascript.html">WebDev Music</a>
               <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
@@ -29,8 +30,8 @@
             </div>
           </div>
           <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Techblog</button>
-              <div id="myDropdown" class="dropdown-content">
+              <button onclick="myTechblog()" class="dropbtn">Techblog</button>
+              <div id="dropdown2" class="dropdown-content">
                 <a href="../blogs/c1-time-and-habits.html"class="shade">Time & Habits</a>
                 <a href="../blogs/udacity-1.html">Udacity Part 1</a> 
                 <a href="../blogs/udacity-2.html">Udacity Part 2</a> 
@@ -42,8 +43,8 @@
               </div>
             </div>
             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Mindful</button>
-                <div id="myDropdown" class="dropdown-content">
+                <button onclick="myMindful()" class="dropbtn">Mindfulness</button>
+                <div id="dropdown3" class="dropdown-content">
                   <a href="../blogs/reflection.html">Reflections</a> 
                   <a href="../blogs/emotional-intell.html">Emotional Intel</a>
                   <a href="../blogs/c3-meditation-process.html">Meditation</a>
@@ -55,9 +56,10 @@
                   <a href="../blogs/c9-leadership.html">Leadership</a> 
                 </div>
             </div>
-            <img class="nav-image" src="../images/drops.jpg" >   
+          </div>
+            <img class="head-image" src="../images/drops.jpg" >   
       </nav>
-      <header> 
+      <main> 
          
           <center><h2>Udacity Blog Part Two: Design Concepts</h2></center>
             <h3>What is grid based design?</h3>
@@ -74,9 +76,9 @@
                 Semantic structure is a fancy term for an organization that represents meaning. For example, an English sentence is a semantic structure. Consider the following sentence structure: subject - verb - object.
               </p>
    
-  </header>
+            </main>
   <footer>
-    <center><strong>Follow me:</strong> 
+    <center><strong>FOLLOW ME</strong> 
       <br></br> 
       <div class="social-bar">
         <a href="https://github.com/indigogeorgiana">
@@ -96,7 +98,7 @@
   </footer>
   <script>
   function myHome() {
-        document.getElementById("dropdown").classList.toggle("show");
+        document.getElementById("dropdown1").classList.toggle("show");
           }
     
       window.onclick = function (event) {
