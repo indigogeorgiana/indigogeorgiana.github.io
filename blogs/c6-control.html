@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" />
     <title>Control</title>
-    </head>
-    <body>
-        <h1 class="left-head">webdev wannabe</h1>
-    <nav>
-        
-        <div class="dropdown">
+  </head>
+<body>
+  <nav> 
+    <div class="container">
+      <h1 id="left-nav">web dev wannabe</h1>     
+        <div class="right-nav"> 
+          <div class="dropdown" id="container">
             <button onclick="myHome()" class="dropbtn">Home</button>
             <div id="dropdown1" class="dropdown-content">
               <a href="../blogs/about-me.html">About the Developer</a>
@@ -32,7 +33,7 @@
           <div class="dropdown">
               <button onclick="myTechblog()" class="dropbtn">Techblog</button>
               <div id="dropdown2" class="dropdown-content">
-                <a href="../blogs/c1-time-and-habits-blog.html"class="shade">Time & Habits</a>
+                <a href="../blogs/c1-time-and-habits.html">Time & Habits</a>
                 <a href="../blogs/udacity-blog-part1.html">Udacity Part 1</a> 
                 <a href="../blogs/udacity-blog-part-2.html">Udacity Part 2</a> 
                 <a href="../blogs/t3-design-to-web-blog.html">Design to Web</a> 
@@ -46,7 +47,7 @@
                 <button onclick="myMindful()" class="dropbtn">Mindful</button>
                 <div id="dropdown3" class="dropdown-content">
                   <a href="../blogs/reflection-blog.html">Reflections</a> 
-                  <a href="../blogs/emotional-intelligence-blog.html">Emotional Intel</a>
+                  <a href="../blogs/emotional-intell.html">Emotional Intel</a>
                   <a href="../blogs/c3-meditation-process.html">Meditation</a>
                   <a href="../blogs/c4-daily-mindfulness.html">Daily Mindfulness</a>
                   <a href="../blogs/c5-self-confidence.html">Self-confidence</a>
@@ -56,11 +57,11 @@
                   <a href="../blogs/c9-leadership.html">Leadership</a> 
                 </div>
               </div>
+              </div>
+              </div>
               <img class="head-image" src="../images/drops.jpg"> 
       </nav>
-             
-<div class="row">
- 
+<main>
     <center>
       <h2>
         <strong>
@@ -74,9 +75,7 @@
         </strong>
       </h3>
     </center>
-  </div>
 
-    <div class="borderline">
         <h3>
           <strong>
             When programming, what are some of your triggers? 
@@ -89,8 +88,7 @@
             time I experience this is when I have overworked myself. In my pursuit to learn I find I tend 
             to push myself to grasp a method I may struggle to understand.
           </p>        
-      </div>
-  <div class="borderline">
+ 
     <h3>
       <strong>
         What causes a disproportionate emotional response?
@@ -102,9 +100,7 @@
           to achieve. I believe I do not like to fail, though I rationally believe it is a part of learning 
           and a part of everyday life. I tend to hold myself to a higher standard because of my past failings.
       </P>
-  </div>
 
-  <div class="borderline">
     <h3>
       <strong>
         How did you find the Siberian North Railroad exercise (Stop, Breathe, Notice, Reflect, Respond)?
@@ -134,10 +130,10 @@
         — <strong>Leonardo da Vinci</strong>
   </h3>
 </center>
-<header> 
-    <img class="image" src="https://stmed.net/sites/default/files/abstract-wallpapers-25162-9547401.jpg" id="nav-image" > 
+</main> 
     <footer>
-      <center><strong>Follow me</strong> 
+      <div class="container">
+      <center><strong>FOLLOW ME</strong> 
         <br></br> 
         <div class="social-bar">
           <a href="https://github.com/indigogeorgiana">
@@ -153,11 +149,12 @@
         <br></br>
         <strong>2018 &#169; Web Dev Wannabe</strong>
         </div>
+        </div>
       </center>
     </footer>
     <script>
     function myHome() {
-          document.getElementById("dropdown").classList.toggle("show");
+          document.getElementById("dropdown1").classList.toggle("show");
             }
       
         window.onclick = function (event) {
