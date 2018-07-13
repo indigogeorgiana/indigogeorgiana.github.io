@@ -12,13 +12,13 @@
     <title>JS Language</title>
     </head>
 <body>
-    <h1 class="left-head">webdev wannabe</h1>
-    <nav>
-        <img href="../images/webdev.jpg" type="logo" sizes="24x24">
-          <h1>webdev wannabe</h1>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Home</button>
-            <div id="myDropdown" class="dropdown-content">
+    <nav> 
+      <div class="container">
+        <h1 id="left-nav">web dev wannabe</h1>    
+          <div class="right-nav"> 
+            <div class="dropdown" id="container">
+            <button onclick="myHome()" class="dropbtn">Home</button>
+            <div id="dropdown1" class="dropdown-content">
               <a href="../blogs/about-me.html">About the Developer</a>
               <a href="../blogs/play-with-javascript.html">WebDev Music</a>
               <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
@@ -30,10 +30,10 @@
               <a href="../blogs/calculator.html">Calculator</a>
             </div>
           </div>
-          <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Tech../blogs</button>
-              <div id="myDropdown" class="dropdown-content">
-                <a href="../blogs/c1-time-and-habits-../blogs.html"class="shade">Time & Habits</a>
+          <div class="dropdown" id="container">
+              <button onclick="myTechblog()" class="dropbtn">Tech Blogs</button>
+              <div id="dropdown2" class="dropdown-content">
+                <a href="../blogs/c1-time-and-habits.html">Time & Habits</a>
                 <a href="../blogs/udacity-../blogs-part1.html">Udacity Part 1</a> 
                 <a href="../blogs/udacity-../blogs-part-2.html">Udacity Part 2</a> 
                 <a href="../blogs/t3-design-to-web-../blogs.html">Design to Web</a> 
@@ -43,9 +43,9 @@
                 <a href="../blogs/t6-scope.html">Scope</a>  
               </div>
             </div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Mindful</button>
-                <div id="myDropdown" class="dropdown-content">
+            <div class="dropdown" id="container">
+                <button onclick="myMindful()" class="dropbtn">Mindful</button>
+                <div id="dropdown1" class="dropdown-content">
                   <a href="../blogs/reflection-../blogs.html">Reflections</a> 
                   <a href="../blogs/emotional-intelligence-../blogs.html">Emotional Intel</a>
                   <a href="../blogs/c3-meditation-process.html">Meditation</a>
@@ -57,9 +57,11 @@
                   <a href="../blogs/c9-leadership.html">Leadership</a> 
                 </div>
               </div>
+              </div>
+              </div>
               <img class="head-image" src="../images/drops.jpg">  
       </nav>
-  <div class="twelve columns">
+  <main>
     <center>
       <h2>
         <strong> 
@@ -72,12 +74,7 @@
           </strong>
         </h3>
     </center>
-  </div>
-</div>  
-<div class="container">
-  <div class="row">
-    <div class="eight columns">
-      <div class="borderline">
+
         <h3>
           <strong>
             parentheses () 
@@ -100,9 +97,7 @@
             line(a, 0, a, 100);  // Containing a list of parameters
             }
           </p>          
-      </div>
-    <br>
-  <div class="borderline">
+  
     <h3>
       <strong>
         brackets []
@@ -122,7 +117,7 @@
       </p>  
     </div> 
   <br>             
-<div class="borderline">
+
   <h3>
     <strong>
       braces {}
@@ -147,7 +142,7 @@
     </p>
   </div>
 <br>
-  <div class="borderline">      
+   
     <h3>
       <strong>
         single quotes ''
@@ -167,7 +162,7 @@
       </p>
   </div>
 <br> 
-<div class="borderline">
+
   <h3>
     <strong>
       double quotes " "
@@ -186,12 +181,10 @@
       double quotes (" ")  
       output.println(""" + String.valueOf (x) + "","" + String.valueOf (y) + "","" + String.valueOf (z) + "","") 
     </p>           
-</div>
-</div>
-<header> 
-    <img class="image" src="https://stmed.net/sites/default/files/abstract-wallpapers-25162-9547401.jpg" id="nav-image" >  
-    <footer>
-      <center><strong>Follow me:</strong> 
+</main>
+  <footer>
+    <div class="container">
+      <center><strong>FOLLOW ME</strong> 
         <br></br> 
         <div class="social-bar">
           <a href="https://github.com/indigogeorgiana">
@@ -207,11 +200,12 @@
         <br></br>
         <strong>2018 &#169; Web Dev Wannabe</strong>
         </div>
+        </div>
       </center>
     </footer>
     <script>
     function myHome() {
-          document.getElementById("dropdown").classList.toggle("show");
+          document.getElementById("dropdown1").classList.toggle("show");
             }
       
         window.onclick = function (event) {

@@ -6,21 +6,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="../styles/main.css" rel="stylesheet" type="text/css"/> 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css"> 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
-    <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16" />
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/jpg" href="../images/webdev.jpg" sizes="16x16"/>
     <title>Scope</title>
     </head>
 <body>
-    <h1 class="left-head">webdev wannabe</h1>
-    <nav>
-        <img href="../images/webdev.jpg" type="logo" sizes="24x24">
-          <h1>webdev wannabe</h1>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Home</button>
-            <div id="myDropdown" class="dropdown-content">
-              <a href="blog/about-me.html">About the Developer</a>
-              <a href="blog/play-with-javascript.html">WebDev Music</a>
+  <nav>
+    <div class="container">
+      <h1 class="left-nav">webdev wannabe</h1>
+        <div class="right-nav"> 
+          <div class="dropdown" id="container">
+            <button onclick="myHome()" class="dropbtn">Home</button>
+            <div id="dropdown1" class="dropdown-content">
+              <a href="../blogs/about-me.html">About the Developer</a>
+              <a href="../blogs/play-with-javascript.html">WebDev Music</a>
               <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
               <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
               <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
@@ -30,9 +30,9 @@
               <a href="../blogs/calculator.html">Calculator</a>
             </div>
           </div>
-          <div class="dropdown">
-              <button onclick="myFunction()" class="dropbtn">Techblog</button>
-              <div id="myDropdown" class="dropdown-content">
+          <div class="dropdown" id="container">
+              <button onclick="myTechblog()" class="dropbtn">Techblog</button>
+              <div id="dropdown2" class="dropdown-content" id="container">
                 <a href="../blogs/c1-time-and-habits-blog.html"class="shade">Time & Habits</a>
                 <a href="../blogs/udacity-blog-part1.html">Udacity Part 1</a> 
                 <a href="../blogs/udacity-blog-part-2.html">Udacity Part 2</a> 
@@ -43,9 +43,9 @@
                 <a href="../blogs/t6-scope.html">Scope</a>  
               </div>
             </div>
-            <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn">Mindful</button>
-                <div id="myDropdown" class="dropdown-content">
+            <div class="dropdown" id="container">
+                <button onclick="myMindful()" class="dropbtn">Mindful</button>
+                <div id="dropdown3" class="dropdown-content" >
                   <a href="../blogs/reflection-blog.html">Reflections</a> 
                   <a href="../blogs/emotional-intelligence-blog.html">Emotional Intel</a>
                   <a href="../blogs/c3-meditation-process.html">Meditation</a>
@@ -54,12 +54,14 @@
                   <a href="../blogs/c6-control.html">Control</a>
                   <a href="../blogs/c7-self-motivation.html">Self-motivation</a>
                   <a href="../blogs/c8-connecting.html">Connecting</a>
-                  <a href="c9-leadership.html">Leadership</a> 
+                  <a href="../blogs/c9-leadership.html">Leadership</a> 
                 </div>
               </div>
-              <img class="head-image" src="images/drops.jpg"> 
+              </div>
+            </div>
+              <img class="head-image" src="../images/drops.jpg"> 
       </nav>
- 
+<main> 
     <center>
       <h2>
         <strong>
@@ -74,9 +76,6 @@
           writing great code, learning and to become a better developer. UnderstandING where variables/functions are place and better 
           accessible change our code making it better and faster to debug as well as excute.
      </P>
-  </div>
-</div>
-
     <h3>
       <strong>
         What is local scope?
@@ -87,9 +86,6 @@
       Any function defined within another function has a local scope which is linked to the outer function. So it goes without saying 
       that if we choose to define a function and create variables inside it, those variables then become locally scoped.
     </p>        
-  </div>
-</div>
-
     <h3>
       <strong>
         What is Global scope?
@@ -102,12 +98,10 @@
       bugs etc with global scope problems.
             
     </p>        
-  </div>
-</div>
-<header> 
-    <img class="image" src="https://stmed.net/sites/default/files/abstract-wallpapers-25162-9547401.jpg" id="nav-image" > 
+</main>
     <footer>
-      <center><strong>Follow me:</strong> 
+      <div class="container">
+      <center><strong>FOLLOW ME</strong> 
         <br></br> 
         <div class="social-bar">
           <a href="https://github.com/indigogeorgiana">
@@ -123,11 +117,12 @@
         <br></br>
         <strong>2018 &#169; Web Dev Wannabe</strong>
         </div>
+        </div>
       </center>
     </footer>
     <script>
     function myHome() {
-          document.getElementById("dropdown").classList.toggle("show");
+          document.getElementById("dropdown1").classList.toggle("show");
             }
       
         window.onclick = function (event) {
