@@ -76,7 +76,7 @@ header {
 
 /********************************************/
 /***NAVIGATION****/
-#left-nav {
+.left-nav {
     width: 60%;
     float: left;
     vertical-align: middle;
