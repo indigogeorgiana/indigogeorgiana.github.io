@@ -17,9 +17,9 @@
       <h1 class="left-nav">webdev wannabe</h1>
       <div class="right-nav">
         <div class="dropdown" id="container">
-          <button onclick="myHome()" class="dropbtn">Home</button>
-          <div id="dropdown1" class="dropdown-content">
-              <a href="../blogs/about-developer.html">About the Developer</a>
+          <button onclick="myBlog()" class="dropbtn">Dev Academy Blog</button>
+          <div id="dropdown4" class="dropdown-content">
+              <a href="../blogs/about-developer.html">Me, the Developer</a>
               <a href="../blogs/web-dev-music.html">WebDev Music</a>
               <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
               <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
@@ -30,6 +30,20 @@
               <a href="../blogs/calculator.html">Calculator</a>
             </div>
           </div>
+          <div class="dropdown" id="container">
+              <button onclick="myHome()" class="dropbtn">Home</button>
+              <div id="dropdown1" class="dropdown-content">
+                  <a href="../blogs/about-developer.html">About the Developer</a>
+                  <a href="../blogs/web-dev-music.html">WebDev Music</a>
+                  <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
+                  <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
+                  <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
+                  <a href="https://github.com/indigogeorgiana/dailyMe">Group Project 4</a>
+                  <a href="https://github.com/indigogeorgiana/GarageSale">Group Project 5</a>
+                  <a href="https://github.com/indigogeorgiana/thefullstack">Solo Project</a> 
+                  <a href="../blogs/calculator.html">Calculator</a>
+                </div>
+              </div>
           <div class="dropdown" id="container">
               <button onclick="myTechblog()" class="dropbtn">Techblog</button>
               <div id="dropdown2" class="dropdown-content">
@@ -172,7 +186,21 @@
   </center>
 </footer>
 <script>
-  
+  function myBlog() {
+    document.getElementById("dropdown4").classList.toggle("show");
+  }
+    window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName('dropdown-content');
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+    let openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
   function myHome() {
     document.getElementById("dropdown1").classList.toggle("show");
   }
