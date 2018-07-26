@@ -79,6 +79,7 @@
           </div>
         </div>
     </div>
+
     <img class="head-image" src="images/drops.jpg">
   </nav>
 <main>  
@@ -106,21 +107,22 @@
     </center>
   </footer>
   <script>
-    function myDev() {
-      document.getElementById("dropdown1").classList.toggle("show");
-    }
-      window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-      let dropdowns = document.getElementsByClassName('dropdown-content');
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-        }
+
+  function myDev() {
+    document.getElementById("dropdown1").classList.toggle("show");
+  }
+    window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName('dropdown-content');
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+    let openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
       }
     }
   }
+}
   function myAcademy() {
       document.getElementById("dropdown2").classList.toggle("show");
     }
@@ -136,39 +138,38 @@
       }
     }
   }
-
  
-      function myGroup() {
-        document.getElementById("dropdown3").classList.toggle("show");
-          }
-        window.onclick = function (event) {
-        if (!event.target.matches('.dropbtn')) {
-        let dropdowns = document.getElementsByClassName('dropdown-content');
-        let i;
-        for (i = 0; i < dropdowns.length; i++) {
-        let openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-          }
-        }
+  function myGroup() {
+    document.getElementById("dropdown3").classList.toggle("show");
       }
-    }
-  
-    function myMindful() {
-      document.getElementById("dropdown4").classList.toggle("show");
-    }
-      window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-      let dropdowns = document.getElementsByClassName('dropdown-content');
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-        }
+    window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName('dropdown-content');
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+    let openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
       }
     }
   }
+}
+
+  function myMindful() {
+    document.getElementById("dropdown4").classList.toggle("show");
+  }
+    window.onclick = function (event) {
+    if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName('dropdown-content');
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+    let openDropdown = dropdowns[i];
+    if (openDropdown.classList.contains('show')) {
+    openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
 
   function myTech() {
       document.getElementById("dropdown5").classList.toggle("show");
@@ -185,6 +186,7 @@
       }
     }
   }
+  
   </script>    
 </body>
 </html> 
