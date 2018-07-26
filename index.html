@@ -14,51 +14,44 @@
 <body>
   <nav> 
     <div class="container">
-      <h1 class="left-nav">web dev wannabe</h1>   <div class="right-nav"> 
+      <h1 class="left-nav">web dev wannabe</h1>   
+        <div class="right-nav"> 
           <div class="dropdown" id="container">
-            <button onclick="myBlog()" class="dropbtn">Dev Academy Blog</button>
-              <div id="dropdown4" class="dropdown-content">
-              <a href="blogs/about-developer.html">Me, the Developer</a>
-              <a href="blogs/web-dev-music.html">WebDev Music</a>
-              <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
-              <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
-              <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
-              <a href="https://github.com/indigogeorgiana/dailyMe">Group Project 4</a>
-              <a href="https://github.com/indigogeorgiana/GarageSale">Group Project 5</a>
-              <a href="https://github.com/indigogeorgiana/thefullstack">Solo Project</a> 
-              <a href="blogs/calculator.html">Calculator</a>
-            </div>
-          </div>
-          <div class="dropdown" id="container">
-              <button onclick="myAbout()" class="dropbtn">About</button>
-                <div id="dropdown1" class="dropdown-content">
-                <a href="blogs/about-developer.html">About the Developer</a>
+            <button onclick="myDev()" class="dropbtn">Developer</button>
+              <div id="dropdown1" class="dropdown-content">
+                <a href="blogs/about-developer.html">Me, a Developer?</a>
                 <a href="blogs/web-dev-music.html">WebDev Music</a>
+                <a href="https://github.com/indigogeorgiana/thefullstack">Solo Project</a> 
+                <a href="blogs/calculator.html">Calculator</a>
+                <a href="https://github.com/indigogeorgiana/author-page">Author Boilerplate</a>
+              </div>
+          </div>
+
+          <div class="dropdown" id="container">
+            <button onclick="myAcademy()" class="dropbtn">Dev Academy</button>
+              <div id="dropdown2" class="dropdown-content">
+                <a href="">The Start</a>
+                <a href="">Day in a life...</a>
+                <a href="blogs/web-dev-music.html">WebDev Music</a>
+                <a href="blogs/calculator.html">Calculator</a>
+              </div>
+          </div>
+
+          <div class="dropdown" id="container">
+            <button onclick="myGroup()" class="dropbtn">Group Projects</button>
+              <div id="dropdown3" class="dropdown-content">
                 <a href="https://github.com/indigogeorgiana/opensauce">Group Project 1</a>
                 <a href="https://github.com/indigogeorgiana/Meat-Less">Group Project 2</a>
                 <a href="https://github.com/indigogeorgiana/cafekihini">Group Project 3</a>
                 <a href="https://github.com/indigogeorgiana/dailyMe">Group Project 4</a>
                 <a href="https://github.com/indigogeorgiana/GarageSale">Group Project 5</a>
-                <a href="https://github.com/indigogeorgiana/thefullstack">Solo Project</a> 
-                <a href="blogs/calculator.html">Calculator</a>
+                <a href="https://github.com/indigogeorgiana/mealsformates">Final Group Project</a>
               </div>
-            </div>
-          <div class="dropdown" id="container">
-          <button onclick="myTechblog()" class="dropbtn">Techblog</button>
-            <div id="dropdown2" class="dropdown-content">
-              <a href="blogs/time-and-habits.html">Time & Habits</a>
-              <a href="blogs/udacity1.html">Udacity Part 1</a> 
-              <a href="blogs/udacity2.html">Udacity Part 2</a> 
-              <a href="blogs/design-web.html">Design to Web</a> 
-              <a href="blogs/javascript-basics.html">JS Basics</a>
-              <a href="blogs/problem-solving.html">Problem Solving</a>  
-              <a href="blogs/javascript-lang.html">JavaScript</a> 
-              <a href="blogs/scope.html">Scope</a> 
-            </div>
           </div>
+
           <div class="dropdown" id="container">
             <button onclick="myMindful()" class="dropbtn">Mindfulness</button>
-              <div id="dropdown3" class="dropdown-content">
+              <div id="dropdown4" class="dropdown-content">
                 <a href="blogs/reflection.html">Reflections</a> 
                 <a href="blogs/emotional-intell.html">Emotional Intel</a>
                 <a href="blogs/meditation-process.html">Meditation</a>
@@ -70,6 +63,20 @@
                 <a href="blogs/leadership.html">Leadership</a> 
               </div>
           </div> 
+      
+          <div class="dropdown" id="container">
+            <button onclick="myTech()" class="dropbtn">Tech</button>
+              <div id="dropdown5" class="dropdown-content">
+                <a href="blogs/time-and-habits.html">Time & Habits</a>
+                <a href="blogs/udacity1.html">Udacity Part 1</a> 
+                <a href="blogs/udacity2.html">Udacity Part 2</a> 
+                <a href="blogs/design-web.html">Design to Web</a> 
+                <a href="blogs/javascript-basics.html">JS Basics</a>
+                <a href="blogs/problem-solving.html">Problem Solving</a>  
+                <a href="blogs/javascript-lang.html">JavaScript</a> 
+                <a href="blogs/scope.html">Scope</a> 
+              </div>
+          </div>
         </div>
     </div>
     <img class="head-image" src="images/drops.jpg">
@@ -99,22 +106,7 @@
     </center>
   </footer>
   <script>
-    function myBlog() {
-      document.getElementById("dropdown4").classList.toggle("show");
-    }
-      window.onclick = function (event) {
-      if (!event.target.matches('.dropbtn')) {
-      let dropdowns = document.getElementsByClassName('dropdown-content');
-      let i;
-      for (i = 0; i < dropdowns.length; i++) {
-      let openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-      openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-  function myAbout() {
+    function myDev() {
       document.getElementById("dropdown1").classList.toggle("show");
     }
       window.onclick = function (event) {
@@ -129,9 +121,25 @@
       }
     }
   }
-    
-      function myTechblog() {
-        document.getElementById("dropdown2").classList.toggle("show");
+  function myAcademy() {
+      document.getElementById("dropdown2").classList.toggle("show");
+    }
+      window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+      let dropdowns = document.getElementsByClassName('dropdown-content');
+      let i;
+      for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+ 
+      function myGroup() {
+        document.getElementById("dropdown3").classList.toggle("show");
           }
         window.onclick = function (event) {
         if (!event.target.matches('.dropbtn')) {
@@ -147,7 +155,23 @@
     }
   
     function myMindful() {
-      document.getElementById("dropdown3").classList.toggle("show");
+      document.getElementById("dropdown4").classList.toggle("show");
+    }
+      window.onclick = function (event) {
+      if (!event.target.matches('.dropbtn')) {
+      let dropdowns = document.getElementsByClassName('dropdown-content');
+      let i;
+      for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+      openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+
+  function myTech() {
+      document.getElementById("dropdown5").classList.toggle("show");
     }
       window.onclick = function (event) {
       if (!event.target.matches('.dropbtn')) {
