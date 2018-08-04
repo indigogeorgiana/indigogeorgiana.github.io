@@ -1,4 +1,4 @@
-Kia Ora Welcome to my github page, my name is Indigo Phillips.
+Kia Ora and welcome to my github page, my name is Indigo Phillips.
 
 I have attended and completed the Ensprial Dev Academy 18 Week Bootcamp in Auckland with an awesome diverse group of nine other students known as the Mamaku Cohort of 2018.  This website page is but the humble beginnings of my journey into the much loved world of code.  
 
@@ -10,6 +10,6 @@ If you are thinking of becoming apart of Dev Academy I would recommend it. The p
 
 A normal day with the emphasis on wellbeing, mindfulness and challenging oneself go hand in hand with the focus on human and team skills is what makes Dev Academy unique.
 
-Your welcome to come along with me on my journey and I look forward to some awesome learning along the way.
+Your welcome to come along with me on my journey and I look forward to some awesome learning along the way. I am currently working on getting paid work.
 
 Indi
