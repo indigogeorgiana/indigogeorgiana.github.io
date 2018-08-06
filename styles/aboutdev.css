@@ -1,0 +1,407 @@
+/***************************************************************/
+/**MAIN BODY*****/
+html, body {
+  background-color: whitesmoke;
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  height:100%;
+  margin: 0;
+}
+
+/****************************************************************/
+/* MAIN HEADER TAGS */
+h1 {
+  margin-top: 0.1rem;
+  font-size: 3rem;
+  padding: 0.4rem 0rem 0 1rem;
+  font-family: 'Libre Baskerville', serif;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 2rem;
+  letter-spacing: 0.03rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+  letter-spacing: 0.03rem;
+  padding-top: 4rem;
+  margin-bottom: 0;
+}
+
+/* h4 {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+h5 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem 0;
+} */
+
+header {
+position: fixed;
+left: 0;
+  z-index: -5;
+  display: inline-block;
+  background-color: white; 
+} 
+
+.head-image {
+  width: 100%;
+  height: 34rem;
+  padding-bottom: 12rem;
+  margin: 0;
+}
+
+#left-head {
+  width: 60%;
+  float: left;
+  vertical-align: middle;
+  border-bottom: 0.2rem;
+  padding-left: 1.8rem;
+  padding-top: 2rem;
+}    
+
+#right-{
+  width: 40%;
+  height: 0.2rem;
+  float: right;
+  vertical-align: bottom;
+  padding-top: 2rem;
+  border-top: 2rem;
+}
+
+/********************************************/
+/***NAVIGATION****/
+.left-nav {
+  width: 45%;
+  float: left;
+  vertical-align: middle;
+  border-bottom: 0.2rem;
+  padding-left: 1.8rem;
+  padding-top: 2rem;
+}    
+
+#right-nav{
+  width: 55%;
+  height: 0.2rem;
+  float: right;
+  vertical-align: bottom;
+  padding-top: 2rem;
+  border-top: 2rem;
+  display: flex;
+  border-radius: 25px;
+}
+
+/****PAGE FOOTER****/
+footer {
+  position: bottom;
+font-weight: bold;
+  text-align: center;
+}
+
+.social-bar {
+  width: 100%;
+  color: black;
+  align-content: center;
+  display:center;
+  border: black;
+}
+.social-bar a {    
+  display: inline-flex; 
+  text-align: center; 
+  padding: 0.3em 0.3em 0.3em 0.3em; 
+  transition: all 0.3s ease; 
+  color:black;
+  font-size: 3em; 
+}
+
+.social-bar a:hover {
+  background-color:  rgb(226, 15, 0);
+  color: black;
+}
+
+.active {
+  background-color: rgb(65, 124, 163);
+  color: black; 
+}
+
+div#container.dropdown {
+  flex-wrap: nowrap;
+  
+}
+/****DROP DOWN BUTTONS****/
+.dropbtn {
+  background-color: rgb(226, 15, 0);
+  color: black;
+  padding: 18px;
+  font-size: 20px;
+  font-family: 'Lato', sans-serif;
+  border: none; 
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: rgb(226, 15, 0);
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  right: 0;
+  position: relative;
+  display: inline-block;
+  padding: 0.1rem;
+  border-right: 3rem;
+}
+
+.dropdown1 {
+  right: 0;
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem;
+  border-right: 3rem;
+}
+
+.dropdown2 {
+  right: 0;
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem;
+  border-right: 3rem;
+}
+
+.dropdown3 {
+  right: 0;
+  position: relative;
+  display: inline-block;
+  padding: 0.8rem;
+  border-right: 3rem;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 80px;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 10px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+  display:block;
+}
+* {
+  box-sizing: border-box;
+  border: 0.5px solid transparent;
+}
+
+/***MEDIA QUERIES***/
+/* Larger than mobile 
+@media only screen and (min-width: 400px) {
+
+  div#container.dropdown {
+      position: relative;
+      width: 100%;
+      margin: auto;
+  }
+}
+
+/* Larger than tablet 
+@media only screen and (min-width: 400px) {
+
+  div#container.dropdown {
+      position: relative;
+      width: 100%;
+      margin: auto;
+      
+  }
+
+}
+
+/* Larger than desktop 
+@media only screen and (min-width: 1000px) {
+  div#container.dropdown {
+      position: relative;
+      width: 1000px;
+      margin: auto;
+  }
+
+  #main {
+      width: 100%;
+  }
+
+  #blog-title {
+      width: 70%;
+  }
+
+  .blog-content {
+      width: 70%;
+  }
+}
+
+/* Larger than Desktop HD 
+@media only screen and (min-width: 1200px) {
+  div#container.dropdown {
+      position: relative;
+      width: 1200px;
+      margin: auto;
+  }
+
+  #main {
+      width: 100%;
+  }
+
+  #blog-title {
+      width: 70%;
+  }
+
+  .blog-content {
+      width: 70%;
+  }
+}
+
+/* Medium screens 
+@media all and (min-width: 37.500em) {
+.aside { flex: 1 auto; }
+}
+
+/* Large screens 
+@media all and (min-width: 50.000em) {
+
+.main { flex: 2 0em; }
+.aside-1 { order: 1; }
+.main    { order: 2; }
+.aside-2 { order: 3; }
+.footer  { order: 4; }
+} 
+
+.container  {
+  display: inline;
+}
+.container1 {   
+  display: center; 
+  flex-grow: 1;
+}
+.container2 { 
+  flex-wrap: wrap;  
+  flex-grow: 1;
+}
+.container-fluid {   
+  display: inline-block;
+}
+.flex-container > * {
+  padding: 0.938em;
+  -webkit-flex: 1 100%;
+  flex: 1 100%;
+} 
+.container {
+  max-width: 100%;
+}
+
+a {
+color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+}
+
+/* Larger than desktop 
+@media only screen and (min-width: 1000px) {
+  .container {
+      position: relative;
+      width: 1000px;
+      margin: auto;
+  }
+
+  #main {
+      width: 100%;
+  }
+
+  #blog-title {
+      width: 70%;
+  }
+
+  .blog-content {
+      width: 70%;
+  }
+}
+
+/* Larger than Desktop HD 
+@media only screen and (min-width: 1200px) {
+  .container {
+      position: relative;
+      width: 1200px;
+      margin: auto;
+  }
+
+  #main {
+      width: 100%;
+  }
+
+  #blog-title {
+      width: 70%;
+  }
+
+  .blog-content {
+      width: 70%;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+/* When the width is between 600px and 900px OR above 1100px - change the appearance of <div> */
+/* @media screen and (max-width: 900px) and (min-width: 600px), (min-width: 1100px) {
+  div.example {
+    font-size: 50px;
+    padding: 50px;
+    border: 8px solid black;
+    background: yellow;
+  }
+} */
+/* Create four equal columns that floats next to each other */
+/* .column {
+  float: left;
+  width: 25%;
+  padding: 20px;
+} */
+
+/* Clear floats after the columns
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+On screens that are 992px wide or less, go from four columns to two columns */
+/* @media screen and (max-width: 992px) {
+  .column {
+      width: 50%;
+  }
+}
+
+/On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+/* @media screen and (max-width: 600px) {
+  .column {
+      width: 100%;
+  }
+}   */
